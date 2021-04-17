@@ -1,6 +1,26 @@
 /* =============
     Header
 ============= */
+header{
+display: grid;
+grid-template-columns: 16px auto 16px;
+grid-template-areas: ". header .";
+
+>div{
+    grid-area: header;
+    border: 1px solid red;
+
+}
+}
+
 #search{
+    display: grid;
+    grid-template-columns: 16px auto 16px;
+    grid-template-areas: ". search .";
     
+    >div{
+        grid-area: header;
+        border: 1px solid red;
+    
+    }
 }

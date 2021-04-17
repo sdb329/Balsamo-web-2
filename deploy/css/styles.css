@@ -427,12 +427,42 @@ textarea {
 /* =============
     Header
 ============= */
+header {
+  display: grid;
+  grid-template-columns: 16px auto 16px;
+  grid-template-areas: ". header .";
+}
+header > div {
+  grid-area: header;
+  border: 1px solid red;
+}
+
+#search {
+  display: grid;
+  grid-template-columns: 16px auto 16px;
+  grid-template-areas: ". search .";
+}
+#search > div {
+  grid-area: header;
+  border: 1px solid red;
+}
+
 /* =============
     Footer
 ============= */
 /* =============
     announcements
 ============= */
+#announcements {
+  display: grid;
+  grid-template-columns: 16px auto 16px;
+  grid-template-areas: ". history .";
+}
+#announcements > div {
+  grid-area: history;
+  border: 1px solid red;
+}
+
 /* =============
     hero
 ============= */
