@@ -1,8 +1,10 @@
 /* =============
     Header
 ============= */
+
 header{
-display: grid;
+
+    display: grid;
 grid-template-columns: 16px auto 16px;
 grid-template-areas: ". header .";
 
@@ -11,16 +13,19 @@ grid-template-areas: ". header .";
     border: 1px solid red;
 
 }
+
 }
 
 #search{
+
     display: grid;
-    grid-template-columns: 16px auto 16px;
-    grid-template-areas: ". search .";
-    
-    >div{
-        grid-area: header;
-        border: 1px solid red;
-    
-    }
+grid-template-columns: 16px auto 16px;
+grid-template-areas: ". search .";
+
+>div{
+    grid-area: search;
+    border: 1px solid red;
+
+}
+
 }

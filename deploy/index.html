@@ -13,19 +13,28 @@
 <body>
 
     <header>
-        <img src="img/header/logo.svg" alt="bredenbecks logo">
+        <div>
+            <img src="img/header/logo.svg" alt="bredenbecks logo">
+        </div>
+        
     </header>
     
     <section id="search">
-        <form action="POST">
+        <div>
+           <form action="POST">
             <input type="text" placeholder="Search Our Inventory">
             <button><i class="fas fa-search"></i></button>
-        </form>
+        </form> 
+        </div>
+        
     </section>
 
     <section id="hero">
-        <img src="img/hero/hero.jpg" alt="bakery">
-        <ul>
+        <div>
+            <img src="img/hero/hero.jpg" alt="bakery">
+        </div>
+        
+        <ul id="ml">
             <li>
                 <a href="">
                     <div>
@@ -56,19 +65,35 @@
     </section>
 
     <section id="announcements">
-        <div>
-            <article>
-            <h2>Planning your next event?</h2>
-            <img src="img/announcements/macaron.png" alt="macarons">
-            <button>start here</button>
-        </article>
+    <div>
         <article>
-            <h2>Check out our ice cream parlor too!</h2>
-            <img src="img/announcements/ice-cream.png" alt="ice cream">
-            <button>start here</button>
+    
+            <div id="event">
+                <h2>Planning your next event?</h2>
+                <button>start here</button>
+            </div>
+    
+    
+            <div id="image-event">
+                <img src="img/announcements/macaron.png" alt="macarons">
+            </div>
+            
+            
+        </article>
+    
+        <article>
+            <div id="icecream">
+                <h2>Check out our ice cream parlor too!</h2>
+                <button>start here</button>
+            </div>
+    
+            <div id="icecream-image">
+                <img src="img/announcements/ice-cream.png" alt="ice cream">
+            </div>
+            
+            
         </article>
     </div>
-        
     </section>
 
     <section id="hero2">
@@ -131,6 +156,7 @@
 
     <footer>
         <section>
+            <div>
             <h2>Locations</h2>
             <ul>
                 <li>
@@ -139,7 +165,7 @@
                     <address>20 Tolland Turnpike
                         <br>Manchester, CT 06042-1763
                     </address>
-                    <i class="fas fa-mobile-android-alt"></i>
+                    <i class="fas fa-mobile"></i>
                     <a href="tel:800-829-4161">(800) 829-4161</a>
                 </li>
     
@@ -149,7 +175,7 @@
                     <address>136 Eastman Street South
                         <br>Easton, MA 02375
                     </address>
-                    <i class="fas fa-mobile-android-alt"></i>
+                    <i class="fas fa-mobile"></i>
                     <a href="tel:877-526-9213">(877) 526-9213</a>
                 </li>
     
@@ -159,7 +185,7 @@
                     <address>318 Park Road
                         <br>Elmsdale, NS B2S 0G25
                     </address>
-                    <i class="fas fa-mobile-android-alt"></i>
+                    <i class="fas fa-mobile"></i>
                     <a href="tel:902-883-7450">(902) 883-7450</a>
                 </li>
             </ul>
@@ -177,7 +203,7 @@
                 <li><a href="https://www.instagram.com/?hl=en"><i class="fab fa-instagram-square"></i></a>
                 <li><a href="https://www.facebook.com/"><i class="fab fa-facebook-square"></i></a>
             </ul>
-    
+        </div>
         </section>
     </footer>
 
