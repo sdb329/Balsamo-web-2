@@ -5,11 +5,11 @@
 
     display: grid;
 grid-template-columns: 16px auto 16px;
-grid-template-areas: ". history .";
+grid-template-areas: ". hero .";
 
 
 #ml{
-    grid-area: history;
+    grid-area: hero;
     border: 1px solid red;
 
 }
