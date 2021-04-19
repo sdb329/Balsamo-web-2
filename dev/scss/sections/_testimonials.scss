@@ -3,16 +3,13 @@
 ============= */
 #testimonials{
 
-   
-
         display: grid;
     grid-template-columns: 16px auto 16px;
-    grid-template-areas: ". search .";
+    grid-template-areas: ". review .";
     
     .review{
-        grid-area: search;
+        grid-area: review;
         border: 1px solid red;
     }
     
-
 }
