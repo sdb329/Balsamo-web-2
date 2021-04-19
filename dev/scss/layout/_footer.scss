@@ -14,29 +14,5 @@ grid-template-areas: ". footer .";
         border: 1px solid blueviolet;
 
     }
-#social-media{
-    display: grid;
-grid-template-columns: 25% auto auto auto;
-grid-template-areas: "yt t ig fb";
- 
-#yt{
-    grid-area: yt;
-}
-#t{
-    grid-area: t;
-}
-#ig{
-    grid-area: ig;
-}
-#fb{
-    grid-area: fb;
-}
 
 }
-
-
-}
-
-
-
-
