@@ -449,6 +449,23 @@ footer #footer-test {
   grid-area: footer;
   border: 1px solid blueviolet;
 }
+footer #social-media {
+  display: grid;
+  grid-template-columns: 25% auto auto auto;
+  grid-template-areas: "yt t ig fb";
+}
+footer #social-media #yt {
+  grid-area: yt;
+}
+footer #social-media #t {
+  grid-area: t;
+}
+footer #social-media #ig {
+  grid-area: ig;
+}
+footer #social-media #fb {
+  grid-area: fb;
+}
 
 /* =============
     announcements
