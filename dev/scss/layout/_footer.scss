@@ -11,8 +11,32 @@ grid-template-areas: ". footer .";
 #footer-test
     {
         grid-area: footer;
-        border: 1px solid blueviolet;
+        // border: 1px solid blueviolet;
 
     }
 
 }
+
+#social-media{
+
+        display: grid;
+grid-template-columns: 16px auto auto auto auto 16px ;
+// grid-template-rows: 200px 200px;
+grid-template-areas: ". yt t ig fb .";
+#yt{ 
+    grid-area: yt;
+}
+
+#t{
+    grid-area: t;
+}
+#ig{
+    grid-area: ig;
+}
+#fb{
+    grid-area: fb;
+}
+
+
+
+                    }

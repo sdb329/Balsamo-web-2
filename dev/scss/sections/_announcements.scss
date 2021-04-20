@@ -14,49 +14,46 @@ grid-template-areas: ". announcements .";
 
 >div{
     grid-area: announcements;
-    border: 1px solid red;
+    // border: 1px solid red;
 
 }
 
 }
-
-
 
 // #announcements{
 
 //     display: grid;
-// grid-template-columns: 16px auto auto 16px;
-// grid-template-areas:". event image ."
-//                     ". button image .";
+// grid-template-columns: auto auto;
+// grid-template-rows: 200px 200px;
+// grid-template-areas: ". e1 i1 ."
+//                      ". b1 i1 ."
 
-// #event{
-//     grid-area: event;
-//     border: 1px solid red;
+//                      ". e2 i2 ."
+//                      ". b2 i2 .";
+
+
+// #text1 {
+//     grid-area: e1;
+
 // }
 
 // #image-event{
-//     grid-area: image;
-//     border: 1px solid red;
+//     grid-area: i1;
 // }
 
 // #button1{
-//     grid-area: button;
-//     border: 1px solid red;
+//     grid-area: b1;
 // }
 
-// #icecream{
-//     grid-area: event;
-//     border: 1px solid red;
+// #text2{
+//     grid-area: e2;
 // }
 
-// #icecream-image{
-//     grid-area: image;
-//     border: 1px solid red;
+// #image-icecream{
+//     grid-area: i2;
 // }
 
 // #button2{
-//     grid-area: button;
-//     border: 1px solid red;
+//     grid-area: b2;
 // }
-
 // }

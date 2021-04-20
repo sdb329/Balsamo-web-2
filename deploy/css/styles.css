@@ -424,7 +424,6 @@ header {
 }
 header > div {
   grid-area: header;
-  border: 1px solid red;
 }
 
 #search {
@@ -434,7 +433,6 @@ header > div {
 }
 #search > div {
   grid-area: search;
-  border: 1px solid red;
 }
 
 /* =============
@@ -447,7 +445,24 @@ footer {
 }
 footer #footer-test {
   grid-area: footer;
-  border: 1px solid blueviolet;
+}
+
+#social-media {
+  display: grid;
+  grid-template-columns: 16px auto auto auto auto 16px;
+  grid-template-areas: ". yt t ig fb .";
+}
+#social-media #yt {
+  grid-area: yt;
+}
+#social-media #t {
+  grid-area: t;
+}
+#social-media #ig {
+  grid-area: ig;
+}
+#social-media #fb {
+  grid-area: fb;
 }
 
 /* =============
@@ -460,7 +475,6 @@ footer #footer-test {
 }
 #announcements > div {
   grid-area: announcements;
-  border: 1px solid red;
 }
 
 /* =============
@@ -473,7 +487,6 @@ footer #footer-test {
 }
 #hero #ml {
   grid-area: hero;
-  border: 1px solid red;
 }
 
 /* =============
@@ -489,5 +502,4 @@ footer #footer-test {
 }
 #testimonials .review {
   grid-area: review;
-  border: 1px solid red;
 }

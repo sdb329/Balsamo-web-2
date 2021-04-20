@@ -10,7 +10,7 @@ grid-template-areas: ". header .";
 
 >div{
     grid-area: header;
-    border: 1px solid red;
+    // border: 1px solid red;
 
 }
 
@@ -27,7 +27,7 @@ grid-template-areas: ". search .";
 
 >div{
     grid-area: search;
-    border: 1px solid red;
+    // border: 1px solid red;
 }
 
 }
