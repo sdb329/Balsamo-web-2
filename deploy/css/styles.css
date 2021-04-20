@@ -573,6 +573,30 @@ footer #footer-test {
   grid-area: hero;
 }
 
+#hero-info-1 {
+  display: grid;
+  grid-template-columns: 70% auto;
+  grid-template-areas: "text button";
+}
+#hero-info-1 #info-1 {
+  grid-area: text;
+}
+#hero-info-1 #details-1 {
+  grid-area: button;
+}
+
+#hero-info-2 {
+  display: grid;
+  grid-template-columns: 70% auto;
+  grid-template-areas: "text button";
+}
+#hero-info-2 #info-2 {
+  grid-area: text;
+}
+#hero-info-2 #details-2 {
+  grid-area: button;
+}
+
 /* =============
     hero2
 ============= */

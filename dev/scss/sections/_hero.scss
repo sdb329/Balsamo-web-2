@@ -15,3 +15,34 @@ grid-template-areas: ". hero .";
 }
 
 }
+
+#hero-info-1{
+    display: grid;
+grid-template-columns: 70% auto;
+grid-template-areas: "text button";
+
+#info-1{
+grid-area: text;
+
+}
+
+#details-1{
+grid-area: button;
+}
+
+}
+
+#hero-info-2{
+    display: grid;
+grid-template-columns: 70% auto;
+grid-template-areas: "text button";
+
+#info-2{
+grid-area: text;
+
+}
+
+#details-2{
+grid-area: button;
+}
+}
