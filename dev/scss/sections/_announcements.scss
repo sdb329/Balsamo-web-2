@@ -2,43 +2,63 @@
     announcements
 ============= */
 
-#announcements{
+#announcements {
 
     display: grid;
-grid-template-columns: 16px auto 16px;
-grid-template-areas: ". announcements .";
+    grid-template-columns: 16px auto 16px;
+    grid-template-areas: ". announcements .";
 
->div{
-    grid-area: announcements;
-    // border: 1px solid red;
+    >div {
+        grid-area: announcements;
+        // border: 1px solid red;
+
+    }
 
 }
 
-}
 
-
-#announce-1{
+#announce-1 {
 
     display: grid;
-grid-template-columns: 16px auto auto 16px ;
-// grid-template-rows: 200px 200px;
-grid-template-areas: ". text1 image-event ."
-                     ". button1 image-event .";
-#text1{ 
-grid-area: text1;
+    grid-template-columns: 16px auto auto 16px;
+    // grid-template-rows: 200px 200px;
+    grid-template-areas: ". text1 image-event ."
+        ". button1 image-event .";
+
+    #text1 {
+        grid-area: text1;
+    }
+
+    #image-event {
+        grid-area: image-event;
+    }
+
+    #button1 {
+        grid-area: button1;
+    }
 }
 
-#image-event{
-grid-area: image-event;
+
+#announce-2 {
+
+    display: grid;
+    grid-template-columns: 16px auto auto 16px;
+    // grid-template-rows: 200px 200px;
+    grid-template-areas: ". text1 image-event ."
+        ". button1 image-event .";
+
+    #text2 {
+        grid-area: text1;
+    }
+
+    #image-icecream {
+        grid-area: image-event;
+    }
+
+    #button2 {
+        grid-area: button1;
+    }
 }
-#button1{
-grid-area: button1;
-}
-
-
-
-
-                }
 
 
 // #announcements{

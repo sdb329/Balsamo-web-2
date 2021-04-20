@@ -546,6 +546,21 @@ footer #footer-test {
   grid-area: button1;
 }
 
+#announce-2 {
+  display: grid;
+  grid-template-columns: 16px auto auto 16px;
+  grid-template-areas: ". text1 image-event ." ". button1 image-event .";
+}
+#announce-2 #text2 {
+  grid-area: text1;
+}
+#announce-2 #image-icecream {
+  grid-area: image-event;
+}
+#announce-2 #button2 {
+  grid-area: button1;
+}
+
 /* =============
     hero
 ============= */
