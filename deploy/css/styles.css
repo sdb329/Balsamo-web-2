@@ -447,6 +447,42 @@ footer #footer-test {
   grid-area: footer;
 }
 
+#section1-1 {
+  display: grid;
+  grid-template-columns: 16px auto auto 16px;
+  grid-template-areas: ". symbol1 address1 ." ". symbol2 phone";
+}
+#section1-1 #symbol1-1 {
+  grid-area: symbol1;
+}
+#section1-1 #address1-1 {
+  grid-area: address1;
+}
+#section1-1 #symbol2-1 {
+  grid-area: symbol2;
+}
+#section1-1 #phone1-1 {
+  grid-area: phone;
+}
+
+#section1-2 {
+  display: grid;
+  grid-template-columns: 16px auto auto 16px;
+  grid-template-areas: ". symbol1 address1 ." ". symbol2 phone";
+}
+#section1-2 #symbol1-2 {
+  grid-area: symbol1;
+}
+#section1-2 #address1-2 {
+  grid-area: address1;
+}
+#section1-2 #symbol2-2 {
+  grid-area: symbol2;
+}
+#section1-2 #phone1-2 {
+  grid-area: phone;
+}
+
 #social-media {
   display: grid;
   grid-template-columns: 16px auto auto auto auto 16px;
@@ -475,6 +511,21 @@ footer #footer-test {
 }
 #announcements > div {
   grid-area: announcements;
+}
+
+#announce-1 {
+  display: grid;
+  grid-template-columns: 16px auto auto 16px;
+  grid-template-areas: ". text1 image-event ." ". button1 image-event .";
+}
+#announce-1 #text1 {
+  grid-area: text1;
+}
+#announce-1 #image-event {
+  grid-area: image-event;
+}
+#announce-1 #button1 {
+  grid-area: button1;
 }
 
 /* =============

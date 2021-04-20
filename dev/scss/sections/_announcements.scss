@@ -8,10 +8,6 @@
 grid-template-columns: 16px auto 16px;
 grid-template-areas: ". announcements .";
 
-// grid-template-columns: 16px auto 219px 16px;
-// grid-template-areas: ". event image ."
-//                      ". button image .";
-
 >div{
     grid-area: announcements;
     // border: 1px solid red;
@@ -19,6 +15,31 @@ grid-template-areas: ". announcements .";
 }
 
 }
+
+
+#announce-1{
+
+    display: grid;
+grid-template-columns: 16px auto auto 16px ;
+// grid-template-rows: 200px 200px;
+grid-template-areas: ". text1 image-event ."
+                     ". button1 image-event .";
+#text1{ 
+grid-area: text1;
+}
+
+#image-event{
+grid-area: image-event;
+}
+#button1{
+grid-area: button1;
+}
+
+
+
+
+                }
+
 
 // #announcements{
 
