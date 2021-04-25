@@ -1,14 +1,38 @@
 /* =============
     hero2
 ============= */
-#hero2{
+#hero2 {
+    >div {
+        display: grid;
 
-    display: grid;
-    img{
-        width: 100%;
+        img {
+            width: 100%;
+        }
+
+        #h2-3 {
+            display: none;
+        }
     }
 
-    #h2-3{
-        display: none;
+    >div {
+        @include md {
+            display: grid;
+            grid-template-columns: auto auto;
+            grid-template-areas:
+                "h2-1 h2-2";
+        }
+
+        #h2-1 {
+            @include md {
+                grid-area: h2-1;
+            }
+        }
+
+        #h2-2 {
+            @include md {
+                grid-area: h2-2;
+            }
+        }
+
     }
 }

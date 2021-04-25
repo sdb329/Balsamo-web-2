@@ -1,62 +1,89 @@
 /* =============
     hero
 ============= */
-#hero-image{
+#hero-image {
 
-        img{
-            width: 100%;
-        }
-    
+    img {
+        width: 100%;
+    }
+
 }
 
-#hero{
+#hero {
 
-ul{
+    ul {
 
-    li{
-        display: grid;
-        grid-template-columns: 16px auto 16px;
-        grid-template-areas: ". hero .";
-        // background-color: blueviolet;
-        a{
-    grid-area: hero;
-    // border: 1px solid red;
+        li {
+            display: grid;
+            grid-template-columns: 16px auto 16px;
+            grid-template-areas: ". hero .";
+
+            // background-color: blueviolet;
+            a {
+                grid-area: hero;
+                // border: 1px solid red;
+            }
+
         }
+
 
     }
 
 
-}
 
-}
+    #hero-info-1 {
+        display: grid;
+        grid-template-columns: 90% auto;
+        grid-template-areas: "text button";
 
-#hero-info-1{
-    display: grid;
-grid-template-columns: 70% auto;
-grid-template-areas: "text button";
+        #info-1 {
+            grid-area: text;
 
-#info-1{
-grid-area: text;
+        }
 
-}
+        #details-1 {
+            grid-area: button;
+        }
 
-#details-1{
-grid-area: button;
-}
+    }
 
-}
+    #hero-info-2 {
+        display: grid;
+        grid-template-columns: 90% auto;
+        grid-template-areas: "text button";
 
-#hero-info-2{
-    display: grid;
-grid-template-columns: 70% auto;
-grid-template-areas: "text button";
+        #info-2 {
+            grid-area: text;
 
-#info-2{
-grid-area: text;
+        }
 
-}
+        #details-2 {
+            grid-area: button;
+        }
+    }
 
-#details-2{
-grid-area: button;
-}
+    .hero-button {
+        display: none;
+    }
+
+
+    ul {
+        @include md {
+            display: grid;
+            grid-template-columns: 40% auto;
+            grid-template-areas: "menu-hero location-hero";
+        }
+
+        .menu-hero {
+            @include md {
+                grid-area: menu-hero;
+            }
+        }
+
+        .location-hero {
+            @include md {
+                grid-area: location-hero;
+            }
+        }
+    }
 }

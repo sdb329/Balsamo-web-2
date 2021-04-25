@@ -16,7 +16,7 @@ footer{
 
 #section1-1{
     display: grid;
-grid-template-columns: auto auto;
+grid-template-columns: 1fr 1fr;
 // grid-template-rows: 200px 200px;
 grid-template-areas: 
                      "symbol1 address1"
@@ -39,7 +39,7 @@ grid-area: phone;
 
 #section1-2{
     display: grid;
-grid-template-columns: auto auto;
+grid-template-columns: 1fr 1fr;
 // grid-template-rows: 200px 200px;
 grid-template-areas: 
                      "symbol1 address1"
@@ -63,11 +63,13 @@ grid-area: phone;
 
 #section1-3{
     display: grid;
-grid-template-columns: auto auto;
+grid-template-columns: 1fr 1fr;
 // grid-template-rows: 200px 200px;
 grid-template-areas: 
                      "symbol1 address1"
                      "symbol2 phone";
+
+                     border: 1px solid red;
 
 #symbol1-3{
 grid-area: symbol1;
@@ -92,8 +94,10 @@ grid-area: phone;
 grid-template-columns: 16px auto auto auto auto 16px ;
 // grid-template-rows: 200px 200px;
 grid-template-areas: ". yt t ig fb .";
+border: 1px solid red;
 #yt{ 
     grid-area: yt;
+    
 }
 
 #t{

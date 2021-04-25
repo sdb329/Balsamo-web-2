@@ -4,46 +4,63 @@
 
 #announcements {
 
-   ul{
+    ul {
 
-    li{
-        display: grid;
-        grid-template-columns: 16px auto 16px;
-        grid-template-areas: ". announce .";
-        // background-color: blueviolet;        
+        li {
+            display: grid;
+            grid-template-columns: 16px auto 16px;
+            grid-template-areas: ". announce .";
+            // background-color: blueviolet;        
 
-        >div{
-            grid-area: announce;
-            // border: 1px solid red;
+            >div {
+                grid-area: announce;
+                // border: 1px solid red;
 
+            }
         }
     }
-   }
 
-   ul{
-    li{
-    >div{
-            display: grid;
-    grid-template-columns: auto auto;
-    // grid-template-rows: 200px 200px;
-    grid-template-areas: 
-    "text image-event"
-    "text image-event";
+    ul {
+        li {
+            >div {
+                display: grid;
+                grid-template-columns: auto 30%;
+                // grid-template-rows: 200px 200px;
+                grid-template-areas:
+                    "text image-event"
+                    "text image-event";
 
-.announce-content{
-    grid-area: text;
-}
+                .announce-content {
+                    grid-area: text;
+                }
 
-.image-event{
-    grid-area: image-event;
-}
-
-
+                .image-event {
+                    grid-area: image-event;
+                }
+            }
+        }
     }
-}
-}
 
-   
-}
-
-
+    ul{
+        @include md{
+            display: grid;
+            grid-template-columns: auto auto;
+            // grid-template-rows: 200px 200px;
+            grid-template-areas:
+                "announce-1 announce-2";
+        }
+    
+    
+               #announce-1{
+                @include md{
+                   grid-area: announce-1;
+                }
+               }
+               #announce-2{
+                @include md{
+                   grid-area: announce-2;
+                }
+               }
+        }
+        
+    }

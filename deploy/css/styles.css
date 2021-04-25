@@ -449,7 +449,7 @@ footer > div {
 
 #section1-1 {
   display: grid;
-  grid-template-columns: auto auto;
+  grid-template-columns: 1fr 1fr;
   grid-template-areas: "symbol1 address1" "symbol2 phone";
 }
 #section1-1 #symbol1-1 {
@@ -467,7 +467,7 @@ footer > div {
 
 #section1-2 {
   display: grid;
-  grid-template-columns: auto auto;
+  grid-template-columns: 1fr 1fr;
   grid-template-areas: "symbol1 address1" "symbol2 phone";
 }
 #section1-2 #symbol1-2 {
@@ -485,8 +485,9 @@ footer > div {
 
 #section1-3 {
   display: grid;
-  grid-template-columns: auto auto;
+  grid-template-columns: 1fr 1fr;
   grid-template-areas: "symbol1 address1" "symbol2 phone";
+  border: 1px solid red;
 }
 #section1-3 #symbol1-3 {
   grid-area: symbol1;
@@ -505,6 +506,7 @@ footer > div {
   display: grid;
   grid-template-columns: 16px auto auto auto auto 16px;
   grid-template-areas: ". yt t ig fb .";
+  border: 1px solid red;
 }
 #social-media #yt {
   grid-area: yt;
@@ -532,7 +534,7 @@ footer > div {
 }
 #announcements ul li > div {
   display: grid;
-  grid-template-columns: auto auto;
+  grid-template-columns: auto 30%;
   grid-template-areas: "text image-event" "text image-event";
 }
 #announcements ul li > div .announce-content {
@@ -540,6 +542,23 @@ footer > div {
 }
 #announcements ul li > div .image-event {
   grid-area: image-event;
+}
+@media (min-width: 768px) {
+  #announcements ul {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-areas: "announce-1 announce-2";
+  }
+}
+@media (min-width: 768px) {
+  #announcements ul #announce-1 {
+    grid-area: announce-1;
+  }
+}
+@media (min-width: 768px) {
+  #announcements ul #announce-2 {
+    grid-area: announce-2;
+  }
 }
 
 /* =============
@@ -557,42 +576,77 @@ footer > div {
 #hero ul li a {
   grid-area: hero;
 }
-
-#hero-info-1 {
+#hero #hero-info-1 {
   display: grid;
-  grid-template-columns: 70% auto;
+  grid-template-columns: 90% auto;
   grid-template-areas: "text button";
 }
-#hero-info-1 #info-1 {
+#hero #hero-info-1 #info-1 {
   grid-area: text;
 }
-#hero-info-1 #details-1 {
+#hero #hero-info-1 #details-1 {
   grid-area: button;
 }
-
-#hero-info-2 {
+#hero #hero-info-2 {
   display: grid;
-  grid-template-columns: 70% auto;
+  grid-template-columns: 90% auto;
   grid-template-areas: "text button";
 }
-#hero-info-2 #info-2 {
+#hero #hero-info-2 #info-2 {
   grid-area: text;
 }
-#hero-info-2 #details-2 {
+#hero #hero-info-2 #details-2 {
   grid-area: button;
+}
+#hero .hero-button {
+  display: none;
+}
+@media (min-width: 768px) {
+  #hero ul {
+    display: grid;
+    grid-template-columns: 40% auto;
+    grid-template-areas: "menu-hero location-hero";
+  }
+}
+@media (min-width: 768px) {
+  #hero ul .menu-hero {
+    grid-area: menu-hero;
+  }
+}
+@media (min-width: 768px) {
+  #hero ul .location-hero {
+    grid-area: location-hero;
+  }
 }
 
 /* =============
     hero2
 ============= */
-#hero2 {
+#hero2 > div {
   display: grid;
 }
-#hero2 img {
+#hero2 > div img {
   width: 100%;
 }
-#hero2 #h2-3 {
+#hero2 > div #h2-3 {
   display: none;
+}
+@media (min-width: 768px) {
+  #hero2 > div {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-areas: "h2-1 h2-2";
+  }
+}
+@media (min-width: 768px) {
+  #hero2 > div #h2-1 {
+    grid-area: h2-1;
+  }
+}
+@media (min-width: 768px) {
+  #hero2 > div #h2-2 {
+    grid-area: h2-2;
+  }
 }
 
 /* =============
