@@ -365,7 +365,7 @@ ul li {
   list-style: none;
 }
 
-img {
+.image-test img {
   width: 100%;
 }
 
@@ -564,6 +564,10 @@ footer #footer-test {
 /* =============
     hero
 ============= */
+#hero-image img {
+  width: 100%;
+}
+
 #hero {
   display: grid;
   grid-template-columns: 16px auto 16px;
@@ -600,6 +604,10 @@ footer #footer-test {
 /* =============
     hero2
 ============= */
+#hero2 img {
+  width: 100%;
+}
+
 /* =============
     testimonials
 ============= */
@@ -610,4 +618,8 @@ footer #footer-test {
 }
 #testimonials .review {
   grid-area: review;
+  border: 1px solid red;
+}
+#testimonials img {
+  width: 100%;
 }
