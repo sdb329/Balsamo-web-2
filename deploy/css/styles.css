@@ -576,31 +576,6 @@ footer > div {
 #hero ul li a {
   grid-area: hero;
 }
-#hero #hero-info-1 {
-  display: grid;
-  grid-template-columns: 90% auto;
-  grid-template-areas: "text button";
-}
-#hero #hero-info-1 #info-1 {
-  grid-area: text;
-}
-#hero #hero-info-1 #details-1 {
-  grid-area: button;
-}
-#hero #hero-info-2 {
-  display: grid;
-  grid-template-columns: 90% auto;
-  grid-template-areas: "text button";
-}
-#hero #hero-info-2 #info-2 {
-  grid-area: text;
-}
-#hero #hero-info-2 #details-2 {
-  grid-area: button;
-}
-#hero .hero-button {
-  display: none;
-}
 @media (min-width: 768px) {
   #hero ul {
     display: grid;
@@ -617,6 +592,20 @@ footer > div {
   #hero ul .location-hero {
     grid-area: location-hero;
   }
+}
+#hero .hero-info {
+  display: grid;
+  grid-template-columns: 90% auto;
+  grid-template-areas: "text button";
+}
+#hero .hero-info .info-content {
+  grid-area: text;
+}
+#hero .hero-info .details-button {
+  grid-area: button;
+}
+#hero .hero-button {
+  display: none;
 }
 
 /* =============
@@ -652,6 +641,9 @@ footer > div {
 /* =============
     testimonials
 ============= */
+#testimonials img {
+  width: 100%;
+}
 #testimonials > div {
   display: grid;
   grid-template-columns: 16px auto 16px;
@@ -665,15 +657,4 @@ footer > div {
   grid-template-columns: 16px auto 16px;
   grid-template-areas: ". review .";
   grid-area: review;
-}
-#testimonials ul li img {
-  width: 100%;
-}
-#testimonials ul li section {
-  display: grid;
-  grid-template-columns: 16px auto 16px;
-  grid-template-areas: ". testimonials .";
-}
-#testimonials ul li section > div {
-  grid-area: testimonials;
 }
