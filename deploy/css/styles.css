@@ -599,15 +599,31 @@ footer #footer-test {
 /* =============
     testimonials
 ============= */
-#testimonials {
+#testimonials > div {
+  display: grid;
+  grid-template-columns: 16px auto 16px;
+  grid-template-areas: ". title-test .";
+}
+#testimonials > div > h1 {
+  grid-area: title-test;
+  border: 1px solid red;
+}
+#testimonials #test-title {
   display: grid;
   grid-template-columns: 16px auto 16px;
   grid-template-areas: ". review .";
-}
-#testimonials .review {
   grid-area: review;
   border: 1px solid red;
 }
-#testimonials img {
+#testimonials ul li img {
   width: 100%;
+}
+#testimonials ul li section {
+  display: grid;
+  grid-template-columns: 16px auto 16px;
+  grid-template-areas: ". testimonials .";
+}
+#testimonials ul li section > div {
+  grid-area: testimonials;
+  border: 1px solid red;
 }

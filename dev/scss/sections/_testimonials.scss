@@ -3,21 +3,43 @@
 ============= */
 #testimonials{
 
+    >div{
         display: grid;
     grid-template-columns: 16px auto 16px;
+    grid-template-areas: ". title-test .";
+
+        >h1{
+            grid-area: title-test;
+    border: 1px solid red;
+
+        }
+    }
+#test-title{ 
+    display: grid;
+    grid-template-columns: 16px auto 16px;
     grid-template-areas: ". review .";
-    
-    .review{
-        grid-area: review;
-        border: 1px solid red;
-    }
-    
-    
-    img{
-        width: 100%;
-    }
-   
+
+    grid-area: review;
+    border: 1px solid red;
+
 }
 
+ul{
 
-   
+    li{
+        img{
+            width: 100%;
+        }
+        section{
+            display: grid;
+    grid-template-columns: 16px auto 16px;
+    grid-template-areas: ". testimonials .";
+            >div{
+                grid-area: testimonials;
+                border: 1px solid red;            
+
+            }
+        }
+    }
+}
+}
