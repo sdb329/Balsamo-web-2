@@ -3,18 +3,15 @@
 ============= */
 
 footer{
-
     display: grid;
-grid-template-columns: 16px auto 16px;
-grid-template-areas: ". footer .";
+    grid-template-columns: 16px auto 16px;
+    grid-template-areas: ". footer .";
 
-#footer-test
-    {
+    >div{
         grid-area: footer;
         // border: 1px solid blueviolet;
 
     }
-
 }
 
 #section1-1{

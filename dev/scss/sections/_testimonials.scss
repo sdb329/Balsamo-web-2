@@ -10,7 +10,7 @@
 
         >h1{
             grid-area: title-test;
-    border: 1px solid red;
+    // border: 1px solid red;
 
         }
     }
@@ -20,7 +20,7 @@
     grid-template-areas: ". review .";
 
     grid-area: review;
-    border: 1px solid red;
+    // border: 1px solid red;
 
 }
 
@@ -36,7 +36,7 @@ ul{
     grid-template-areas: ". testimonials .";
             >div{
                 grid-area: testimonials;
-                border: 1px solid red;            
+                // border: 1px solid red;            
 
             }
         }

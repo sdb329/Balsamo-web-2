@@ -443,7 +443,7 @@ footer {
   grid-template-columns: 16px auto 16px;
   grid-template-areas: ". footer .";
 }
-footer #footer-test {
+footer > div {
   grid-area: footer;
 }
 
@@ -529,7 +529,6 @@ footer #footer-test {
 }
 #announcements ul li > div {
   grid-area: announce;
-  border: 1px solid red;
 }
 #announcements ul li > div {
   display: grid;
@@ -606,14 +605,12 @@ footer #footer-test {
 }
 #testimonials > div > h1 {
   grid-area: title-test;
-  border: 1px solid red;
 }
 #testimonials #test-title {
   display: grid;
   grid-template-columns: 16px auto 16px;
   grid-template-areas: ". review .";
   grid-area: review;
-  border: 1px solid red;
 }
 #testimonials ul li img {
   width: 100%;
@@ -625,5 +622,4 @@ footer #footer-test {
 }
 #testimonials ul li section > div {
   grid-area: testimonials;
-  border: 1px solid red;
 }
