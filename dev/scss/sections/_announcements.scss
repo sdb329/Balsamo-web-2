@@ -4,98 +4,44 @@
 
 #announcements {
 
-    display: grid;
-    grid-template-columns: 16px auto 16px;
-    grid-template-areas: ". announcements .";
+   ul{
 
-    >div {
-        grid-area: announcements;
-        // border: 1px solid red;
+    li{
+        display: grid;
+        grid-template-columns: 16px auto 16px;
+        grid-template-areas: ". announce .";
+        // background-color: blueviolet;        
 
+        >div{
+            grid-area: announce;
+            border: 1px solid red;
+
+        }
     }
-
+   }
+   
 }
 
 
-#announce-1 {
-
-    display: grid;
+ul{
+    li{
+    >div{
+            display: grid;
     grid-template-columns: auto auto;
     // grid-template-rows: 200px 200px;
-    grid-template-areas: "text1 image-event"
-        "button1 image-event";
+    grid-template-areas: 
+    "text image-event"
+    "text image-event";
 
+.announce-content{
+    grid-area: text;
+}
 
-    #text1 {
-        grid-area: text1;
-    }
-
-    #image-event {
-        grid-area: image-event;
-    }
-
-    #button1 {
-        grid-area: button1;
-    }
+.image-event{
+    grid-area: image-event;
 }
 
 
-#announce-2 {
-
-    display: grid;
-    grid-template-columns: auto auto;
-    // grid-template-rows: 200px 200px;
-    grid-template-areas: "text1 image-event"
-        "button1 image-event";
-
-    #text2 {
-        grid-area: text1;
-    }
-
-    #image-icecream {
-        grid-area: image-event;
-    }
-
-    #button2 {
-        grid-area: button1;
     }
 }
-
-
-// #announcements{
-
-//     display: grid;
-// grid-template-columns: auto auto;
-// grid-template-rows: 200px 200px;
-// grid-template-areas: ". e1 i1 ."
-//                      ". b1 i1 ."
-
-//                      ". e2 i2 ."
-//                      ". b2 i2 .";
-
-
-// #text1 {
-//     grid-area: e1;
-
-// }
-
-// #image-event{
-//     grid-area: i1;
-// }
-
-// #button1{
-//     grid-area: b1;
-// }
-
-// #text2{
-//     grid-area: e2;
-// }
-
-// #image-icecream{
-//     grid-area: i2;
-// }
-
-// #button2{
-//     grid-area: b2;
-// }
-// }
+}

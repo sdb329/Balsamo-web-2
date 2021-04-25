@@ -522,43 +522,26 @@ footer #footer-test {
 /* =============
     announcements
 ============= */
-#announcements {
+#announcements ul li {
   display: grid;
   grid-template-columns: 16px auto 16px;
-  grid-template-areas: ". announcements .";
+  grid-template-areas: ". announce .";
 }
-#announcements > div {
-  grid-area: announcements;
-}
-
-#announce-1 {
-  display: grid;
-  grid-template-columns: auto auto;
-  grid-template-areas: "text1 image-event" "button1 image-event";
-}
-#announce-1 #text1 {
-  grid-area: text1;
-}
-#announce-1 #image-event {
-  grid-area: image-event;
-}
-#announce-1 #button1 {
-  grid-area: button1;
+#announcements ul li > div {
+  grid-area: announce;
+  border: 1px solid red;
 }
 
-#announce-2 {
+ul li > div {
   display: grid;
   grid-template-columns: auto auto;
-  grid-template-areas: "text1 image-event" "button1 image-event";
+  grid-template-areas: "text image-event" "text image-event";
 }
-#announce-2 #text2 {
-  grid-area: text1;
+ul li > div .announce-content {
+  grid-area: text;
 }
-#announce-2 #image-icecream {
+ul li > div .image-event {
   grid-area: image-event;
-}
-#announce-2 #button2 {
-  grid-area: button1;
 }
 
 /* =============
