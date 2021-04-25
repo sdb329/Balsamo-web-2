@@ -531,16 +531,15 @@ footer #footer-test {
   grid-area: announce;
   border: 1px solid red;
 }
-
-ul li > div {
+#announcements ul li > div {
   display: grid;
   grid-template-columns: auto auto;
   grid-template-areas: "text image-event" "text image-event";
 }
-ul li > div .announce-content {
+#announcements ul li > div .announce-content {
   grid-area: text;
 }
-ul li > div .image-event {
+#announcements ul li > div .image-event {
   grid-area: image-event;
 }
 
@@ -587,8 +586,14 @@ ul li > div .image-event {
 /* =============
     hero2
 ============= */
+#hero2 {
+  display: grid;
+}
 #hero2 img {
   width: 100%;
+}
+#hero2 #h2-3 {
+  display: none;
 }
 
 /* =============

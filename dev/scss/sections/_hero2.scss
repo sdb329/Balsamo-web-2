@@ -3,8 +3,12 @@
 ============= */
 #hero2{
 
+    display: grid;
     img{
         width: 100%;
     }
 
+    #h2-3{
+        display: none;
+    }
 }
