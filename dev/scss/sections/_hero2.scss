@@ -36,9 +36,9 @@
 
         @include lg {
             display: grid;
-            grid-template-columns: 60% auto;
+            grid-template-columns: 16px 60% auto 16px;
             grid-template-areas:
-                "h2-1 h2-2";
+                ". h2-1 h2-2 .";
         }
         #h2-1 {
             @include lg {
@@ -51,5 +51,29 @@
             }
         }
 
+        @include xl{
+            display: grid;
+            grid-template-columns: 40px 60% auto 40px;
+            grid-template-areas:
+                ". h2-1 h2-2 ."
+                ". . h2-3 .";
+        }
+        #h2-1 {
+            @include xl {
+                grid-area: h2-1;
+            }
+        }
+        #h2-2 {
+            @include xl {
+                grid-area: h2-2;
+            }
+        }
+        #h2-3 {
+            @include xl {
+                grid-area: h2-3;
+
+                display: list-item;
+            }
+        }
+        }
     }
-}

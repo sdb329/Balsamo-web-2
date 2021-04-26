@@ -61,8 +61,25 @@
                    grid-area: announce-2;
                 }
                }
-        }
 
+               @include xl{
+                display: grid;
+                grid-template-columns: 10% auto auto 10%;
+                // grid-template-rows: 200px 200px;
+                grid-template-areas:
+                    ". announce-1 announce-2 .";
+            }
         
         
-    }
+                   #announce-1{
+                    @include xl{
+                       grid-area: announce-1;
+                    }
+                   }
+                   #announce-2{
+                    @include xl{
+                       grid-area: announce-2;
+                    }
+                   }
+            }
+        }

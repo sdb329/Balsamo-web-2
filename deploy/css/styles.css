@@ -617,6 +617,23 @@ footer #social-media #fb {
     grid-area: announce-2;
   }
 }
+@media (min-width: 1200px) {
+  #announcements ul {
+    display: grid;
+    grid-template-columns: 10% auto auto 10%;
+    grid-template-areas: ". announce-1 announce-2 .";
+  }
+}
+@media (min-width: 1200px) {
+  #announcements ul #announce-1 {
+    grid-area: announce-1;
+  }
+}
+@media (min-width: 1200px) {
+  #announcements ul #announce-2 {
+    grid-area: announce-2;
+  }
+}
 
 /* =============
     hero
@@ -625,6 +642,11 @@ footer #social-media #fb {
   width: 100%;
 }
 
+@media (min-width: 1200px) {
+  #hero ul li {
+    grid-gap: 10%;
+  }
+}
 #hero ul li {
   display: grid;
   grid-template-columns: 16px auto 16px;
@@ -714,8 +736,8 @@ footer #social-media #fb {
 @media (min-width: 992px) {
   #hero2 > div {
     display: grid;
-    grid-template-columns: 60% auto;
-    grid-template-areas: "h2-1 h2-2";
+    grid-template-columns: 16px 60% auto 16px;
+    grid-template-areas: ". h2-1 h2-2 .";
   }
 }
 @media (min-width: 992px) {
@@ -726,6 +748,29 @@ footer #social-media #fb {
 @media (min-width: 992px) {
   #hero2 > div #h2-2 {
     grid-area: h2-2;
+  }
+}
+@media (min-width: 1200px) {
+  #hero2 > div {
+    display: grid;
+    grid-template-columns: 40px 60% auto 40px;
+    grid-template-areas: ". h2-1 h2-2 ." ". . h2-3 .";
+  }
+}
+@media (min-width: 1200px) {
+  #hero2 > div #h2-1 {
+    grid-area: h2-1;
+  }
+}
+@media (min-width: 1200px) {
+  #hero2 > div #h2-2 {
+    grid-area: h2-2;
+  }
+}
+@media (min-width: 1200px) {
+  #hero2 > div #h2-3 {
+    grid-area: h2-3;
+    display: list-item;
   }
 }
 
@@ -758,6 +803,8 @@ footer #social-media #fb {
     display: grid;
     grid-template-columns: auto auto;
     border: 1px solid green;
+    grid-gap: 16px;
+    padding: 16px;
   }
 }
 @media (min-width: 768px) {
@@ -770,6 +817,8 @@ footer #social-media #fb {
     display: grid;
     grid-template-columns: auto auto auto;
     border: 1px solid green;
+    padding: 16px;
+    grid-gap: 16px;
   }
 }
 @media (min-width: 992px) {
@@ -781,5 +830,11 @@ footer #social-media #fb {
 @media (min-width: 992px) {
   #testimonials ul li img {
     width: 95%;
+  }
+}
+@media (min-width: 1200px) {
+  #testimonials ul {
+    padding-right: 10%;
+    padding-left: 10%;
   }
 }

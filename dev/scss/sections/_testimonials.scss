@@ -36,11 +36,18 @@
             }
 
         }}
+
      ul{
+
+       
+
+
          @include md{
             display: grid;
             grid-template-columns: auto auto;
             border: 1px solid green;
+            grid-gap: 16px;
+            padding: 16px;
          }
         li{
             @include md{
@@ -55,6 +62,8 @@
            display: grid;
            grid-template-columns: auto auto auto;
            border: 1px solid green;
+           padding: 16px;
+           grid-gap: 16px;
         }
         .test-content {
             @include lg{
@@ -68,9 +77,15 @@
            }}
        }
     }
+
+    ul{
+        @include xl{
+           padding-right: 10%;
+           padding-left: 10%
+        }
     
     
-    }
+    }}
 
 
 
