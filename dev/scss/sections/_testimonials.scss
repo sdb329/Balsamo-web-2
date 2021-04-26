@@ -35,58 +35,97 @@
                 }
             }
 
+        }}
+     ul{
+         @include md{
+            display: grid;
+            grid-template-columns: auto auto;
+            border: 1px solid green;
+         }
+        li{
+            @include md{
+            img {
+                width: 95%
+            }}
         }
+     }
+    
+     ul{
+        @include lg{
+           display: grid;
+           grid-template-columns: auto auto auto;
+           border: 1px solid green;
+        }
+        .test-content {
+            @include lg{
+            grid-area: test;
+            border: 1px solid red;
+        }}
+       li{
+           @include lg{
+           img {
+               width: 95%
+           }}
+       }
+    }
+    
+    
+    }
 
-        @include md {
-            li {
-                display: grid;
-                grid-template-columns: auto auto;
-                grid-template-areas:
-                    "t1 t2"
-                    "img1 img2"
-                    "t3 t4"
-                    "img3 img4"
-                    "t5 t5"
-                    "img5 img5";
-            }
-        }
+
+
+
+    //     @include md {
+    //         li {
+    //             display: grid;
+    //             grid-template-columns: auto auto;
+    //             grid-template-areas:
+    //                 "t1 t2"
+    //                 "img1 img2"
+    //                 "t3 t4"
+    //                 "img3 img4"
+    //                 "t5 t5"
+    //                 "img5 img5";
+    //         }
+    //     }
 
        
-                #img-1t{
-                    @include md {
-                        grid-area: img1;
-                    } 
-                }
+    //             #img-1t{
+    //                 @include md {
+    //                     grid-area: img1;
+    //                 } 
+    //             }
 
         
 
-                #img-2t{
-                    @include md {
-                        grid-area: img2;
-                    } 
-                }
+    //             #img-2t{
+    //                 @include md {
+    //                     grid-area: img2;
+    //                 } 
+    //             }
 
          
 
-                #img-3t{
-                    @include md {
-                        grid-area: img3;
-                    } 
-                }
+    //             #img-3t{
+    //                 @include md {
+    //                     grid-area: img3;
+    //                 } 
+    //             }
 
           
 
-                #img-4t{
-                    @include md {
-                        grid-area: img4;
-                    } 
-                }
+    //             #img-4t{
+    //                 @include md {
+    //                     grid-area: img4;
+    //                 } 
+    //             }
 
      
-                #img-5t{
-                    @include md {
-                        grid-area: img5;
-                    } 
-                }
-        }
-    }
+    //             #img-5t{
+    //                 @include md {
+    //                     grid-area: img5;
+    //                 } 
+    //             }
+    //     }
+    // }
+    

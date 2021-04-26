@@ -754,34 +754,32 @@ footer #social-media #fb {
   border: 1px solid red;
 }
 @media (min-width: 768px) {
-  #testimonials ul li {
+  #testimonials ul {
     display: grid;
     grid-template-columns: auto auto;
-    grid-template-areas: "t1 t2" "img1 img2" "t3 t4" "img3 img4" "t5 t5" "img5 img5";
+    border: 1px solid green;
   }
 }
 @media (min-width: 768px) {
-  #testimonials ul #img-1t {
-    grid-area: img1;
+  #testimonials ul li img {
+    width: 95%;
   }
 }
-@media (min-width: 768px) {
-  #testimonials ul #img-2t {
-    grid-area: img2;
+@media (min-width: 992px) {
+  #testimonials ul {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    border: 1px solid green;
   }
 }
-@media (min-width: 768px) {
-  #testimonials ul #img-3t {
-    grid-area: img3;
+@media (min-width: 992px) {
+  #testimonials ul .test-content {
+    grid-area: test;
+    border: 1px solid red;
   }
 }
-@media (min-width: 768px) {
-  #testimonials ul #img-4t {
-    grid-area: img4;
-  }
-}
-@media (min-width: 768px) {
-  #testimonials ul #img-5t {
-    grid-area: img5;
+@media (min-width: 992px) {
+  #testimonials ul li img {
+    width: 95%;
   }
 }
