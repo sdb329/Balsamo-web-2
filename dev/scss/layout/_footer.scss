@@ -153,9 +153,43 @@ footer{
                }
 
         }
+
+        >section{
+            @include lg{
+                display: grid;
+                grid-template-columns: auto auto auto;
+                // grid-template-rows: 200px 200px;
+                grid-template-areas:
+                    "title title title"
+                    "loc sign-up socials";
+            }
+            #title-footer{
+                @include lg{
+                   grid-area: title;
+                   border: 1px solid red;
+                }
+               }
+            #address-footer{
+                @include lg{
+                   grid-area: loc;
+                   border: 1px solid red;
+                }
+               }
+               #sign-up-footer{
+                @include lg{
+                   grid-area: sign-up;
+                   border: 1px solid red;
+                }
+               }
+               #socials-footer{
+                @include lg{
+                   grid-area: socials;
+                   border: 1px solid red;
+                }
+               }
+
+        }
     }
+
     
-
-
-           
     }

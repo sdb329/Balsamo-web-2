@@ -1,66 +1,92 @@
 /* =============
     testimonials
 ============= */
-#testimonials{
+#testimonials {
 
-    img {
-        width: 100%;
-    }
-
-    >div{
+    >div {
         display: grid;
-    grid-template-columns: 16px auto 16px;
-    grid-template-areas: ". title-test .";
+        grid-template-columns: 16px auto 16px;
+        grid-template-areas: ". title-test .";
 
-        >h1{
+        >h1 {
             grid-area: title-test;
-    // border: 1px solid red;
+            border: 1px solid red;
 
         }
     }
-#test-title{ 
-    display: grid;
-    grid-template-columns: 16px auto 16px;
-    grid-template-areas: ". review .";
 
-    grid-area: review;
-    // border: 1px solid red;
+    ul {
 
-}
 
-ul{ @include md{
-    grid-template-columns: 16px auto auto 16px;
-    grid-template-areas: 
-    ". 1t 2t ."
-    ". 3t 4t ."
-    ". 5t 5t .";
-}
-    #testa{
-        @include md{
-grid-area: 1t;
+        li {
+            img {
+                width: 100%;
+            }
+
+            section {
+                display: grid;
+                grid-template-columns: 16px auto 16px;
+                grid-template-areas: ". testimonials .";
+
+                .test-content {
+                    grid-area: testimonials;
+                    border: 1px solid red;
+
+                }
+            }
+
         }
-    }
-    #testb{
-        @include md{
-grid-area: 2t;
-        }
-    }
-    #testc{
-        @include md{
-grid-area: 3t;
-        }
-    }
-    #testd{
-        @include md{
-grid-area: 4t;
-        }
-     #teste{
-            @include md{
-    grid-area: 5t;
+
+        @include md {
+            li {
+                display: grid;
+                grid-template-columns: auto auto;
+                grid-template-areas:
+                    "t1 t2"
+                    "img1 img2"
+                    "t3 t4"
+                    "img3 img4"
+                    "t5 t5"
+                    "img5 img5";
             }
         }
+
+       
+                #img-1t{
+                    @include md {
+                        grid-area: img1;
+                    } 
+                }
+
+        
+
+                #img-2t{
+                    @include md {
+                        grid-area: img2;
+                    } 
+                }
+
+         
+
+                #img-3t{
+                    @include md {
+                        grid-area: img3;
+                    } 
+                }
+
+          
+
+                #img-4t{
+                    @include md {
+                        grid-area: img4;
+                    } 
+                }
+
+     
+                #img-5t{
+                    @include md {
+                        grid-area: img5;
+                    } 
+                }
+        }
     }
-}
-
-
-}

@@ -21,15 +21,32 @@
             grid-template-areas:
                 "h2-1 h2-2";
         }
-
         #h2-1 {
             @include md {
                 grid-area: h2-1;
             }
         }
-
         #h2-2 {
             @include md {
+                grid-area: h2-2;
+            }
+        }
+
+        
+
+        @include lg {
+            display: grid;
+            grid-template-columns: 60% auto;
+            grid-template-areas:
+                "h2-1 h2-2";
+        }
+        #h2-1 {
+            @include lg {
+                grid-area: h2-1;
+            }
+        }
+        #h2-2 {
+            @include lg {
                 grid-area: h2-2;
             }
         }

@@ -546,6 +546,37 @@ footer #social-media #fb {
     border: 1px solid red;
   }
 }
+@media (min-width: 992px) {
+  footer > div > section {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-areas: "title title title" "loc sign-up socials";
+  }
+}
+@media (min-width: 992px) {
+  footer > div > section #title-footer {
+    grid-area: title;
+    border: 1px solid red;
+  }
+}
+@media (min-width: 992px) {
+  footer > div > section #address-footer {
+    grid-area: loc;
+    border: 1px solid red;
+  }
+}
+@media (min-width: 992px) {
+  footer > div > section #sign-up-footer {
+    grid-area: sign-up;
+    border: 1px solid red;
+  }
+}
+@media (min-width: 992px) {
+  footer > div > section #socials-footer {
+    grid-area: socials;
+    border: 1px solid red;
+  }
+}
 
 /* =============
     announcements
@@ -614,7 +645,24 @@ footer #social-media #fb {
     grid-area: menu-hero;
   }
 }
-@media (min-width: 768px) {
+@media (min-width: 992px) {
+  #hero ul .location-hero {
+    grid-area: location-hero;
+  }
+}
+@media (min-width: 992px) {
+  #hero ul {
+    display: grid;
+    grid-template-columns: 50% auto;
+    grid-template-areas: "menu-hero location-hero";
+  }
+}
+@media (min-width: 992px) {
+  #hero ul .menu-hero {
+    grid-area: menu-hero;
+  }
+}
+@media (min-width: 992px) {
   #hero ul .location-hero {
     grid-area: location-hero;
   }
@@ -663,13 +711,27 @@ footer #social-media #fb {
     grid-area: h2-2;
   }
 }
+@media (min-width: 992px) {
+  #hero2 > div {
+    display: grid;
+    grid-template-columns: 60% auto;
+    grid-template-areas: "h2-1 h2-2";
+  }
+}
+@media (min-width: 992px) {
+  #hero2 > div #h2-1 {
+    grid-area: h2-1;
+  }
+}
+@media (min-width: 992px) {
+  #hero2 > div #h2-2 {
+    grid-area: h2-2;
+  }
+}
 
 /* =============
     testimonials
 ============= */
-#testimonials img {
-  width: 100%;
-}
 #testimonials > div {
   display: grid;
   grid-template-columns: 16px auto 16px;
@@ -677,41 +739,49 @@ footer #social-media #fb {
 }
 #testimonials > div > h1 {
   grid-area: title-test;
+  border: 1px solid red;
 }
-#testimonials #test-title {
+#testimonials ul li img {
+  width: 100%;
+}
+#testimonials ul li section {
   display: grid;
   grid-template-columns: 16px auto 16px;
-  grid-template-areas: ". review .";
-  grid-area: review;
+  grid-template-areas: ". testimonials .";
+}
+#testimonials ul li section .test-content {
+  grid-area: testimonials;
+  border: 1px solid red;
 }
 @media (min-width: 768px) {
-  #testimonials ul {
-    grid-template-columns: 16px auto auto 16px;
-    grid-template-areas: ". 1t 2t ." ". 3t 4t ." ". 5t 5t .";
+  #testimonials ul li {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-areas: "t1 t2" "img1 img2" "t3 t4" "img3 img4" "t5 t5" "img5 img5";
   }
 }
 @media (min-width: 768px) {
-  #testimonials ul #testa {
-    grid-area: 1t;
+  #testimonials ul #img-1t {
+    grid-area: img1;
   }
 }
 @media (min-width: 768px) {
-  #testimonials ul #testb {
-    grid-area: 2t;
+  #testimonials ul #img-2t {
+    grid-area: img2;
   }
 }
 @media (min-width: 768px) {
-  #testimonials ul #testc {
-    grid-area: 3t;
+  #testimonials ul #img-3t {
+    grid-area: img3;
   }
 }
 @media (min-width: 768px) {
-  #testimonials ul #testd {
-    grid-area: 4t;
+  #testimonials ul #img-4t {
+    grid-area: img4;
   }
 }
 @media (min-width: 768px) {
-  #testimonials ul #testd #teste {
-    grid-area: 5t;
+  #testimonials ul #img-5t {
+    grid-area: img5;
   }
 }

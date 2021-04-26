@@ -39,7 +39,25 @@
         }
 
         .location-hero {
-            @include md {
+            @include lg {
+                grid-area: location-hero;
+            }
+        }
+
+        @include lg {
+            display: grid;
+            grid-template-columns: 50% auto;
+            grid-template-areas: "menu-hero location-hero";
+        }
+
+        .menu-hero {
+            @include lg {
+                grid-area: menu-hero;
+            }
+        }
+
+        .location-hero {
+            @include lg {
                 grid-area: location-hero;
             }
         }
