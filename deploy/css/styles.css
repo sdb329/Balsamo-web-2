@@ -446,79 +446,105 @@ footer {
 footer > div {
   grid-area: footer;
 }
-
-#section1-1 {
+footer #section1-1 {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-areas: "symbol1 address1" "symbol2 phone";
 }
-#section1-1 #symbol1-1 {
+footer #section1-1 #symbol1-1 {
   grid-area: symbol1;
 }
-#section1-1 #address1-1 {
+footer #section1-1 #address1-1 {
   grid-area: address1;
 }
-#section1-1 #symbol2-1 {
+footer #section1-1 #symbol2-1 {
   grid-area: symbol2;
 }
-#section1-1 #phone1-1 {
+footer #section1-1 #phone1-1 {
   grid-area: phone;
 }
-
-#section1-2 {
+footer #section1-2 {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-areas: "symbol1 address1" "symbol2 phone";
 }
-#section1-2 #symbol1-2 {
+footer #section1-2 #symbol1-2 {
   grid-area: symbol1;
 }
-#section1-2 #address1-2 {
+footer #section1-2 #address1-2 {
   grid-area: address1;
 }
-#section1-2 #symbol2-2 {
+footer #section1-2 #symbol2-2 {
   grid-area: symbol2;
 }
-#section1-2 #phone1-2 {
+footer #section1-2 #phone1-2 {
   grid-area: phone;
 }
-
-#section1-3 {
+footer #section1-3 {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-areas: "symbol1 address1" "symbol2 phone";
-  border: 1px solid red;
 }
-#section1-3 #symbol1-3 {
+footer #section1-3 #symbol1-3 {
   grid-area: symbol1;
 }
-#section1-3 #address1-3 {
+footer #section1-3 #address1-3 {
   grid-area: address1;
 }
-#section1-3 #symbol2-3 {
+footer #section1-3 #symbol2-3 {
   grid-area: symbol2;
 }
-#section1-3 #phone1-3 {
+footer #section1-3 #phone1-3 {
   grid-area: phone;
 }
-
-#social-media {
+footer #social-media {
   display: grid;
   grid-template-columns: 16px auto auto auto auto 16px;
   grid-template-areas: ". yt t ig fb .";
-  border: 1px solid red;
 }
-#social-media #yt {
+footer #social-media #yt {
   grid-area: yt;
 }
-#social-media #t {
+footer #social-media #t {
   grid-area: t;
 }
-#social-media #ig {
+footer #social-media #ig {
   grid-area: ig;
 }
-#social-media #fb {
+footer #social-media #fb {
   grid-area: fb;
+}
+
+@media (min-width: 768px) {
+  footer > div > section {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-areas: "title title" "loc sign-up" "loc socials";
+  }
+}
+@media (min-width: 768px) {
+  footer > div > section #title-footer {
+    grid-area: title;
+    border: 1px solid red;
+  }
+}
+@media (min-width: 768px) {
+  footer > div > section #address-footer {
+    grid-area: loc;
+    border: 1px solid red;
+  }
+}
+@media (min-width: 768px) {
+  footer > div > section #sign-up-footer {
+    grid-area: sign-up;
+    border: 1px solid red;
+  }
+}
+@media (min-width: 768px) {
+  footer > div > section #socials-footer {
+    grid-area: socials;
+    border: 1px solid red;
+  }
 }
 
 /* =============
@@ -657,4 +683,35 @@ footer > div {
   grid-template-columns: 16px auto 16px;
   grid-template-areas: ". review .";
   grid-area: review;
+}
+@media (min-width: 768px) {
+  #testimonials ul {
+    grid-template-columns: 16px auto auto 16px;
+    grid-template-areas: ". 1t 2t ." ". 3t 4t ." ". 5t 5t .";
+  }
+}
+@media (min-width: 768px) {
+  #testimonials ul #testa {
+    grid-area: 1t;
+  }
+}
+@media (min-width: 768px) {
+  #testimonials ul #testb {
+    grid-area: 2t;
+  }
+}
+@media (min-width: 768px) {
+  #testimonials ul #testc {
+    grid-area: 3t;
+  }
+}
+@media (min-width: 768px) {
+  #testimonials ul #testd {
+    grid-area: 4t;
+  }
+}
+@media (min-width: 768px) {
+  #testimonials ul #testd #teste {
+    grid-area: 5t;
+  }
 }

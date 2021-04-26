@@ -12,7 +12,7 @@ footer{
         // border: 1px solid blueviolet;
 
     }
-}
+
 
 #section1-1{
     display: grid;
@@ -69,7 +69,7 @@ grid-template-areas:
                      "symbol1 address1"
                      "symbol2 phone";
 
-                     border: 1px solid red;
+                    //  border: 1px solid red;
 
 #symbol1-3{
 grid-area: symbol1;
@@ -94,7 +94,7 @@ grid-area: phone;
 grid-template-columns: 16px auto auto auto auto 16px ;
 // grid-template-rows: 200px 200px;
 grid-template-areas: ". yt t ig fb .";
-border: 1px solid red;
+// border: 1px solid red;
 #yt{ 
     grid-area: yt;
     
@@ -109,5 +109,53 @@ border: 1px solid red;
 #fb{
     grid-area: fb;
 }
-
   }
+
+}
+
+
+
+footer{
+    >div{
+        >section{
+            @include md{
+                display: grid;
+                grid-template-columns: auto auto;
+                // grid-template-rows: 200px 200px;
+                grid-template-areas:
+                    "title title"
+                    "loc sign-up"
+                    "loc socials";
+            }
+            #title-footer{
+                @include md{
+                   grid-area: title;
+                   border: 1px solid red;
+                }
+               }
+            #address-footer{
+                @include md{
+                   grid-area: loc;
+                   border: 1px solid red;
+                }
+               }
+               #sign-up-footer{
+                @include md{
+                   grid-area: sign-up;
+                   border: 1px solid red;
+                }
+               }
+               #socials-footer{
+                @include md{
+                   grid-area: socials;
+                   border: 1px solid red;
+                }
+               }
+
+        }
+    }
+    
+
+
+           
+    }
