@@ -643,8 +643,9 @@ footer #social-media #fb {
 }
 
 @media (min-width: 1200px) {
-  #hero ul li {
-    grid-gap: 10%;
+  #hero ul {
+    padding-left: 10%;
+    padding-right: 10%;
   }
 }
 #hero ul li {
@@ -687,6 +688,11 @@ footer #social-media #fb {
 @media (min-width: 992px) {
   #hero ul .location-hero {
     grid-area: location-hero;
+  }
+}
+@media (min-width: 992px) {
+  #hero ul .hero-button {
+    display: list-item;
   }
 }
 #hero .hero-info {
@@ -785,6 +791,12 @@ footer #social-media #fb {
 #testimonials > div > h1 {
   grid-area: title-test;
   border: 1px solid red;
+}
+@media (min-width: 1200px) {
+  #testimonials > div > h1 {
+    padding-left: 10%;
+    padding-right: 10%;
+  }
 }
 #testimonials ul li img {
   width: 100%;

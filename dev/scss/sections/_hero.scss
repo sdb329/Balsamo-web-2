@@ -13,10 +13,10 @@
 
     @include xl{
         ul{
-            li{
-             grid-gap: 10%;   
+
+             padding-left: 10%;   
+             padding-right: 10%;   
             }
-        }
     }
     ul {
 
@@ -70,6 +70,12 @@
                 grid-area: location-hero;
             }
         }
+
+       @include lg{
+        .hero-button{
+            display: list-item;
+        }
+       } 
 
        
     }
