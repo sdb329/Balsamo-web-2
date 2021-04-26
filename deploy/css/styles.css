@@ -525,25 +525,21 @@ footer #social-media #fb {
 @media (min-width: 768px) {
   footer > div > section #title-footer {
     grid-area: title;
-    border: 1px solid red;
   }
 }
 @media (min-width: 768px) {
   footer > div > section #address-footer {
     grid-area: loc;
-    border: 1px solid red;
   }
 }
 @media (min-width: 768px) {
   footer > div > section #sign-up-footer {
     grid-area: sign-up;
-    border: 1px solid red;
   }
 }
 @media (min-width: 768px) {
   footer > div > section #socials-footer {
     grid-area: socials;
-    border: 1px solid red;
   }
 }
 @media (min-width: 992px) {
@@ -556,25 +552,21 @@ footer #social-media #fb {
 @media (min-width: 992px) {
   footer > div > section #title-footer {
     grid-area: title;
-    border: 1px solid red;
   }
 }
 @media (min-width: 992px) {
   footer > div > section #address-footer {
     grid-area: loc;
-    border: 1px solid red;
   }
 }
 @media (min-width: 992px) {
   footer > div > section #sign-up-footer {
     grid-area: sign-up;
-    border: 1px solid red;
   }
 }
 @media (min-width: 992px) {
   footer > div > section #socials-footer {
     grid-area: socials;
-    border: 1px solid red;
   }
 }
 
@@ -790,12 +782,11 @@ footer #social-media #fb {
 }
 #testimonials > div > h1 {
   grid-area: title-test;
-  border: 1px solid red;
 }
 @media (min-width: 1200px) {
   #testimonials > div > h1 {
-    padding-left: 10%;
-    padding-right: 10%;
+    padding-left: 5%;
+    padding-right: 5%;
   }
 }
 #testimonials ul li img {
@@ -808,13 +799,11 @@ footer #social-media #fb {
 }
 #testimonials ul li section .test-content {
   grid-area: testimonials;
-  border: 1px solid red;
 }
 @media (min-width: 768px) {
   #testimonials ul {
     display: grid;
     grid-template-columns: auto auto;
-    border: 1px solid green;
     grid-gap: 16px;
     padding: 16px;
   }
@@ -828,7 +817,6 @@ footer #social-media #fb {
   #testimonials ul {
     display: grid;
     grid-template-columns: auto auto auto;
-    border: 1px solid green;
     padding: 16px;
     grid-gap: 16px;
   }
@@ -836,7 +824,6 @@ footer #social-media #fb {
 @media (min-width: 992px) {
   #testimonials ul .test-content {
     grid-area: test;
-    border: 1px solid red;
   }
 }
 @media (min-width: 992px) {
@@ -846,7 +833,7 @@ footer #social-media #fb {
 }
 @media (min-width: 1200px) {
   #testimonials ul {
-    padding-right: 10%;
-    padding-left: 10%;
+    padding-right: 5%;
+    padding-left: 5%;
   }
 }

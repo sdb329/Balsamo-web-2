@@ -10,15 +10,15 @@
 
         >h1 {
             grid-area: title-test;
-            border: 1px solid red;
+            // border: 1px solid red;
 
         }
 
         @include xl{
 
             >h1 {
-                padding-left: 10%;
-                padding-right: 10%;
+                padding-left: 5%;
+                padding-right: 5%;
     
             }
         }
@@ -39,7 +39,7 @@
 
                 .test-content {
                     grid-area: testimonials;
-                    border: 1px solid red;
+                    // border: 1px solid red;
 
                 }
             }
@@ -54,7 +54,7 @@
          @include md{
             display: grid;
             grid-template-columns: auto auto;
-            border: 1px solid green;
+            // border: 1px solid green;
             grid-gap: 16px;
             padding: 16px;
          }
@@ -70,14 +70,14 @@
         @include lg{
            display: grid;
            grid-template-columns: auto auto auto;
-           border: 1px solid green;
+        //    border: 1px solid green;
            padding: 16px;
            grid-gap: 16px;
         }
         .test-content {
             @include lg{
             grid-area: test;
-            border: 1px solid red;
+            // border: 1px solid red;
         }}
        li{
            @include lg{
@@ -89,8 +89,8 @@
 
     ul{
         @include xl{
-           padding-right: 10%;
-           padding-left: 10%
+           padding-right: 5%;
+           padding-left: 5%
         }
     
     

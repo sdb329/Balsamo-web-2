@@ -130,25 +130,25 @@ footer{
             #title-footer{
                 @include md{
                    grid-area: title;
-                   border: 1px solid red;
+                //    border: 1px solid red;
                 }
                }
             #address-footer{
                 @include md{
                    grid-area: loc;
-                   border: 1px solid red;
+                //    border: 1px solid red;
                 }
                }
                #sign-up-footer{
                 @include md{
                    grid-area: sign-up;
-                   border: 1px solid red;
+                //    border: 1px solid red;
                 }
                }
                #socials-footer{
                 @include md{
                    grid-area: socials;
-                   border: 1px solid red;
+                //    border: 1px solid red;
                 }
                }
 
@@ -166,25 +166,25 @@ footer{
             #title-footer{
                 @include lg{
                    grid-area: title;
-                   border: 1px solid red;
+                //    border: 1px solid red;
                 }
                }
             #address-footer{
                 @include lg{
                    grid-area: loc;
-                   border: 1px solid red;
+                //    border: 1px solid red;
                 }
                }
                #sign-up-footer{
                 @include lg{
                    grid-area: sign-up;
-                   border: 1px solid red;
+                //    border: 1px solid red;
                 }
                }
                #socials-footer{
                 @include lg{
                    grid-area: socials;
-                   border: 1px solid red;
+                //    border: 1px solid red;
                 }
                }
 
