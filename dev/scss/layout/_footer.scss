@@ -2,123 +2,135 @@
     Footer
 ============= */
 
-footer{
+footer {
     display: grid;
     grid-template-columns: 16px auto 16px;
     grid-template-areas: ". footer .";
 
-    >div{
+    >div {
         grid-area: footer;
         // border: 1px solid blueviolet;
 
     }
 
 
-#section1-1{
-    display: grid;
-grid-template-columns: 1fr 1fr;
-// grid-template-rows: 200px 200px;
-grid-template-areas: 
-                     "symbol1 address1"
-                     "symbol2 phone";
+    #section1-1 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        // grid-template-rows: 200px 200px;
+        grid-template-areas:
+            "symbol1 address1"
+            "symbol2 phone";
 
-#symbol1-1{
-grid-area: symbol1;
-}
-#address1-1{
-grid-area: address1;
-}
-#symbol2-1{
-    grid-area: symbol2;
+        #symbol1-1 {
+            grid-area: symbol1;
+        }
+
+        #address1-1 {
+            grid-area: address1;
+        }
+
+        #symbol2-1 {
+            grid-area: symbol2;
+        }
+
+        #phone1-1 {
+            grid-area: phone;
+        }
+
     }
-#phone1-1{
-grid-area: phone;
-}
-            
-}
 
-#section1-2{
-    display: grid;
-grid-template-columns: 1fr 1fr;
-// grid-template-rows: 200px 200px;
-grid-template-areas: 
-                     "symbol1 address1"
-                     "symbol2 phone";
+    #section1-2 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        // grid-template-rows: 200px 200px;
+        grid-template-areas:
+            "symbol1 address1"
+            "symbol2 phone";
 
-#symbol1-2{
-grid-area: symbol1;
-}
-#address1-2{
-grid-area: address1;
-}
-#symbol2-2{
-    grid-area: symbol2;
+        #symbol1-2 {
+            grid-area: symbol1;
+        }
+
+        #address1-2 {
+            grid-area: address1;
+        }
+
+        #symbol2-2 {
+            grid-area: symbol2;
+        }
+
+        #phone1-2 {
+            grid-area: phone;
+        }
+
     }
-#phone1-2{
-grid-area: phone;
-}
-            
-}
 
 
-#section1-3{
-    display: grid;
-grid-template-columns: 1fr 1fr;
-// grid-template-rows: 200px 200px;
-grid-template-areas: 
-                     "symbol1 address1"
-                     "symbol2 phone";
+    #section1-3 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        // grid-template-rows: 200px 200px;
+        grid-template-areas:
+            "symbol1 address1"
+            "symbol2 phone";
 
-                    //  border: 1px solid red;
+        //  border: 1px solid red;
 
-#symbol1-3{
-grid-area: symbol1;
-}
-#address1-3{
-grid-area: address1;
-}
-#symbol2-3{
-    grid-area: symbol2;
+        #symbol1-3 {
+            grid-area: symbol1;
+        }
+
+        #address1-3 {
+            grid-area: address1;
+        }
+
+        #symbol2-3 {
+            grid-area: symbol2;
+        }
+
+        #phone1-3 {
+            grid-area: phone;
+        }
+
     }
-#phone1-3{
-grid-area: phone;
-}
-            
-}
 
 
 
-#social-media{
+    #social-media {
 
         display: grid;
-grid-template-columns: 16px auto auto auto auto 16px ;
-// grid-template-rows: 200px 200px;
-grid-template-areas: ". yt t ig fb .";
-// border: 1px solid red;
-#yt{ 
-    grid-area: yt;
-    
+        grid-template-columns: 16px auto auto auto auto 16px;
+        // grid-template-rows: 200px 200px;
+        grid-template-areas: ". yt t ig fb .";
+
+        // border: 1px solid red;
+        #yt {
+            grid-area: yt;
+
+        }
+
+        #t {
+            grid-area: t;
+        }
+
+        #ig {
+            grid-area: ig;
+        }
+
+        #fb {
+            grid-area: fb;
+        }
+    }
+
 }
 
-#t{
-    grid-area: t;
-}
-#ig{
-    grid-area: ig;
-}
-#fb{
-    grid-area: fb;
-}
-  }
-
-}
 
 
-
-footer{
-    >div{
-        >section{
-            @include md{
+footer {
+    >div {
+        >section {
+            @include md {
                 display: grid;
                 grid-template-columns: auto auto;
                 // grid-template-rows: 200px 200px;
@@ -127,35 +139,39 @@ footer{
                     "loc sign-up"
                     "loc socials";
             }
-            #title-footer{
-                @include md{
-                   grid-area: title;
-                //    border: 1px solid red;
+
+            #title-footer {
+                @include md {
+                    grid-area: title;
+                    //    border: 1px solid red;
                 }
-               }
-            #address-footer{
-                @include md{
-                   grid-area: loc;
-                //    border: 1px solid red;
+            }
+
+            #address-footer {
+                @include md {
+                    grid-area: loc;
+                    //    border: 1px solid red;
                 }
-               }
-               #sign-up-footer{
-                @include md{
-                   grid-area: sign-up;
-                //    border: 1px solid red;
+            }
+
+            #sign-up-footer {
+                @include md {
+                    grid-area: sign-up;
+                    //    border: 1px solid red;
                 }
-               }
-               #socials-footer{
-                @include md{
-                   grid-area: socials;
-                //    border: 1px solid red;
+            }
+
+            #socials-footer {
+                @include md {
+                    grid-area: socials;
+                    //    border: 1px solid red;
                 }
-               }
+            }
 
         }
 
-        >section{
-            @include lg{
+        >section {
+            @include lg {
                 display: grid;
                 grid-template-columns: auto auto auto;
                 // grid-template-rows: 200px 200px;
@@ -163,33 +179,39 @@ footer{
                     "title title title"
                     "loc sign-up socials";
             }
-            #title-footer{
-                @include lg{
-                   grid-area: title;
-                //    border: 1px solid red;
-                }
-               }
-            #address-footer{
-                @include lg{
-                   grid-area: loc;
-                //    border: 1px solid red;
-                }
-               }
-               #sign-up-footer{
-                @include lg{
-                   grid-area: sign-up;
-                //    border: 1px solid red;
-                }
-               }
-               #socials-footer{
-                @include lg{
-                   grid-area: socials;
-                //    border: 1px solid red;
-                }
-               }
 
+            #title-footer {
+                @include lg {
+                    grid-area: title;
+                    //    border: 1px solid red;
+                }
+            }
+
+            #address-footer {
+                @include lg {
+                    grid-area: loc;
+                    //    border: 1px solid red;
+                }
+            }
+
+            #sign-up-footer {
+                @include lg {
+                    grid-area: sign-up;
+                    //    border: 1px solid red;
+                }
+            }
+
+            #socials-footer {
+                @include lg {
+                    grid-area: socials;
+                    //    border: 1px solid red;
+                }
+            }
+        }
+
+        @include xl{
+            padding-left: 10%;
+            padding-right: 10%;
         }
     }
-
-    
-    }
+}

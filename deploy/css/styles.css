@@ -569,6 +569,12 @@ footer #social-media #fb {
     grid-area: socials;
   }
 }
+@media (min-width: 1200px) {
+  footer > div {
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+}
 
 /* =============
     announcements
@@ -785,8 +791,8 @@ footer #social-media #fb {
 }
 @media (min-width: 1200px) {
   #testimonials > div > h1 {
-    padding-left: 5%;
-    padding-right: 5%;
+    padding-left: 10%;
+    padding-right: 10%;
   }
 }
 #testimonials ul li img {
@@ -833,7 +839,7 @@ footer #social-media #fb {
 }
 @media (min-width: 1200px) {
   #testimonials ul {
-    padding-right: 5%;
-    padding-left: 5%;
+    padding-right: 10%;
+    padding-left: 10%;
   }
 }
