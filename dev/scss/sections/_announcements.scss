@@ -4,13 +4,34 @@
 
 #announcements {
 
+    @include md{
+        display: grid;
+        grid-template-columns: 16px auto 16px;
+        grid-template-areas: ". announcements .";
+
+    }
+
+    @include xl{
+        grid-template-columns: auto 1000px auto;
+    }
+
     ul {
+
+       display: grid;
+       gap: 16px;
+
+       @include md{
+           grid-template-columns: 50% auto;
+           gap: 24px;
+           grid-area: announcements;
+       }
+
 
         li {
             display: grid;
             grid-template-columns: 16px auto 16px;
             grid-template-areas: ". announce .";
-            // background-color: blueviolet;        
+            background-color: $lightbrown;        
 
             >div {
                 grid-area: announce;
@@ -39,47 +60,4 @@
                 }
             }
         }
-    }
-
-    ul{
-        @include md{
-            display: grid;
-            grid-template-columns: auto auto;
-            // grid-template-rows: 200px 200px;
-            grid-template-areas:
-                "announce-1 announce-2";
-        }
-    
-    
-               #announce-1{
-                @include md{
-                   grid-area: announce-1;
-                }
-               }
-               #announce-2{
-                @include md{
-                   grid-area: announce-2;
-                }
-               }
-
-               @include xl{
-                display: grid;
-                grid-template-columns: 10% auto auto 10%;
-                // grid-template-rows: 200px 200px;
-                grid-template-areas:
-                    ". announce-1 announce-2 .";
-            }
-        
-        
-                   #announce-1{
-                    @include xl{
-                       grid-area: announce-1;
-                    }
-                   }
-                   #announce-2{
-                    @include xl{
-                       grid-area: announce-2;
-                    }
-                   }
-            }
-        }
+    }}

@@ -589,10 +589,34 @@ footer #social-media #fb {
 /* =============
     announcements
 ============= */
+@media (min-width: 768px) {
+  #announcements {
+    display: grid;
+    grid-template-columns: 16px auto 16px;
+    grid-template-areas: ". announcements .";
+  }
+}
+@media (min-width: 1200px) {
+  #announcements {
+    grid-template-columns: auto 1000px auto;
+  }
+}
+#announcements ul {
+  display: grid;
+  gap: 16px;
+}
+@media (min-width: 768px) {
+  #announcements ul {
+    grid-template-columns: 50% auto;
+    gap: 24px;
+    grid-area: announcements;
+  }
+}
 #announcements ul li {
   display: grid;
   grid-template-columns: 16px auto 16px;
   grid-template-areas: ". announce .";
+  background-color: #BFA48A;
 }
 #announcements ul li > div {
   grid-area: announce;
@@ -607,40 +631,6 @@ footer #social-media #fb {
 }
 #announcements ul li > div .image-event {
   grid-area: image-event;
-}
-@media (min-width: 768px) {
-  #announcements ul {
-    display: grid;
-    grid-template-columns: auto auto;
-    grid-template-areas: "announce-1 announce-2";
-  }
-}
-@media (min-width: 768px) {
-  #announcements ul #announce-1 {
-    grid-area: announce-1;
-  }
-}
-@media (min-width: 768px) {
-  #announcements ul #announce-2 {
-    grid-area: announce-2;
-  }
-}
-@media (min-width: 1200px) {
-  #announcements ul {
-    display: grid;
-    grid-template-columns: 10% auto auto 10%;
-    grid-template-areas: ". announce-1 announce-2 .";
-  }
-}
-@media (min-width: 1200px) {
-  #announcements ul #announce-1 {
-    grid-area: announce-1;
-  }
-}
-@media (min-width: 1200px) {
-  #announcements ul #announce-2 {
-    grid-area: announce-2;
-  }
 }
 
 /* =============
