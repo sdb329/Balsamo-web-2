@@ -452,6 +452,7 @@ footer {
   display: grid;
   grid-template-columns: 16px auto 16px;
   grid-template-areas: ". footer .";
+  background-color: #4E4741;
 }
 footer > div {
   grid-area: footer;
@@ -768,65 +769,113 @@ footer #social-media #fb {
 /* =============
     testimonials
 ============= */
-#testimonials > div {
+@media (min-width: 768px) {
+  #testimonials {
+    display: grid;
+    grid-template-columns: 16px auto 16px;
+    grid-template-areas: ". testimonials .";
+  }
+}
+@media (min-width: 1200px) {
+  #testimonials {
+    grid-template-columns: auto 1000px auto;
+  }
+}
+@media (min-width: 768px) {
+  #testimonials > div {
+    grid-area: testimonials;
+  }
+}
+#testimonials > div #test-title {
   display: grid;
   grid-template-columns: 16px auto 16px;
   grid-template-areas: ". title-test .";
 }
-#testimonials > div > h1 {
+#testimonials > div #test-title > h1 {
   grid-area: title-test;
 }
 @media (min-width: 1200px) {
-  #testimonials > div > h1 {
+  #testimonials > div #test-title > h1 {
     padding-left: 10%;
     padding-right: 10%;
   }
 }
-#testimonials ul li img {
+@media (min-width: 768px) {
+  #testimonials > div ul {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas: "t1 t1 t2 t2" "t3 t3 t4 t4" ". t5 t5 .";
+    gap: 16px;
+  }
+}
+@media (min-width: 768px) {
+  #testimonials > div ul #t1 {
+    grid-area: t1;
+  }
+}
+@media (min-width: 768px) {
+  #testimonials > div ul #t2 {
+    grid-area: t2;
+  }
+}
+@media (min-width: 768px) {
+  #testimonials > div ul #t3 {
+    grid-area: t3;
+  }
+}
+@media (min-width: 768px) {
+  #testimonials > div ul #t4 {
+    grid-area: t4;
+  }
+}
+@media (min-width: 768px) {
+  #testimonials > div ul #t5 {
+    grid-area: t5;
+  }
+}
+@media (min-width: 992px) {
+  #testimonials > div ul {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-areas: "t1 t1 t2 t2 t3 t3" ". t4 t4 t5 t5 .";
+  }
+}
+@media (min-width: 992px) {
+  #testimonials > div ul #t1 {
+    grid-area: t1;
+  }
+}
+@media (min-width: 992px) {
+  #testimonials > div ul #t2 {
+    grid-area: t2;
+  }
+}
+@media (min-width: 992px) {
+  #testimonials > div ul #t3 {
+    grid-area: t3;
+  }
+}
+@media (min-width: 992px) {
+  #testimonials > div ul #t4 {
+    grid-area: t4;
+  }
+}
+@media (min-width: 992px) {
+  #testimonials > div ul #t5 {
+    grid-area: t5;
+  }
+}
+#testimonials > div ul li {
+  background-color: #EAE7E4;
+}
+#testimonials > div ul li img {
   width: 100%;
 }
-#testimonials ul li section {
+#testimonials > div ul li section {
   display: grid;
   grid-template-columns: 16px auto 16px;
   grid-template-areas: ". testimonials .";
 }
-#testimonials ul li section .test-content {
+#testimonials > div ul li section .test-content {
   grid-area: testimonials;
-}
-@media (min-width: 768px) {
-  #testimonials ul {
-    display: grid;
-    grid-template-columns: auto auto;
-    grid-gap: 16px;
-    padding: 16px;
-  }
-}
-@media (min-width: 768px) {
-  #testimonials ul li img {
-    width: 95%;
-  }
-}
-@media (min-width: 992px) {
-  #testimonials ul {
-    display: grid;
-    grid-template-columns: auto auto auto;
-    padding: 16px;
-    grid-gap: 16px;
-  }
-}
-@media (min-width: 992px) {
-  #testimonials ul .test-content {
-    grid-area: test;
-  }
-}
-@media (min-width: 992px) {
-  #testimonials ul li img {
-    width: 95%;
-  }
-}
-@media (min-width: 1200px) {
-  #testimonials ul {
-    padding-right: 10%;
-    padding-left: 10%;
-  }
 }

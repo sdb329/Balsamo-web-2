@@ -2,8 +2,22 @@
     testimonials
 ============= */
 #testimonials {
+    @include md{
+        display: grid;
+        grid-template-columns: 16px auto 16px;
+        grid-template-areas: ". testimonials .";
+    }
 
-    >div {
+    @include xl{
+        grid-template-columns: auto 1000px auto;
+        // border: 1px solid red;
+    }
+>div{
+
+    @include md{
+        grid-area: testimonials;
+    }
+    #test-title {
         display: grid;
         grid-template-columns: 16px auto 16px;
         grid-template-areas: ". title-test .";
@@ -25,9 +39,81 @@
     }
 
     ul {
+        @include md{
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-areas: 
+            "t1 t1 t2 t2"
+            "t3 t3 t4 t4"
+            ". t5 t5 .";
+            gap: 16px;
+        }
+
+        #t1{
+            @include md{
+                grid-area: t1;
+            }
+        }
+        #t2{
+            @include md{
+                grid-area: t2;
+            }
+        }
+        #t3{
+            @include md{
+                grid-area: t3;
+            }
+        }
+        #t4{
+            @include md{
+                grid-area: t4;
+            }
+        }
+        #t5{
+            @include md{
+                grid-area: t5;
+            }
+        }
+
+
+
+        @include lg{
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+            grid-template-areas: 
+            "t1 t1 t2 t2 t3 t3"
+            ". t4 t4 t5 t5 .";
+        }
+
+        #t1{
+            @include lg{
+                grid-area: t1;
+            }
+        }
+        #t2{
+            @include lg{
+                grid-area: t2;
+            }
+        }
+        #t3{
+            @include lg{
+                grid-area: t3;
+            }
+        }
+        #t4{
+            @include lg{
+                grid-area: t4;
+            }
+        }
+        #t5{
+            @include lg{
+                grid-area: t5;
+            }
+        }
 
 
         li {
+            background-color: $gray;
             img {
                 width: 100%;
             }
@@ -45,111 +131,58 @@
             }
 
         }}
-
-     ul{
-
-       
-
-
-         @include md{
-            display: grid;
-            grid-template-columns: auto auto;
-            // border: 1px solid green;
-            grid-gap: 16px;
-            padding: 16px;
-         }
-        li{
-            @include md{
-            img {
-                width: 95%
-            }}
-        }
-     }
-    
-     ul{
-        @include lg{
-           display: grid;
-           grid-template-columns: auto auto auto;
-        //    border: 1px solid green;
-           padding: 16px;
-           grid-gap: 16px;
-        }
-        .test-content {
-            @include lg{
-            grid-area: test;
-            // border: 1px solid red;
-        }}
-       li{
-           @include lg{
-           img {
-               width: 95%
-           }}
-       }
     }
 
-    ul{
-        @include xl{
-           padding-right: 10%;
-           padding-left: 10%
-        }
-    
-    
-    }}
-
-
-
-
-    //     @include md {
-    //         li {
-    //             display: grid;
-    //             grid-template-columns: auto auto;
-    //             grid-template-areas:
-    //                 "t1 t2"
-    //                 "img1 img2"
-    //                 "t3 t4"
-    //                 "img3 img4"
-    //                 "t5 t5"
-    //                 "img5 img5";
-    //         }
-    //     }
+    //  ul{
 
        
-    //             #img-1t{
-    //                 @include md {
-    //                     grid-area: img1;
-    //                 } 
-    //             }
 
-        
 
-    //             #img-2t{
-    //                 @include md {
-    //                     grid-area: img2;
-    //                 } 
-    //             }
-
-         
-
-    //             #img-3t{
-    //                 @include md {
-    //                     grid-area: img3;
-    //                 } 
-    //             }
-
-          
-
-    //             #img-4t{
-    //                 @include md {
-    //                     grid-area: img4;
-    //                 } 
-    //             }
-
-     
-    //             #img-5t{
-    //                 @include md {
-    //                     grid-area: img5;
-    //                 } 
-    //             }
+    //      @include md{
+    //         display: grid;
+    //         grid-template-columns: auto auto;
+    //         // border: 1px solid green;
+    //         grid-gap: 16px;
+    //         padding: 16px;
+    //      }
+    //     li{
+    //         @include md{
+    //         img {
+    //             width: 95%
+    //         }}
     //     }
-    // }
+    //  }
     
+    //  ul{
+    //     @include lg{
+    //        display: grid;
+    //        grid-template-columns: auto auto auto;
+    //     //    border: 1px solid green;
+    //        padding: 16px;
+    //        grid-gap: 16px;
+    //     }
+    //     .test-content {
+    //         @include lg{
+    //         grid-area: test;
+    //         // border: 1px solid red;
+    //     }}
+    //    li{
+    //        @include lg{
+    //        img {
+    //            width: 95%
+    //        }}
+    //    }
+    // }
+
+    // ul{
+    //     @include xl{
+    //        padding-right: 10%;
+    //        padding-left: 10%
+    //     }
+    
+    
+    // }
+}
+
+
+
