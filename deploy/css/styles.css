@@ -457,6 +457,12 @@ footer {
 footer > div {
   grid-area: footer;
 }
+footer > div section article input {
+  background-color: #EAE7E4;
+}
+footer > div section article button {
+  background-color: #F0CCC5;
+}
 footer #section1-1 {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -599,7 +605,7 @@ footer #social-media #fb {
 }
 @media (min-width: 1200px) {
   #announcements {
-    grid-template-columns: auto 1000px auto;
+    grid-template-columns: auto 1200px auto;
   }
 }
 #announcements ul {
@@ -621,14 +627,15 @@ footer #social-media #fb {
 }
 #announcements ul li > div {
   grid-area: announce;
-}
-#announcements ul li > div {
   display: grid;
   grid-template-columns: auto 30%;
   grid-template-areas: "text image-event" "text image-event";
 }
 #announcements ul li > div .announce-content {
   grid-area: text;
+}
+#announcements ul li > div .announce-content > div > button {
+  background-color: #F0CCC5;
 }
 #announcements ul li > div .image-event {
   grid-area: image-event;
@@ -778,7 +785,7 @@ footer #social-media #fb {
 }
 @media (min-width: 1200px) {
   #testimonials {
-    grid-template-columns: auto 1000px auto;
+    grid-template-columns: auto 1400px auto;
   }
 }
 @media (min-width: 768px) {
@@ -878,4 +885,7 @@ footer #social-media #fb {
 }
 #testimonials > div ul li section .test-content {
   grid-area: testimonials;
+}
+#testimonials > div ul li section .test-content .readmore {
+  background-color: #F0CCC5;
 }

@@ -13,6 +13,17 @@ footer {
         grid-area: footer;
         // border: 1px solid blueviolet;
 
+        section{
+            article{
+                input{
+                    background-color: $gray;
+                }
+                button{
+                    background-color: $lightpink;
+                }
+            }
+        }
+
     }
 
 

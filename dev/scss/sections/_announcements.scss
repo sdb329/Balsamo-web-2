@@ -12,7 +12,7 @@
     }
 
     @include xl{
-        grid-template-columns: auto 1000px auto;
+        grid-template-columns: auto 1200px auto;
     }
 
     ul {
@@ -37,13 +37,6 @@
                 grid-area: announce;
                 // border: 1px solid red;
 
-            }
-        }
-    }
-
-    ul {
-        li {
-            >div {
                 display: grid;
                 grid-template-columns: auto 30%;
                 // grid-template-rows: 200px 200px;
@@ -53,11 +46,20 @@
 
                 .announce-content {
                     grid-area: text;
+
+                    >div{
+                        >button{
+                            background-color: $lightpink;
+                        }
+                    }
                 }
 
                 .image-event {
                     grid-area: image-event;
                 }
+
             }
         }
-    }}
+    }
+
+}
