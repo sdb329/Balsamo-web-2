@@ -418,6 +418,7 @@ textarea {
     Header
 ============= */
 header {
+  background-color: #4E4741;
   display: grid;
   grid-template-columns: 16px auto 16px;
   grid-template-areas: ". header .";
@@ -427,12 +428,21 @@ header > div {
 }
 
 #search {
+  background-color: #EAE7E4;
   display: grid;
   grid-template-columns: 16px auto 16px;
   grid-template-areas: ". search .";
 }
+@media (min-width: 1200px) {
+  #search {
+    grid-template-columns: auto 1000px auto;
+  }
+}
 #search > div {
   grid-area: search;
+}
+#search > div form button {
+  background-color: #F0CCC5;
 }
 
 /* =============
@@ -640,55 +650,42 @@ footer #social-media #fb {
   width: 100%;
 }
 
-@media (min-width: 1200px) {
-  #hero ul {
-    padding-left: 10%;
-    padding-right: 10%;
-  }
-}
 #hero ul li {
   display: grid;
   grid-template-columns: 16px auto 16px;
   grid-template-areas: ". hero .";
 }
+@media (min-width: 1200px) {
+  #hero ul li {
+    grid-template-columns: auto 480px 16px;
+  }
+}
 #hero ul li a {
   grid-area: hero;
+}
+#hero ul #menu-hero {
+  background-color: #E3A599;
+}
+#hero ul #location-hero {
+  background-color: #F0CCC5;
+}
+@media (min-width: 1200px) {
+  #hero ul #location-hero {
+    display: grid;
+    grid-template-columns: 16px 480px auto;
+  }
 }
 @media (min-width: 768px) {
   #hero ul {
     display: grid;
     grid-template-columns: 40% auto;
-    grid-template-areas: "menu-hero location-hero";
-  }
-}
-@media (min-width: 768px) {
-  #hero ul .menu-hero {
-    grid-area: menu-hero;
-  }
-}
-@media (min-width: 992px) {
-  #hero ul .location-hero {
-    grid-area: location-hero;
   }
 }
 @media (min-width: 992px) {
   #hero ul {
     display: grid;
     grid-template-columns: 50% auto;
-    grid-template-areas: "menu-hero location-hero";
   }
-}
-@media (min-width: 992px) {
-  #hero ul .menu-hero {
-    grid-area: menu-hero;
-  }
-}
-@media (min-width: 992px) {
-  #hero ul .location-hero {
-    grid-area: location-hero;
-  }
-}
-@media (min-width: 992px) {
   #hero ul .hero-button {
     display: list-item;
   }

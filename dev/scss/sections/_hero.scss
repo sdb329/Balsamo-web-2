@@ -11,23 +11,22 @@
 
 #hero {
 
-    @include xl{
-        ul{
-
-             padding-left: 10%;   
-             padding-right: 10%;   
-            }
-    }
+    
     ul {
-
         
 
         li {
+
+            @include xl{
+               grid-template-columns: auto 480px 16px;
+            }
             display: grid;
             grid-template-columns: 16px auto 16px;
             grid-template-areas: ". hero .";
 
             // background-color: blueviolet;
+
+
             a {
                 grid-area: hero;
                 // border: 1px solid red;
@@ -35,49 +34,38 @@
 
         }
 
+
+   
+
+        #menu-hero{
+            background-color: $darkpink;
+        }
+
+
+        #location-hero{
+            background-color: $lightpink;
+            @include xl{
+                display: grid;
+                grid-template-columns: 16px 480px auto;
+            }
+
+        }
+
         @include md {
             display: grid;
             grid-template-columns: 40% auto;
-            grid-template-areas: "menu-hero location-hero";
-        }
-
-        .menu-hero {
-            @include md {
-                grid-area: menu-hero;
-            }
-        }
-
-        .location-hero {
-            @include lg {
-                grid-area: location-hero;
-            }
+            
         }
 
         @include lg {
             display: grid;
             grid-template-columns: 50% auto;
-            grid-template-areas: "menu-hero location-hero";
-        }
 
-        .menu-hero {
-            @include lg {
-                grid-area: menu-hero;
+            .hero-button{
+                display: list-item;
             }
         }
 
-        .location-hero {
-            @include lg {
-                grid-area: location-hero;
-            }
-        }
-
-       @include lg{
-        .hero-button{
-            display: list-item;
-        }
-       } 
-
-       
     }
 
 

@@ -4,6 +4,8 @@
 
 header{
 
+    background-color: $darkbrown;
+
     display: grid;
 grid-template-columns: 16px auto 16px;
 grid-template-areas: ". header .";
@@ -21,13 +23,26 @@ grid-template-areas: ". header .";
 
 #search{
 
+    background-color: $gray;
+
     display: grid;
 grid-template-columns: 16px auto 16px;
 grid-template-areas: ". search .";
 
+@include xl{
+    grid-template-columns: auto 1000px auto;
+    // border: 1px solid red;
+}
+
 >div{
     grid-area: search;
     // border: 1px solid red;
+
+    form{
+        button{
+            background-color: $lightpink;
+        }
+    }
 }
 
 }
