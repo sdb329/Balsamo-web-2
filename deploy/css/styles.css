@@ -945,24 +945,55 @@ footer #social-media #fb {
 #testimonials > div ul li img {
   width: 100%;
 }
-#testimonials > div ul li section {
+#testimonials > div ul li #img-1t {
+  background-image: url("../img/testimonials/wedding-cake.jpg");
+  height: 250px;
+  background-position: center 30%;
+  background-size: cover;
+}
+#testimonials > div ul li #img-2t {
+  background-image: url("../img/testimonials/strawberry-cupcakes.jpg");
+  height: 250px;
+  background-position: center 80%;
+  background-size: cover;
+}
+#testimonials > div ul #img-3t {
+  background-image: url("../img/testimonials/birthday-cake.jpg");
+  height: 250px;
+  background-position: center 87%;
+  background-size: cover;
+}
+#testimonials > div ul #img-4t {
+  background-image: url("../img/testimonials/fruit-cake.jpg");
+  height: 250px;
+  background-position: center 87%;
+  background-size: cover;
+}
+#testimonials > div ul #img-5t {
+  background-image: url("../img/testimonials/cake-display.jpg");
+  height: 250px;
+  background-position: center 87%;
+  background-size: cover;
+}
+#testimonials > div ul section {
   display: grid;
   grid-template-columns: 16px auto 16px;
   grid-template-areas: ". testimonials .";
 }
-#testimonials > div ul li section .test-content {
+#testimonials > div ul section .test-content {
   grid-area: testimonials;
 }
-#testimonials > div ul li section .test-content > div > h2 {
+#testimonials > div ul section .test-content > div > h2 {
   color: #4E4741;
 }
-#testimonials > div ul li section .test-content > div > p {
+#testimonials > div ul section .test-content > div > p {
   color: #4E4741;
 }
-#testimonials > div ul li section .test-content > div .readmore {
+#testimonials > div ul section .test-content > div .readmore {
   background-color: #F0CCC5;
   color: #4E4741;
 }
-#testimonials #test-title h1 {
+
+#test-title h1 {
   color: #4E4741;
 }

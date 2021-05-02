@@ -124,10 +124,45 @@
 
             li {
                 background-color: $gray;
-
                 img {
                     width: 100%;
                 }
+
+
+
+                #img-1t{
+                    background-image: url("../img/testimonials/wedding-cake.jpg");
+                    height: 250px;
+                    background-position: center 30%;
+                    background-size: cover;
+                }
+                #img-2t{
+                    background-image: url("../img/testimonials/strawberry-cupcakes.jpg");
+                    height: 250px;
+                    background-position: center 80%;
+                    background-size: cover;
+                }
+                }
+                #img-3t{
+                    background-image: url("../img/testimonials/birthday-cake.jpg");
+                    height: 250px;
+                    background-position: center 87%;
+                    background-size: cover;
+                }
+                #img-4t{
+                    background-image: url("../img/testimonials/fruit-cake.jpg");
+                    height: 250px;
+                    background-position: center 87%;
+                    background-size: cover;
+                    
+                }
+                #img-5t{
+                    background-image: url("../img/testimonials/cake-display.jpg");
+                    height: 250px;
+                    background-position: center 87%;
+                    background-size: cover;
+                }
+                
 
                 section {
                     display: grid;
@@ -166,7 +201,6 @@
             color: $darkbrown;
         }
     }
-}
 
 //  ul{
 
@@ -217,3 +251,4 @@
 
 
 // }
+
