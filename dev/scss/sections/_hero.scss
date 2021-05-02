@@ -78,10 +78,24 @@
         .info-content {
             grid-area: text;
 
+            >h3{
+                color: $darkbrown;
+            }
+            >h4{
+                color: $darkbrown;
+            }
+
         }
 
         .details-button {
             grid-area: button;
+
+            >h4{
+                color: $darkbrown;
+            }
+            >i{
+                color: $darkbrown;
+            }
         }
 
     }
@@ -90,3 +104,4 @@
         display: none;
     }  
 } 
+

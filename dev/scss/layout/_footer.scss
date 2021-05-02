@@ -14,12 +14,52 @@ footer {
         // border: 1px solid blueviolet;
 
         section{
-            article{
+            #title-footer{
+                color: $gray;
+            }
+            #address-footer{
+                >ul{
+                    >li{
+                        h3{
+                            color: $gray;
+                        }
+                        >div{
+                            >div{
+                                i{
+                                color: $darkpink;
+                                }
+                                a{
+                                    color: $gray;
+                                }
+                            }
+                        }
+                        address{
+                            color: $gray;
+                        }
+                    }
+                }
+            }
+            #sign-up-footer{
+                h2{
+                    color: $gray;
+                }
                 input{
                     background-color: $gray;
+                    color: $darkbrown;
                 }
                 button{
                     background-color: $lightpink;
+                    color: $darkbrown;
+                }
+            }
+            #socials-footer{
+                h2{
+                    color: $gray;
+                }
+                ul{
+                    li{
+                        color: white;
+                    }
                 }
             }
         }
@@ -28,7 +68,7 @@ footer {
 
 
     #section1-1 {
-        display: grid;
+        display: grid; 
         grid-template-columns: 1fr 1fr;
         // grid-template-rows: 200px 200px;
         grid-template-areas:
@@ -228,3 +268,4 @@ footer {
         }
     }
 }
+

@@ -441,8 +441,12 @@ header > div {
 #search > div {
   grid-area: search;
 }
+#search > div form input {
+  color: #BFA48A;
+}
 #search > div form button {
   background-color: #F0CCC5;
+  color: #4E4741;
 }
 
 /* =============
@@ -457,11 +461,37 @@ footer {
 footer > div {
   grid-area: footer;
 }
-footer > div section article input {
-  background-color: #EAE7E4;
+footer > div section #title-footer {
+  color: #EAE7E4;
 }
-footer > div section article button {
+footer > div section #address-footer > ul > li h3 {
+  color: #EAE7E4;
+}
+footer > div section #address-footer > ul > li > div > div i {
+  color: #E3A599;
+}
+footer > div section #address-footer > ul > li > div > div a {
+  color: #EAE7E4;
+}
+footer > div section #address-footer > ul > li address {
+  color: #EAE7E4;
+}
+footer > div section #sign-up-footer h2 {
+  color: #EAE7E4;
+}
+footer > div section #sign-up-footer input {
+  background-color: #EAE7E4;
+  color: #4E4741;
+}
+footer > div section #sign-up-footer button {
   background-color: #F0CCC5;
+  color: #4E4741;
+}
+footer > div section #socials-footer h2 {
+  color: #EAE7E4;
+}
+footer > div section #socials-footer ul li {
+  color: white;
 }
 footer #section1-1 {
   display: grid;
@@ -634,8 +664,12 @@ footer #social-media #fb {
 #announcements ul li > div .announce-content {
   grid-area: text;
 }
+#announcements ul li > div .announce-content > div > h2 {
+  color: #4E4741;
+}
 #announcements ul li > div .announce-content > div > button {
   background-color: #F0CCC5;
+  color: #4E4741;
 }
 #announcements ul li > div .image-event {
   grid-area: image-event;
@@ -696,8 +730,20 @@ footer #social-media #fb {
 #hero .hero-info .info-content {
   grid-area: text;
 }
+#hero .hero-info .info-content > h3 {
+  color: #4E4741;
+}
+#hero .hero-info .info-content > h4 {
+  color: #4E4741;
+}
 #hero .hero-info .details-button {
   grid-area: button;
+}
+#hero .hero-info .details-button > h4 {
+  color: #4E4741;
+}
+#hero .hero-info .details-button > i {
+  color: #4E4741;
 }
 #hero .hero-button {
   display: none;
@@ -886,6 +932,16 @@ footer #social-media #fb {
 #testimonials > div ul li section .test-content {
   grid-area: testimonials;
 }
-#testimonials > div ul li section .test-content .readmore {
+#testimonials > div ul li section .test-content > div > h2 {
+  color: #4E4741;
+}
+#testimonials > div ul li section .test-content > div > p {
+  color: #4E4741;
+}
+#testimonials > div ul li section .test-content > div .readmore {
   background-color: #F0CCC5;
+  color: #4E4741;
+}
+#testimonials #test-title h1 {
+  color: #4E4741;
 }

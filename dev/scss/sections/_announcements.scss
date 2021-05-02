@@ -48,8 +48,12 @@
                     grid-area: text;
 
                     >div{
+                        >h2{
+                            color: $darkbrown;
+                        }
                         >button{
                             background-color: $lightpink;
+                            color: $darkbrown;
                         }
                     }
                 }
@@ -63,3 +67,4 @@
     }
 
 }
+

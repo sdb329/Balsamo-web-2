@@ -39,10 +39,15 @@ grid-template-areas: ". search .";
     // border: 1px solid red;
 
     form{
+        input{
+            color: $lightbrown;
+        }
         button{
             background-color: $lightpink;
+            color: $darkbrown;
         }
     }
 }
 
 }
+
