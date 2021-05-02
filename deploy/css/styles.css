@@ -678,8 +678,10 @@ footer #social-media #fb {
 /* =============
     hero
 ============= */
-#hero-image img {
-  width: 100%;
+#hero-image {
+  background-image: url("../img/hero/hero.jpg");
+  height: 252px;
+  background-position: center;
 }
 
 #hero ul li {
