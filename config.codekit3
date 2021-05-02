@@ -70,19 +70,9 @@
       "plM" : 52780316221407,
       "prP" : 0
     },
-    "\/deploy\/img\/header\/search.svg" : {
-      "ft" : 2097152,
-      "miP" : 0,
-      "oA" : 2,
-      "oAP" : "\/deploy\/img\/header\/search.svg",
-      "oF" : 0,
-      "opt" : 0,
-      "plM" : 52780316221407,
-      "prP" : 0
-    },
     "\/deploy\/img\/hero\/hero.jpg" : {
       "ft" : 16384,
-      "iS" : 472463,
+      "iS" : 496927,
       "jF" : 0,
       "oA" : 0,
       "oAP" : "\/deploy\/img\/hero\/hero.jpg",
@@ -95,7 +85,7 @@
     },
     "\/deploy\/img\/hero2\/cupcakes.jpg" : {
       "ft" : 16384,
-      "iS" : 119596,
+      "iS" : 653182,
       "jF" : 0,
       "oA" : 0,
       "oAP" : "\/deploy\/img\/hero2\/cupcakes.jpg",
@@ -108,7 +98,7 @@
     },
     "\/deploy\/img\/hero2\/fruit-pastries.jpg" : {
       "ft" : 16384,
-      "iS" : 405427,
+      "iS" : 916523,
       "jF" : 0,
       "oA" : 0,
       "oAP" : "\/deploy\/img\/hero2\/fruit-pastries.jpg",
@@ -121,7 +111,7 @@
     },
     "\/deploy\/img\/hero2\/macarons.jpg" : {
       "ft" : 16384,
-      "iS" : 92574,
+      "iS" : 573852,
       "jF" : 0,
       "oA" : 0,
       "oAP" : "\/deploy\/img\/hero2\/macarons.jpg",
@@ -134,7 +124,7 @@
     },
     "\/deploy\/img\/testimonials\/birthday-cake.jpg" : {
       "ft" : 16384,
-      "iS" : 23519,
+      "iS" : 270235,
       "jF" : 0,
       "oA" : 0,
       "oAP" : "\/deploy\/img\/testimonials\/birthday-cake.jpg",
@@ -147,7 +137,7 @@
     },
     "\/deploy\/img\/testimonials\/cake-display.jpg" : {
       "ft" : 16384,
-      "iS" : 39658,
+      "iS" : 753318,
       "jF" : 0,
       "oA" : 0,
       "oAP" : "\/deploy\/img\/testimonials\/cake-display.jpg",
@@ -160,20 +150,20 @@
     },
     "\/deploy\/img\/testimonials\/fruit-cake.jpg" : {
       "ft" : 16384,
-      "iS" : 32728,
+      "iS" : 589300,
       "jF" : 0,
       "oA" : 0,
       "oAP" : "\/deploy\/img\/testimonials\/fruit-cake.jpg",
       "oF" : 0,
       "oIPL" : 0,
-      "opt" : 0,
+      "opt" : 1,
       "ou" : "lpckwebp-none",
       "q" : 100,
       "rq" : 75
     },
     "\/deploy\/img\/testimonials\/strawberry-cupcakes.jpg" : {
       "ft" : 16384,
-      "iS" : 22865,
+      "iS" : 203541,
       "jF" : 0,
       "oA" : 0,
       "oAP" : "\/deploy\/img\/testimonials\/strawberry-cupcakes.jpg",
@@ -186,7 +176,7 @@
     },
     "\/deploy\/img\/testimonials\/wedding-cake.jpg" : {
       "ft" : 16384,
-      "iS" : 23435,
+      "iS" : 461726,
       "jF" : 0,
       "oA" : 0,
       "oAP" : "\/deploy\/img\/testimonials\/wedding-cake.jpg",
