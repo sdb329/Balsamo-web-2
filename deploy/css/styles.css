@@ -775,28 +775,35 @@ footer #social-media #fb {
 ============= */
 #hero2 > div {
   display: grid;
+  grid-template-rows: repeat(8, 100px);
+  grid-template-areas: "h2-1" "h2-1" "h2-1" "h2-2" "h2-2" "h2-2" "h2-2" "h2-2";
 }
 #hero2 > div img {
   width: 100%;
 }
 #hero2 > div #h2-1 {
   background-image: url("../img/hero2/fruit-pastries.jpg");
-  background-position: center 30%;
+  background-position: center;
   background-size: cover;
+  grid-area: h2-1;
 }
 #hero2 > div #h2-2 {
   background-image: url("../img/hero2/cupcakes.jpg");
-  background-position: center 30%;
+  background-position: center;
   background-size: cover;
+  grid-area: h2-2;
 }
 #hero2 > div #h2-3 {
   background-image: url("../img/hero2/macarons.jpg");
+  background-position: center;
+  background-size: cover;
   display: none;
 }
 @media (min-width: 768px) {
   #hero2 > div {
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1, 600px);
     grid-template-areas: "h2-1 h2-2";
   }
 }
@@ -814,6 +821,7 @@ footer #social-media #fb {
   #hero2 > div {
     display: grid;
     grid-template-columns: 16px 60% auto 16px;
+    grid-template-rows: repeat(1, 640px);
     grid-template-areas: ". h2-1 h2-2 .";
   }
 }
@@ -831,7 +839,8 @@ footer #social-media #fb {
   #hero2 > div {
     display: grid;
     grid-template-columns: 40px 60% auto 40px;
-    grid-template-areas: ". h2-1 h2-2 ." ". . h2-3 .";
+    grid-template-rows: repeat(2, 375px);
+    grid-template-areas: ". h2-1 h2-2 ." ". h2-1 h2-3 .";
   }
 }
 @media (min-width: 1200px) {
