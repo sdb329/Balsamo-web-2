@@ -3,10 +3,24 @@
 ============= */
 
 #hero-image {
-
+    img{
+        width: 100%;
+    }
     background-image: url("../img/hero/hero.jpg");
     height: 252px;
     background-position: center;
+// x right center left
+// y top center bottom
+
+@include md{
+    height: 422px;
+}
+@include lg{
+    height: 562px;
+}
+@include xl{
+    height: 880px;
+}
 
 
 }

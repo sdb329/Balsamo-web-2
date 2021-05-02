@@ -683,6 +683,24 @@ footer #social-media #fb {
   height: 252px;
   background-position: center;
 }
+#hero-image img {
+  width: 100%;
+}
+@media (min-width: 768px) {
+  #hero-image {
+    height: 422px;
+  }
+}
+@media (min-width: 992px) {
+  #hero-image {
+    height: 562px;
+  }
+}
+@media (min-width: 1200px) {
+  #hero-image {
+    height: 880px;
+  }
+}
 
 #hero ul li {
   display: grid;
