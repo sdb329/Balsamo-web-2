@@ -3,13 +3,28 @@
 ============= */
 #hero2 {
     >div {
+
+
+
         display: grid;
 
         img {
             width: 100%;
         }
+        #h2-1 {
+            background-image: url("../img/hero2/fruit-pastries.jpg");
+            background-position: center 30%;
+            background-size: cover;
 
+        }
+        #h2-2 {
+            background-image: url("../img/hero2/cupcakes.jpg");
+            background-position: center 30%;
+            background-size: cover;
+
+        }
         #h2-3 {
+            background-image: url("../img/hero2/macarons.jpg");
             display: none;
         }
     }

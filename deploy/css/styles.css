@@ -773,18 +773,24 @@ footer #social-media #fb {
 /* =============
     hero2
 ============= */
+#hero2 > div {
+  display: grid;
+}
+#hero2 > div img {
+  width: 100%;
+}
 #hero2 > div #h2-1 {
   background-image: url("../img/hero2/fruit-pastries.jpg");
-  background-position: center;
-  height: 200px;
+  background-position: center 30%;
   background-size: cover;
 }
 #hero2 > div #h2-2 {
   background-image: url("../img/hero2/cupcakes.jpg");
-  background-size: 400px;
-  background-position: center;
+  background-position: center 30%;
+  background-size: cover;
 }
 #hero2 > div #h2-3 {
+  background-image: url("../img/hero2/macarons.jpg");
   display: none;
 }
 @media (min-width: 768px) {
@@ -794,16 +800,10 @@ footer #social-media #fb {
     grid-template-areas: "h2-1 h2-2";
   }
 }
-#hero2 > div #h2-1 {
-  grid-area: h2-1;
-}
 @media (min-width: 768px) {
   #hero2 > div #h2-1 {
     grid-area: h2-1;
   }
-}
-#hero2 > div #h2-2 {
-  grid-area: h2-2;
 }
 @media (min-width: 768px) {
   #hero2 > div #h2-2 {
