@@ -5,23 +5,24 @@
 #hero-image {
     img{
         width: 100%;
+        object-fit: cover;
     }
-    background-image: url("../img/hero/hero.jpg");
-    height: 252px;
-    background-position: center top;
-    background-size: cover;
+    // background-image: url("../img/hero/hero.jpg");
+    // height: 252px;
+    // background-position: center top;
+    // background-size: cover;
 // x right center left
 // y top center bottom
 
-@include md{
-    height: 422px;
-}
-@include lg{
-    height: 562px;
-}
-@include xl{
-    height: 880px;
-}
+// @include md{
+//     height: 422px;
+// }
+// @include lg{
+//     height: 562px;
+// }
+// @include xl{
+//     height: 880px;
+// }
 
 
 }
