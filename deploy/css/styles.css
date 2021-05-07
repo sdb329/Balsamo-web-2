@@ -674,6 +674,19 @@ footer #social-media #fb {
 #announcements ul li > div .image-event {
   grid-area: image-event;
 }
+#announcements ul li > div .image-event > div {
+  background-position: center;
+  border: 4px #fff solid;
+  height: 85px;
+  width: 85px;
+  border-radius: 100%;
+}
+#announcements ul li > div .image-event #event-right {
+  background-image: url("../img/announcements/macaron.png");
+}
+#announcements ul li > div .image-event #event-left {
+  background-image: url("../img/announcements/ice-cream.png");
+}
 
 /* =============
     hero
