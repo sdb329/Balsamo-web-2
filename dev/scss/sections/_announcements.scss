@@ -67,13 +67,22 @@
                     height: 85px;
                     width: 85px;
                     border-radius: 100%;
+
+                    @include md{
+                        height: 115px;
+                        width: 115px;
+                    }
                     }
                     #event-right{
-
-                        background-image: url("../img/announcements/macaron.png");
+                        background-position: center bottom;
+                        background-size: cover;
+                        background-image: url("../img/announcements/macaron.jpg");
                     }
+                    
                     #event-left{
-                        background-image: url("../img/announcements/ice-cream.png");
+                        background-position: center bottom;
+                        background-size: cover;
+                        background-image: url("../img/announcements/ice-cream.jpg");
                     }
                 }
 
