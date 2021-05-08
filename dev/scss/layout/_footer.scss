@@ -16,12 +16,19 @@ footer {
         section{
             #title-footer{
                 color: $gray;
+
+                font-size: rem-calc(20);
+                font-weight: 600;
             }
             #address-footer{
                 >ul{
                     >li{
                         h3{
                             color: $gray;
+
+
+                font-size: rem-calc(16);
+                font-weight: 500;
                         }
                         >div{
                             >div{
@@ -30,11 +37,17 @@ footer {
                                 }
                                 a{
                                     color: $gray;
+
+                                    font-size: rem-calc(12);
+                                    font-weight: 400;
                                 }
                             }
                         }
                         address{
                             color: $gray;
+
+                            font-size: rem-calc(12);
+                            font-weight: 400;
                         }
                     }
                 }
@@ -42,10 +55,24 @@ footer {
             #sign-up-footer{
                 h2{
                     color: $gray;
+                    font-size: rem-calc(20);
+                    font-weight: 600;
                 }
                 input{
                     background-color: $gray;
                     color: $darkbrown;
+
+                        &::placeholder {
+                            color: $darkbrown;
+                        }
+        
+                        &:-ms-input-placeholder {
+                            color: $darkbrown;
+                        }
+        
+                        &::-ms-input-placeholder {
+                            color: $darkbrown;
+                        }
                 }
                 button{
                     background-color: $lightpink;
@@ -55,6 +82,8 @@ footer {
             #socials-footer{
                 h2{
                     color: $gray;
+                    font-size: rem-calc(20);
+                    font-weight: 600;
                 }
                 ul{
                     li{

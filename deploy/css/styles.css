@@ -352,21 +352,24 @@ template {
 /* =============
     Base
 ============= */
-figure {
-  padding: 0;
-  margin: 0;
+html, body, h1, h2, h3 {
+  font-family: "Playfair Display", serif;
+}
+
+p, input, button, .footer-location, address {
+  font-family: "Cabin", sans-serif;
+}
+
+button {
+  font-weight: 600;
 }
 
 ul {
-  padding: 0;
   margin: 0;
+  padding: 0;
 }
 ul li {
   list-style: none;
-}
-
-.image-test img {
-  width: 100%;
 }
 
 /* =============
@@ -433,15 +436,32 @@ header > div {
   grid-template-columns: 16px auto 16px;
   grid-template-areas: ". search .";
 }
+@media (min-width: 768px) {
+  #search {
+    font-size: 1.875rem;
+    font-weight: 400;
+  }
+}
 @media (min-width: 1200px) {
   #search {
     grid-template-columns: auto 1000px auto;
+    font-size: 2.1875rem;
+    font-weight: 400;
   }
 }
 #search > div {
   grid-area: search;
 }
 #search > div form input {
+  color: #BFA48A;
+}
+#search > div form input::placeholder {
+  color: #BFA48A;
+}
+#search > div form input:-ms-input-placeholder {
+  color: #BFA48A;
+}
+#search > div form input::-ms-input-placeholder {
   color: #BFA48A;
 }
 #search > div form button {
@@ -463,24 +483,43 @@ footer > div {
 }
 footer > div section #title-footer {
   color: #EAE7E4;
+  font-size: 1.25rem;
+  font-weight: 600;
 }
 footer > div section #address-footer > ul > li h3 {
   color: #EAE7E4;
+  font-size: 1rem;
+  font-weight: 500;
 }
 footer > div section #address-footer > ul > li > div > div i {
   color: #E3A599;
 }
 footer > div section #address-footer > ul > li > div > div a {
   color: #EAE7E4;
+  font-size: 0.75rem;
+  font-weight: 400;
 }
 footer > div section #address-footer > ul > li address {
   color: #EAE7E4;
+  font-size: 0.75rem;
+  font-weight: 400;
 }
 footer > div section #sign-up-footer h2 {
   color: #EAE7E4;
+  font-size: 1.25rem;
+  font-weight: 600;
 }
 footer > div section #sign-up-footer input {
   background-color: #EAE7E4;
+  color: #4E4741;
+}
+footer > div section #sign-up-footer input::placeholder {
+  color: #4E4741;
+}
+footer > div section #sign-up-footer input:-ms-input-placeholder {
+  color: #4E4741;
+}
+footer > div section #sign-up-footer input::-ms-input-placeholder {
   color: #4E4741;
 }
 footer > div section #sign-up-footer button {
@@ -489,6 +528,8 @@ footer > div section #sign-up-footer button {
 }
 footer > div section #socials-footer h2 {
   color: #EAE7E4;
+  font-size: 1.25rem;
+  font-weight: 600;
 }
 footer > div section #socials-footer ul li {
   color: white;
@@ -666,6 +707,18 @@ footer #social-media #fb {
 }
 #announcements ul li > div .announce-content > div > h2 {
   color: #4E4741;
+  font-size: 1.3125rem;
+  font-weight: 400;
+}
+@media (min-width: 768px) {
+  #announcements ul li > div .announce-content > div > h2 {
+    font-size: 1.8125rem;
+  }
+}
+@media (min-width: 768px) {
+  #announcements ul li > div .announce-content > div > h2 {
+    font-size: 1.9375rem;
+  }
 }
 #announcements ul li > div .announce-content > div > button {
   background-color: #F0CCC5;
@@ -890,11 +943,17 @@ footer #social-media #fb {
 }
 #testimonials > div #test-title > h1 {
   grid-area: title-test;
+  font-size: 1.25rem;
+  font-weight: 400;
 }
-@media (min-width: 1200px) {
+@media (min-width: 768px) {
   #testimonials > div #test-title > h1 {
-    padding-left: 10%;
-    padding-right: 10%;
+    font-size: 1.75rem;
+  }
+}
+@media (min-width: 992px) {
+  #testimonials > div #test-title > h1 {
+    font-size: 2.3125rem;
   }
 }
 @media (min-width: 768px) {
@@ -980,23 +1039,31 @@ footer #social-media #fb {
   background-position: center 80%;
   background-size: cover;
 }
-#testimonials > div ul #img-3t {
+#testimonials > div ul li #img-3t {
   background-image: url("../img/testimonials/birthday-cake.jpg");
   height: 250px;
   background-position: center 87%;
   background-size: cover;
 }
-#testimonials > div ul #img-4t {
+#testimonials > div ul li #img-4t {
   background-image: url("../img/testimonials/fruit-cake.jpg");
   height: 250px;
   background-position: center 87%;
   background-size: cover;
 }
-#testimonials > div ul #img-5t {
+#testimonials > div ul li #img-5t {
   background-image: url("../img/testimonials/cake-display.jpg");
   height: 250px;
   background-position: center 87%;
   background-size: cover;
+}
+#testimonials > div ul li section .test-content > div h2 {
+  font-size: 1.6875rem;
+  font-weight: 600;
+}
+#testimonials > div ul li section .test-content > div p {
+  font-size: 1rem;
+  font-weight: 400;
 }
 #testimonials > div ul section {
   display: grid;

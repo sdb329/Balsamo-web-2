@@ -28,16 +28,25 @@
                 grid-area: title-test;
                 // border: 1px solid red;
 
+                    font-size: rem-calc(20);
+                    font-weight: 400;
+                    @include md{
+                        font-size: rem-calc(28);
+                    }
+                    @include lg{
+                        font-size: rem-calc(37);
+                    }
+
             }
 
-            @include xl {
+            // @include xl {
 
-                >h1 {
-                    padding-left: 10%;
-                    padding-right: 10%;
+            //     >h1 {
+            //         padding-left: 10%;
+            //         padding-right: 10%;
 
-                }
-            }
+            //     }
+            // }
         }
 
         ul {
@@ -130,7 +139,6 @@
                 }
 
 
-
                 #img-1t{
                     background-image: url("../img/testimonials/wedding-cake.jpg");
                     height: 250px;
@@ -143,7 +151,7 @@
                     background-position: center 80%;
                     background-size: cover;
                 }
-                }
+                
                 #img-3t{
                     background-image: url("../img/testimonials/birthday-cake.jpg");
                     height: 250px;
@@ -163,6 +171,26 @@
                     background-position: center 87%;
                     background-size: cover;
                 }
+
+                section{
+                    .test-content{
+                        >div{
+                            h2{
+
+                                    font-size: rem-calc(27);
+                                    font-weight: 600;
+
+
+                            }
+                            p{
+                                font-size: rem-calc(16);
+                                font-weight: 400;
+
+                            }
+                        }
+                    }
+                }
+            }
                 
 
                 section {

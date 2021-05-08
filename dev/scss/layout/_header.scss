@@ -2,52 +2,71 @@
     Header
 ============= */
 
-header{
+header {
 
     background-color: $darkbrown;
 
     display: grid;
-grid-template-columns: 16px auto 16px;
-grid-template-areas: ". header .";
+    grid-template-columns: 16px auto 16px;
+    grid-template-areas: ". header .";
 
->div{
-    grid-area: header;
-    // border: 1px solid red;
+    >div {
+        grid-area: header;
+        // border: 1px solid red;
+
+    }
 
 }
 
-}
 
 
 
-
-#search{
+#search {
+    @include md {
+        font-size: rem-calc(30);
+        font-weight: 400;
+    }
 
     background-color: $gray;
 
     display: grid;
-grid-template-columns: 16px auto 16px;
-grid-template-areas: ". search .";
+    grid-template-columns: 16px auto 16px;
+    grid-template-areas: ". search .";
 
-@include xl{
-    grid-template-columns: auto 1000px auto;
-    // border: 1px solid red;
-}
+    @include xl {
+        grid-template-columns: auto 1000px auto;
+        font-size: rem-calc(35);
+        font-weight: 400;
+        // border: 1px solid red;
+    }
 
->div{
-    grid-area: search;
-    // border: 1px solid red;
+    >div {
+        grid-area: search;
+        // border: 1px solid red;
 
-    form{
-        input{
-            color: $lightbrown;
-        }
-        button{
-            background-color: $lightpink;
-            color: $darkbrown;
+        form {
+            input {
+
+                color: $lightbrown;
+
+                &::placeholder {
+                    color: $lightbrown;
+                }
+
+                &:-ms-input-placeholder {
+                    color: $lightbrown;
+                }
+
+                &::-ms-input-placeholder {
+                    color: $lightbrown;
+                }
+            }
+
+            button {
+                background-color: $lightpink;
+                color: $darkbrown;
+            }
         }
     }
-}
 
 }
-
