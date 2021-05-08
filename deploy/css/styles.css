@@ -352,8 +352,18 @@ template {
 /* =============
     Base
 ============= */
-html, body, h1, h2, h3 {
+html, body, h1, h2, h3, h4, h5, h6 {
   font-family: "Playfair Display", serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  padding: 0;
+  margin: 0;
+}
+
+p {
+  padding: 0;
+  margin: 0;
 }
 
 p, input, button, .footer-location, address {
@@ -362,6 +372,15 @@ p, input, button, .footer-location, address {
 
 button {
   font-weight: 600;
+  border: none;
+  padding: 5px 15px;
+  border-radius: 5px;
+  transition: 0.25s;
+  cursor: pointer;
+}
+button:hover {
+  background-color: #000;
+  color: #fff;
 }
 
 ul {
@@ -428,6 +447,7 @@ header {
 }
 header > div {
   grid-area: header;
+  padding: 10px;
 }
 
 #search {
@@ -467,6 +487,10 @@ header > div {
 #search > div form button {
   background-color: #F0CCC5;
   color: #4E4741;
+}
+#search > div form button:hover {
+  background-color: #4E4741;
+  color: #F0CCC5;
 }
 
 /* =============
@@ -525,6 +549,11 @@ footer > div section #sign-up-footer input::-ms-input-placeholder {
 footer > div section #sign-up-footer button {
   background-color: #F0CCC5;
   color: #4E4741;
+}
+footer > div section #sign-up-footer button:hover {
+  background-color: #4E4741;
+  color: #F0CCC5;
+  border: 0.5px solid #BFA48A;
 }
 footer > div section #socials-footer h2 {
   color: #EAE7E4;
@@ -723,6 +752,10 @@ footer #social-media #fb {
 #announcements ul li > div .announce-content > div > button {
   background-color: #F0CCC5;
   color: #4E4741;
+}
+#announcements ul li > div .announce-content > div > button:hover {
+  background-color: #4E4741;
+  color: #F0CCC5;
 }
 #announcements ul li > div .image-event {
   grid-area: image-event;
@@ -1082,6 +1115,10 @@ footer #social-media #fb {
 #testimonials > div ul section .test-content > div .readmore {
   background-color: #F0CCC5;
   color: #4E4741;
+}
+#testimonials > div ul section .test-content > div .readmore:hover {
+  background-color: #4E4741;
+  color: #F0CCC5;
 }
 
 #test-title h1 {

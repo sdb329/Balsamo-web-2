@@ -77,6 +77,12 @@ footer {
                 button{
                     background-color: $lightpink;
                     color: $darkbrown;
+
+                    &:hover{
+                        background-color: $darkbrown;
+                        color: $lightpink;
+                        border: 0.5px solid $lightbrown;
+                    }
                 }
             }
             #socials-footer{

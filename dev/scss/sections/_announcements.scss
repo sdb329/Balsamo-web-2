@@ -64,6 +64,11 @@
                         >button{
                             background-color: $lightpink;
                             color: $darkbrown;
+
+                            &:hover{
+                                background-color: $darkbrown;
+                                color: $lightpink;
+                            }
                         }
                     }
                 }
