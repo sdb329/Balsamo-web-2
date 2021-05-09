@@ -5,6 +5,10 @@
 #announcements {
 
 
+    padding: 16px 0px;
+    // text-align: center;
+
+
     @include md{
         display: grid;
         grid-template-columns: 16px auto 16px;
@@ -29,6 +33,16 @@
 
 
         li {
+
+            padding: 14px 16px;
+            @include md{
+                padding: 17px 23px; 
+            }
+            @include lg{
+                padding: 16px 17px; 
+            }
+
+
             display: grid;
             grid-template-columns: 16px auto 16px;
             grid-template-areas: ". announce .";
@@ -47,6 +61,7 @@
 
                 .announce-content {
                     grid-area: text;
+                    
 
                     >div{
                         >h2{
@@ -61,7 +76,19 @@
                                     font-size: rem-calc(31);
                                 }
                         }
+                        
                         >button{
+
+                            margin: 14px 0px;
+                            @include md{
+                                margin: 20px 0px;
+                            }
+                            @include lg{
+                                margin: 22px 0px; 
+                            }
+                
+
+                            
                             background-color: $lightpink;
                             color: $darkbrown;
 
@@ -82,6 +109,7 @@
                     height: 85px;
                     width: 85px;
                     border-radius: 100%;
+
 
                     @include md{
                         height: 115px;

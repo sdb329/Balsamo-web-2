@@ -352,6 +352,31 @@ template {
 /* =============
     Base
 ============= */
+button {
+  font-weight: 600;
+  border: none;
+  padding: 5px 15px;
+  border-radius: 5px;
+  transition: 0.25s;
+  cursor: pointer;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+ul li {
+  list-style: none;
+}
+
+figure {
+  padding: 0;
+  margin: 0;
+}
+
+/* =============
+    Typography
+============= */
 html, body, h1, h2, h3, h4, h5, h6 {
   font-family: "Playfair Display", serif;
 }
@@ -368,44 +393,6 @@ p {
 
 p, input, button, .footer-location, address {
   font-family: "Cabin", sans-serif;
-}
-
-button {
-  font-weight: 600;
-  border: none;
-  padding: 5px 15px;
-  border-radius: 5px;
-  transition: 0.25s;
-  cursor: pointer;
-}
-button:hover {
-  background-color: #000;
-  color: #fff;
-}
-
-ul {
-  margin: 0;
-  padding: 0;
-}
-ul li {
-  list-style: none;
-}
-
-/* =============
-    Typography
-============= */
-body {
-  font-family: "Montserrat", sans-serif;
-}
-
-h1, h2, h3, h4 {
-  margin: 0;
-  padding: 0;
-}
-
-p {
-  margin: 0;
-  padding: 0;
 }
 
 .section-title {
@@ -696,6 +683,9 @@ footer #social-media #fb {
 /* =============
     announcements
 ============= */
+#announcements {
+  padding: 16px 0px;
+}
 @media (min-width: 768px) {
   #announcements {
     display: grid;
@@ -720,10 +710,21 @@ footer #social-media #fb {
   }
 }
 #announcements ul li {
+  padding: 14px 16px;
   display: grid;
   grid-template-columns: 16px auto 16px;
   grid-template-areas: ". announce .";
   background-color: #BFA48A;
+}
+@media (min-width: 768px) {
+  #announcements ul li {
+    padding: 17px 23px;
+  }
+}
+@media (min-width: 992px) {
+  #announcements ul li {
+    padding: 16px 17px;
+  }
 }
 #announcements ul li > div {
   grid-area: announce;
@@ -750,8 +751,19 @@ footer #social-media #fb {
   }
 }
 #announcements ul li > div .announce-content > div > button {
+  margin: 14px 0px;
   background-color: #F0CCC5;
   color: #4E4741;
+}
+@media (min-width: 768px) {
+  #announcements ul li > div .announce-content > div > button {
+    margin: 20px 0px;
+  }
+}
+@media (min-width: 992px) {
+  #announcements ul li > div .announce-content > div > button {
+    margin: 22px 0px;
+  }
 }
 #announcements ul li > div .announce-content > div > button:hover {
   background-color: #4E4741;
@@ -793,6 +805,7 @@ footer #social-media #fb {
 }
 
 #hero ul li {
+  justify-content: center;
   display: grid;
   grid-template-columns: 16px auto 16px;
   grid-template-areas: ". hero .";
@@ -807,9 +820,11 @@ footer #social-media #fb {
 }
 #hero ul #menu-hero {
   background-color: #E3A599;
+  padding: 30px 10px;
 }
 #hero ul #location-hero {
   background-color: #F0CCC5;
+  padding: 30px 17px;
 }
 @media (min-width: 1200px) {
   #hero ul #location-hero {
@@ -820,7 +835,7 @@ footer #social-media #fb {
 @media (min-width: 768px) {
   #hero ul {
     display: grid;
-    grid-template-columns: 40% auto;
+    grid-template-columns: 47% auto;
   }
 }
 @media (min-width: 992px) {
@@ -830,32 +845,59 @@ footer #social-media #fb {
   }
   #hero ul .hero-button {
     display: list-item;
+    display: inline-block;
   }
 }
-#hero .hero-info {
-  display: grid;
-  grid-template-columns: 90% auto;
-  grid-template-areas: "text button";
-}
-#hero .hero-info .info-content {
-  grid-area: text;
-}
-#hero .hero-info .info-content > h3 {
+#hero a:link, #hero a:visited {
   color: #4E4741;
+  transition: 0.25s;
 }
-#hero .hero-info .info-content > h4 {
+#hero a:link h3, #hero a:visited h3 {
+  font-size: 1.125rem;
+  font-weight: 600;
+}
+@media (min-width: 992px) {
+  #hero a:link h3, #hero a:visited h3 {
+    font-size: 1.5625rem;
+  }
+}
+#hero h4 {
+  font-size: 1rem;
+  font-weight: 400;
+}
+#hero:hover, #hero:active {
+  color: #fff;
+}
+
+a {
+  text-decoration: none;
+}
+
+.info-content {
+  display: inline-block;
+}
+
+.details-button {
+  display: inline-block;
+  text-decoration: none;
+  padding: 0px 20px;
+}
+@media (min-width: 768px) {
+  .details-button {
+    padding: 0px 13px;
+  }
+}
+.details-button > h4 {
   color: #4E4741;
+  text-decoration: none;
 }
-#hero .hero-info .details-button {
-  grid-area: button;
-}
-#hero .hero-info .details-button > h4 {
+.details-button > i {
   color: #4E4741;
+  display: inline-block;
+  text-decoration: none;
 }
-#hero .hero-info .details-button > i {
-  color: #4E4741;
-}
-#hero .hero-button {
+
+.hero-button {
   display: none;
 }
 

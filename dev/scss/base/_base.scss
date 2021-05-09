@@ -7,18 +7,7 @@
 //     font-family: 'Playfair Display', serif;
 
 
-// // figure{
-// //     padding: 0;
-// //     margin: 0;
-// // }
 
-// ul{
-//     padding: 0;
-//     margin: 0;
-//     li{
-//         list-style: none;
-//     }
-// }
 
 // // .container-grid{
 // //     display: grid;
@@ -43,23 +32,7 @@
 // }
 
 
-    html,body,h1,h2,h3,h4,h5,h6 {
-        font-family: 'Playfair Display', serif;
-    }
 
-    h1,h2,h3,h4,h5,h6 {
-        padding: 0;
-        margin: 0;
-    }
-
-    p {
-        padding: 0;
-        margin: 0;
-    }
-
-    p,input,button,.footer-location,address {
-        font-family: 'Cabin', sans-serif;
-    }
 
     button{
         font-weight: 600;
@@ -68,11 +41,6 @@
         border-radius: 5px;
         transition: 0.25s;
         cursor: pointer;
-
-        &:hover{
-            background-color: $black;
-            color: $white;
-        }
     }
     ul{
         margin: 0;
@@ -82,3 +50,7 @@
         }
     }
 
+    figure{
+        padding: 0;
+        margin: 0;
+    }

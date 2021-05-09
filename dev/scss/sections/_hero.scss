@@ -2,17 +2,19 @@
     hero
 ============= */
 
+
+
 #hero-image {
     img{
         width: 100%;
         object-fit: cover;
     }
-    // background-image: url("../img/hero/hero.jpg");
-    // height: 252px;
-    // background-position: center top;
-    // background-size: cover;
-// x right center left
-// y top center bottom
+//     background-image: url("../img/hero/hero.jpg");
+//     height: 252px;
+//     background-position: center top;
+//     background-size: cover;
+// // x right center left
+// // y top center bottom
 
 // @include md{
 //     height: 422px;
@@ -23,8 +25,6 @@
 // @include xl{
 //     height: 880px;
 // }
-
-
 }
 
 #hero {
@@ -35,6 +35,8 @@
 
         li {
 
+            justify-content: center;
+
             @include xl{
                grid-template-columns: auto 480px 16px;
             }
@@ -42,12 +44,9 @@
             grid-template-columns: 16px auto 16px;
             grid-template-areas: ". hero .";
 
-            // background-color: blueviolet;
-
-
             a {
                 grid-area: hero;
-                // border: 1px solid red;
+
             }
 
         }
@@ -57,21 +56,25 @@
 
         #menu-hero{
             background-color: $darkpink;
+            padding: 30px 10px;
+
         }
 
 
         #location-hero{
             background-color: $lightpink;
+            padding: 30px 17px;
             @include xl{
                 display: grid;
                 grid-template-columns: 16px 480px auto;
             }
 
+
         }
 
         @include md {
             display: grid;
-            grid-template-columns: 40% auto;
+            grid-template-columns: 47% auto;
             
         }
 
@@ -81,45 +84,93 @@
 
             .hero-button{
                 display: list-item;
+                display: inline-block;
             }
         }
 
     }
 
+  
+        a:link, a:visited{
+            color: $darkbrown;
 
+            transition: 0.25s;
 
-    .hero-info {
-        display: grid;
-        grid-template-columns: 90% auto;
-        grid-template-areas: "text button";
+            h3{
+                font-size: rem-calc(18);
+                font-weight: 600;
 
-        .info-content {
-            grid-area: text;
-
-            >h3{
-                color: $darkbrown;
+                @include lg{
+                    font-size: rem-calc(25);
+                }
+                }
             }
-            >h4{
-                color: $darkbrown;
+
+            h4{
+                font-size: rem-calc(16);
+                font-weight: 400;
             }
 
+            &:hover, &:active{
+                color: $white;
+            }
         }
 
+        a{
+            text-decoration: none;
+        }
+
+      
+
+
+
+    // .hero-info {
+    //     // display: grid;
+    //     // grid-template-columns: 90% auto;
+    //     // grid-template-areas: "text button";
+
+        .info-content {
+    //     //     // grid-area: text;
+            display: inline-block;
+    //     //     text-decoration: none;
+        }
+
+
+    //     //     >h3{
+    //     //         color: $darkbrown;
+    //     //     }
+    //     //     >h4{
+    //     //         color: $darkbrown;
+    //     //     }
+
+    //     }
+
         .details-button {
-            grid-area: button;
+            // grid-area: button;
+            display: inline-block;
+            text-decoration: none;
+
+            padding: 0px 20px;
+
+            @include md{
+                padding: 0px 13px;
+            }
 
             >h4{
                 color: $darkbrown;
+    
+                text-decoration: none;
             }
             >i{
                 color: $darkbrown;
+                display: inline-block;
+                text-decoration: none;
             }
         }
-
-    }
-
+    
+    
     .hero-button {
         display: none;
     }  
-} 
+
 
