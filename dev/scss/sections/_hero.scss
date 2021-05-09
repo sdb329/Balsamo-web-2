@@ -35,11 +35,9 @@
 
         li {
 
-            justify-content: center;
-
-            @include xl{
-               grid-template-columns: auto 480px 16px;
-            }
+            // @include xl{
+            //    grid-template-columns: auto 480px 16px;
+            // }
             display: grid;
             grid-template-columns: 16px auto 16px;
             grid-template-areas: ". hero .";
@@ -55,18 +53,26 @@
    
 
         #menu-hero{
+
+            justify-content: center;
             background-color: $darkpink;
             padding: 30px 10px;
-
+@include md{
+            justify-content: right;
         }
+    }
 
 
         #location-hero{
+
+            justify-content: center;
             background-color: $lightpink;
             padding: 30px 17px;
-            @include xl{
-                display: grid;
-                grid-template-columns: 16px 480px auto;
+            // display: flex;
+
+
+            @include md{
+            justify-content: left;
             }
 
 

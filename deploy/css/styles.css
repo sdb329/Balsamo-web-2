@@ -779,31 +779,31 @@ footer #socials-footer {
 }
 
 #hero ul li {
-  justify-content: center;
   display: grid;
   grid-template-columns: 16px auto 16px;
   grid-template-areas: ". hero .";
-}
-@media (min-width: 1200px) {
-  #hero ul li {
-    grid-template-columns: auto 480px 16px;
-  }
 }
 #hero ul li a {
   grid-area: hero;
 }
 #hero ul #menu-hero {
+  justify-content: center;
   background-color: #E3A599;
   padding: 30px 10px;
 }
+@media (min-width: 768px) {
+  #hero ul #menu-hero {
+    justify-content: right;
+  }
+}
 #hero ul #location-hero {
+  justify-content: center;
   background-color: #F0CCC5;
   padding: 30px 17px;
 }
-@media (min-width: 1200px) {
+@media (min-width: 768px) {
   #hero ul #location-hero {
-    display: grid;
-    grid-template-columns: 16px 480px auto;
+    justify-content: left;
   }
 }
 @media (min-width: 768px) {
@@ -968,17 +968,30 @@ a {
 /* =============
     testimonials
 ============= */
+#testimonials {
+  margin-bottom: 24px;
+}
 @media (min-width: 768px) {
   #testimonials {
     display: grid;
     grid-template-columns: 16px auto 16px;
     grid-template-areas: ". testimonials .";
+    margin-bottom: 38px;
+  }
+}
+@media (min-width: 992px) {
+  #testimonials {
+    margin-bottom: 58px;
   }
 }
 @media (min-width: 1200px) {
   #testimonials {
     grid-template-columns: auto 1200px auto;
+    margin-bottom: 66px;
   }
+}
+#testimonials section div div h2 {
+  margin: 17px 0px 12px 0px;
 }
 @media (min-width: 768px) {
   #testimonials > div {
@@ -992,17 +1005,25 @@ a {
 }
 #testimonials > div #test-title > h1 {
   grid-area: title-test;
+  margin: 18px 0px 12px 0px;
   font-size: 1.25rem;
   font-weight: 400;
 }
 @media (min-width: 768px) {
   #testimonials > div #test-title > h1 {
     font-size: 1.75rem;
+    margin: 24px 0px 16px 0px;
   }
 }
 @media (min-width: 992px) {
   #testimonials > div #test-title > h1 {
     font-size: 2.3125rem;
+    margin: 13px 0px 16px 0px;
+  }
+}
+@media (min-width: 1200px) {
+  #testimonials > div #test-title > h1 {
+    margin: 39px 0px 5px 0px;
   }
 }
 @media (min-width: 768px) {
@@ -1131,6 +1152,7 @@ a {
 #testimonials > div ul section .test-content > div .readmore {
   background-color: #F0CCC5;
   color: #4E4741;
+  margin: 12px 17px 23px;
 }
 #testimonials > div ul section .test-content > div .readmore:hover {
   background-color: #4E4741;
