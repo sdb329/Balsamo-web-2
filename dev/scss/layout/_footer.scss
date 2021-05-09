@@ -3,6 +3,10 @@
 ============= */
 
 footer {
+
+    @include md{
+        justify-content: center;
+    }
     display: grid;
     grid-template-columns: 16px auto 16px;
     grid-template-areas: ". footer .";
@@ -112,6 +116,15 @@ footer {
                     display: flex;
                 }
                 }
+
+
+                .bottom{
+                    background-color: $gray;
+                    height: 1px;
+                    margin: 10px 0px;
+                    width: 100%;
+
+                }
             }
         }
     }
@@ -199,7 +212,20 @@ footer {
 
 #social-media{
     display: flex;
-    font-size: rem-calc(40px);
+    font-size: rem-calc(30px);
+    li{
+    padding: 0px 16px;
+
+    a:link, a:visited{
+        color: $white;
+        transition: 0.25s;
+
+        &:hover, &:active{
+            color: $lightpink;
+        }
+    }
+
+    }
 }
 
     // #social-media {
@@ -322,5 +348,19 @@ footer {
             padding-left: 10%;
             padding-right: 10%;
         }
+    }
+
+
+    // #title-footer{
+    //     padding: 0px 40px;
+    // }
+    #address-footer{
+        padding: 0px 40px;
+    }
+    #sign-up-footer {
+        padding: 0px 40px;
+    }
+    #socials-footer{
+        padding: 0px 40px;
     }
 }
