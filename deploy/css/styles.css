@@ -550,73 +550,16 @@ footer > div section #socials-footer h2 {
 footer > div section #socials-footer ul li {
   color: white;
 }
-footer #section1-1 {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-areas: "symbol1 address1" "symbol2 phone";
+footer ul li > div .address-flex {
+  display: flex;
 }
-footer #section1-1 #symbol1-1 {
-  grid-area: symbol1;
+footer ul li > div .phone-flex {
+  display: flex;
 }
-footer #section1-1 #address1-1 {
-  grid-area: address1;
-}
-footer #section1-1 #symbol2-1 {
-  grid-area: symbol2;
-}
-footer #section1-1 #phone1-1 {
-  grid-area: phone;
-}
-footer #section1-2 {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-areas: "symbol1 address1" "symbol2 phone";
-}
-footer #section1-2 #symbol1-2 {
-  grid-area: symbol1;
-}
-footer #section1-2 #address1-2 {
-  grid-area: address1;
-}
-footer #section1-2 #symbol2-2 {
-  grid-area: symbol2;
-}
-footer #section1-2 #phone1-2 {
-  grid-area: phone;
-}
-footer #section1-3 {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-areas: "symbol1 address1" "symbol2 phone";
-}
-footer #section1-3 #symbol1-3 {
-  grid-area: symbol1;
-}
-footer #section1-3 #address1-3 {
-  grid-area: address1;
-}
-footer #section1-3 #symbol2-3 {
-  grid-area: symbol2;
-}
-footer #section1-3 #phone1-3 {
-  grid-area: phone;
-}
-footer #social-media {
-  display: grid;
-  grid-template-columns: 16px auto auto auto auto 16px;
-  grid-template-areas: ". yt t ig fb .";
-}
-footer #social-media #yt {
-  grid-area: yt;
-}
-footer #social-media #t {
-  grid-area: t;
-}
-footer #social-media #ig {
-  grid-area: ig;
-}
-footer #social-media #fb {
-  grid-area: fb;
+
+#social-media {
+  display: flex;
+  font-size: 2.5rem;
 }
 
 @media (min-width: 768px) {
@@ -685,6 +628,7 @@ footer #social-media #fb {
 ============= */
 #announcements {
   padding: 16px 0px;
+  justify-content: center;
 }
 @media (min-width: 768px) {
   #announcements {

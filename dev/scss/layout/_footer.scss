@@ -102,121 +102,140 @@ footer {
     }
 
 
-    #section1-1 {
-        display: grid; 
-        grid-template-columns: 1fr 1fr;
-        // grid-template-rows: 200px 200px;
-        grid-template-areas:
-            "symbol1 address1"
-            "symbol2 phone";
-
-        #symbol1-1 {
-            grid-area: symbol1;
-        }
-
-        #address1-1 {
-            grid-area: address1;
-        }
-
-        #symbol2-1 {
-            grid-area: symbol2;
-        }
-
-        #phone1-1 {
-            grid-area: phone;
-        }
-
-    }
-
-    #section1-2 {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        // grid-template-rows: 200px 200px;
-        grid-template-areas:
-            "symbol1 address1"
-            "symbol2 phone";
-
-        #symbol1-2 {
-            grid-area: symbol1;
-        }
-
-        #address1-2 {
-            grid-area: address1;
-        }
-
-        #symbol2-2 {
-            grid-area: symbol2;
-        }
-
-        #phone1-2 {
-            grid-area: phone;
-        }
-
-    }
-
-
-    #section1-3 {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        // grid-template-rows: 200px 200px;
-        grid-template-areas:
-            "symbol1 address1"
-            "symbol2 phone";
-
-        //  border: 1px solid red;
-
-        #symbol1-3 {
-            grid-area: symbol1;
-        }
-
-        #address1-3 {
-            grid-area: address1;
-        }
-
-        #symbol2-3 {
-            grid-area: symbol2;
-        }
-
-        #phone1-3 {
-            grid-area: phone;
-        }
-
-    }
-
-
-
-    #social-media {
-
-        display: grid;
-        grid-template-columns: 16px auto auto auto auto 16px;
-        // grid-template-rows: 200px 200px;
-        grid-template-areas: ". yt t ig fb .";
-
-        // border: 1px solid red;
-        #yt {
-            grid-area: yt;
-
-        }
-
-        #t {
-            grid-area: t;
-        }
-
-        #ig {
-            grid-area: ig;
-        }
-
-        #fb {
-            grid-area: fb;
+    ul{
+        li{
+            >div{
+                .address-flex{
+                    display: flex;
+                }
+                .phone-flex{
+                    display: flex;
+                }
+                }
+            }
         }
     }
 
+    // #section1-1 {
+    //     display: grid; 
+    //     grid-template-columns: 1fr 1fr;
+    //     // grid-template-rows: 200px 200px;
+    //     grid-template-areas:
+    //         "symbol1 address1"
+    //         "symbol2 phone";
+
+    //     #symbol1-1 {
+    //         grid-area: symbol1;
+    //     }
+
+    //     #address1-1 {
+    //         grid-area: address1;
+    //     }
+
+    //     #symbol2-1 {
+    //         grid-area: symbol2;
+    //     }
+
+    //     #phone1-1 {
+    //         grid-area: phone;
+    //     }
+
+    // }
+
+
+    // #section1-2 {
+    //     display: grid;
+    //     grid-template-columns: 1fr 1fr;
+
+    //     grid-template-areas:
+    //         "symbol1 address1"
+    //         "symbol2 phone";
+
+    //     #symbol1-2 {
+    //         grid-area: symbol1;
+    //     }
+
+    //     #address1-2 {
+    //         grid-area: address1;
+    //     }
+
+    //     #symbol2-2 {
+    //         grid-area: symbol2;
+    //     }
+
+    //     #phone1-2 {
+    //         grid-area: phone;
+    //     }
+
+    // }
+
+
+    // #section1-3 {
+    //     display: grid;
+    //     grid-template-columns: 1fr 1fr;
+
+    //     grid-template-areas:
+    //         "symbol1 address1"
+    //         "symbol2 phone";
+
+
+    //     #symbol1-3 {
+    //         grid-area: symbol1;
+    //     }
+
+    //     #address1-3 {
+    //         grid-area: address1;
+    //     }
+
+    //     #symbol2-3 {
+    //         grid-area: symbol2;
+    //     }
+
+    //     #phone1-3 {
+    //         grid-area: phone;
+    //     }
+
+    // }
+
+#social-media{
+    display: flex;
+    font-size: rem-calc(40px);
 }
+
+    // #social-media {
+
+    //     display: grid;
+    //     grid-template-columns: 16px auto auto auto auto 16px;
+
+    //     grid-template-areas: ". yt t ig fb .";
+
+
+    //     #yt {
+    //         grid-area: yt;
+
+    //     }
+
+    //     #t {
+    //         grid-area: t;
+    //     }
+
+    //     #ig {
+    //         grid-area: ig;
+    //     }
+
+    //     #fb {
+    //         grid-area: fb;
+    //     }
+    // }
+
+
 
 
 
 footer {
     >div {
+
+
         >section {
             @include md {
                 display: grid;
@@ -227,6 +246,8 @@ footer {
                     "loc sign-up"
                     "loc socials";
             }
+
+
 
             #title-footer {
                 @include md {
@@ -303,4 +324,3 @@ footer {
         }
     }
 }
-
