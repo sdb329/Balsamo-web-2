@@ -541,6 +541,9 @@ footer > div section #sign-up-footer input::-ms-input-placeholder {
 footer > div section #sign-up-footer button {
   background-color: #F0CCC5;
   color: #4E4741;
+  display: block;
+  margin-top: 16px;
+  margin-bottom: 6px;
 }
 footer > div section #sign-up-footer button:hover {
   background-color: #4E4741;
@@ -557,9 +560,17 @@ footer > div section #socials-footer ul li {
 }
 footer ul li > div .address-flex {
   display: flex;
+  margin: 18px 0px;
+}
+footer ul li > div .address-flex > div i {
+  padding: 0px 5px;
 }
 footer ul li > div .phone-flex {
   display: flex;
+  margin: 18px 0px;
+}
+footer ul li > div .phone-flex > div i {
+  padding: 0px 8px;
 }
 footer ul li .bottom {
   background-color: #EAE7E4;
@@ -573,7 +584,7 @@ footer ul li .bottom {
   font-size: 1.875rem;
 }
 #social-media li {
-  padding: 0px 16px;
+  margin: 0px 16px 15px 0px;
 }
 #social-media li a:link, #social-media li a:visited {
   color: #fff;
@@ -617,6 +628,9 @@ footer ul li .bottom {
     grid-template-areas: "title title title" "loc sign-up socials";
   }
 }
+footer > div > section #title-footer {
+  padding: 12px 0px 16px 0px;
+}
 @media (min-width: 992px) {
   footer > div > section #title-footer {
     grid-area: title;
@@ -632,16 +646,21 @@ footer ul li .bottom {
     grid-area: sign-up;
   }
 }
+footer > div > section #sign-up-footer > h2 {
+  padding: 12px 0px 16px 0px;
+}
+@media (min-width: 992px) {
+  footer > div > section #sign-up-footer > h2 {
+    text-align: center;
+  }
+}
 @media (min-width: 992px) {
   footer > div > section #socials-footer {
     grid-area: socials;
   }
 }
-@media (min-width: 1200px) {
-  footer > div {
-    padding-left: 10%;
-    padding-right: 10%;
-  }
+footer > div > section #socials-footer h2 {
+  padding: 12px 0px 16px 0px;
 }
 footer #address-footer {
   padding: 0px 40px;
