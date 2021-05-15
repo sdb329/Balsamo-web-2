@@ -12,8 +12,12 @@ header {
 
     >div {
         grid-area: header;
-        // border: 1px solid red;
+
         padding: 10px;
+
+        img{
+            width: 100%;
+        }
     }
 
 }
@@ -37,12 +41,12 @@ header {
         grid-template-columns: auto 1000px auto;
         font-size: rem-calc(35);
         font-weight: 400;
-        // border: 1px solid red;
+
     }
 
     >div {
         grid-area: search;
-        // border: 1px solid red;
+
 
         form {
             input {
@@ -60,6 +64,8 @@ header {
                 &::-ms-input-placeholder {
                     color: $lightbrown;
                 }
+
+                background-color: transparent;
             }
 
             button {

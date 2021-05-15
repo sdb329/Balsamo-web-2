@@ -1,0 +1,1187 @@
+/* =============
+    Mixins
+============= */
+/* ---------------- Font Sizing ---------------- */
+html {
+  font-size: 100%;
+}
+
+/* ---------------- Media Queries ---------------- */
+/* =============
+    Variables
+============= */
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+/* Document
+   ========================================================================== */
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
+html {
+  line-height: 1.15;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+}
+
+/* Sections
+   ========================================================================== */
+/**
+ * Remove the margin in all browsers.
+ */
+body {
+  margin: 0;
+}
+
+/**
+ * Render the `main` element consistently in IE.
+ */
+main {
+  display: block;
+}
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+hr {
+  box-sizing: content-box;
+  /* 1 */
+  height: 0;
+  /* 1 */
+  overflow: visible;
+  /* 2 */
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+pre {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * Remove the gray background on active links in IE 10.
+ */
+a {
+  background-color: transparent;
+}
+
+/**
+ * 1. Remove the bottom border in Chrome 57-
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+abbr[title] {
+  border-bottom: none;
+  /* 1 */
+  text-decoration: underline;
+  /* 2 */
+  text-decoration: underline dotted;
+  /* 2 */
+}
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+code,
+kbd,
+samp {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+/**
+ * Add the correct font size in all browsers.
+ */
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Remove the border on images inside links in IE 10.
+ */
+img {
+  border-style: none;
+}
+
+/* Forms
+   ========================================================================== */
+/**
+ * 1. Change the font styles in all browsers.
+ * 2. Remove the margin in Firefox and Safari.
+ */
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 1 */
+  line-height: 1.15;
+  /* 1 */
+  margin: 0;
+  /* 2 */
+}
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+button,
+input {
+  /* 1 */
+  overflow: visible;
+}
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+button,
+select {
+  /* 1 */
+  text-transform: none;
+}
+
+/**
+ * Correct the inability to style clickable types in iOS and Safari.
+ */
+button,
+[type=button],
+[type=reset],
+[type=submit] {
+  -webkit-appearance: button;
+}
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+button::-moz-focus-inner,
+[type=button]::-moz-focus-inner,
+[type=reset]::-moz-focus-inner,
+[type=submit]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+button:-moz-focusring,
+[type=button]:-moz-focusring,
+[type=reset]:-moz-focusring,
+[type=submit]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+ * Correct the padding in Firefox.
+ */
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+legend {
+  box-sizing: border-box;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+  display: table;
+  /* 1 */
+  max-width: 100%;
+  /* 1 */
+  padding: 0;
+  /* 3 */
+  white-space: normal;
+  /* 1 */
+}
+
+/**
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+progress {
+  vertical-align: baseline;
+}
+
+/**
+ * Remove the default vertical scrollbar in IE 10+.
+ */
+textarea {
+  overflow: auto;
+}
+
+/**
+ * 1. Add the correct box sizing in IE 10.
+ * 2. Remove the padding in IE 10.
+ */
+[type=checkbox],
+[type=radio] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+[type=number]::-webkit-inner-spin-button,
+[type=number]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+[type=search] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */
+}
+
+/**
+ * Remove the inner padding in Chrome and Safari on macOS.
+ */
+[type=search]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+}
+
+/* Interactive
+   ========================================================================== */
+/*
+ * Add the correct display in Edge, IE 10+, and Firefox.
+ */
+details {
+  display: block;
+}
+
+/*
+ * Add the correct display in all browsers.
+ */
+summary {
+  display: list-item;
+}
+
+/* Misc
+   ========================================================================== */
+/**
+ * Add the correct display in IE 10+.
+ */
+template {
+  display: none;
+}
+
+/**
+ * Add the correct display in IE 10.
+ */
+[hidden] {
+  display: none;
+}
+
+/* =============
+    Base
+============= */
+button {
+  font-weight: 600;
+  border: none;
+  padding: 5px 15px;
+  border-radius: 5px;
+  transition: 0.25s;
+  cursor: pointer;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+ul li {
+  list-style: none;
+}
+
+figure {
+  padding: 0;
+  margin: 0;
+}
+
+/* =============
+    Typography
+============= */
+html, body, h1, h2, h3, h4, h5, h6 {
+  font-family: "Playfair Display", serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  padding: 0;
+  margin: 0;
+}
+
+p {
+  padding: 0;
+  margin: 0;
+}
+
+p, input, button, .footer-location, address {
+  font-family: "Cabin", sans-serif;
+}
+
+.section-title {
+  font-weight: 300;
+}
+
+/* =============
+    Buttons
+============= */
+/* =============
+    Forms
+============= */
+[type=text], [type=password], [type=date], [type=datetime], [type=datetime-local], [type=month], [type=week], [type=email], [type=number], [type=search], [type=tel], [type=time], [type=url], [type=color], textarea {
+  box-shadow: none;
+}
+
+[type=text]:focus, [type=password]:focus, [type=date]:focus, [type=datetime]:focus, [type=datetime-local]:focus, [type=month]:focus, [type=week]:focus, [type=email]:focus, [type=number]:focus, [type=search]:focus, [type=tel]:focus, [type=time]:focus, [type=url]:focus, [type=color]:focus, textarea:focus {
+  box-shadow: none;
+}
+
+input[type=text],
+input[type=email],
+input[type=password],
+textarea {
+  -webkit-appearance: none;
+}
+
+/* =============
+    Navigation
+============= */
+/* =============
+    Header
+============= */
+header {
+  background-color: #4E4741;
+  display: grid;
+  grid-template-columns: 16px auto 16px;
+  grid-template-areas: ". header .";
+}
+header > div {
+  grid-area: header;
+  padding: 10px;
+}
+header > div img {
+  width: 100%;
+}
+
+#search {
+  background-color: #EAE7E4;
+  display: grid;
+  grid-template-columns: 16px auto 16px;
+  grid-template-areas: ". search .";
+}
+@media (min-width: 768px) {
+  #search {
+    font-size: 1.875rem;
+    font-weight: 400;
+  }
+}
+@media (min-width: 1200px) {
+  #search {
+    grid-template-columns: auto 1000px auto;
+    font-size: 2.1875rem;
+    font-weight: 400;
+  }
+}
+#search > div {
+  grid-area: search;
+}
+#search > div form input {
+  color: #BFA48A;
+  background-color: transparent;
+}
+#search > div form input::placeholder {
+  color: #BFA48A;
+}
+#search > div form input:-ms-input-placeholder {
+  color: #BFA48A;
+}
+#search > div form input::-ms-input-placeholder {
+  color: #BFA48A;
+}
+#search > div form button {
+  background-color: #F0CCC5;
+  color: #4E4741;
+}
+#search > div form button:hover {
+  background-color: #4E4741;
+  color: #F0CCC5;
+}
+
+/* =============
+    Footer
+============= */
+footer {
+  display: grid;
+  grid-template-columns: 16px auto 16px;
+  grid-template-areas: ". footer .";
+  background-color: #4E4741;
+}
+@media (min-width: 768px) {
+  footer {
+    justify-content: center;
+  }
+}
+footer > div {
+  grid-area: footer;
+}
+footer > div section #title-footer {
+  color: #EAE7E4;
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+footer > div section #address-footer > ul > li h3 {
+  color: #EAE7E4;
+  font-size: 1rem;
+  font-weight: 500;
+}
+footer > div section #address-footer > ul > li > div > div i {
+  color: #E3A599;
+}
+footer > div section #address-footer > ul > li > div > div a {
+  color: #EAE7E4;
+  font-size: 0.75rem;
+  font-weight: 400;
+}
+footer > div section #address-footer > ul > li address {
+  color: #EAE7E4;
+  font-size: 0.75rem;
+  font-weight: 400;
+}
+footer > div section #sign-up-footer h2 {
+  color: #EAE7E4;
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+footer > div section #sign-up-footer input {
+  background-color: #EAE7E4;
+  color: #4E4741;
+}
+footer > div section #sign-up-footer input::placeholder {
+  color: #4E4741;
+}
+footer > div section #sign-up-footer input:-ms-input-placeholder {
+  color: #4E4741;
+}
+footer > div section #sign-up-footer input::-ms-input-placeholder {
+  color: #4E4741;
+}
+footer > div section #sign-up-footer button {
+  background-color: #F0CCC5;
+  color: #4E4741;
+  display: block;
+  margin-top: 16px;
+  margin-bottom: 6px;
+}
+footer > div section #sign-up-footer button:hover {
+  background-color: #4E4741;
+  color: #F0CCC5;
+  border: 0.5px solid #BFA48A;
+}
+footer > div section #socials-footer h2 {
+  color: #EAE7E4;
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+footer > div section #socials-footer ul li {
+  color: white;
+}
+footer ul li > div .address-flex {
+  display: flex;
+  margin: 18px 0px;
+}
+footer ul li > div .address-flex > div i {
+  padding: 0px 5px;
+}
+footer ul li > div .phone-flex {
+  display: flex;
+  margin: 18px 0px;
+}
+footer ul li > div .phone-flex > div i {
+  padding: 0px 8px;
+}
+footer ul li .bottom {
+  background-color: #EAE7E4;
+  height: 1px;
+  margin: 10px 0px;
+  width: 100%;
+}
+
+#social-media {
+  display: flex;
+  font-size: 1.875rem;
+}
+#social-media li {
+  margin: 0px 16px 15px 0px;
+}
+#social-media li a:link, #social-media li a:visited {
+  color: #fff;
+  transition: 0.25s;
+}
+#social-media li a:link:hover, #social-media li a:link:active, #social-media li a:visited:hover, #social-media li a:visited:active {
+  color: #F0CCC5;
+}
+
+@media (min-width: 768px) {
+  footer > div > section {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-areas: "title title" "loc sign-up" "loc socials";
+  }
+}
+@media (min-width: 768px) {
+  footer > div > section #title-footer {
+    grid-area: title;
+  }
+}
+@media (min-width: 768px) {
+  footer > div > section #address-footer {
+    grid-area: loc;
+  }
+}
+@media (min-width: 768px) {
+  footer > div > section #sign-up-footer {
+    grid-area: sign-up;
+  }
+}
+@media (min-width: 768px) {
+  footer > div > section #socials-footer {
+    grid-area: socials;
+  }
+}
+@media (min-width: 992px) {
+  footer > div > section {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-areas: "title title title" "loc sign-up socials";
+  }
+}
+footer > div > section #title-footer {
+  padding: 12px 0px 16px 0px;
+}
+@media (min-width: 992px) {
+  footer > div > section #title-footer {
+    grid-area: title;
+  }
+}
+@media (min-width: 992px) {
+  footer > div > section #address-footer {
+    grid-area: loc;
+  }
+}
+@media (min-width: 992px) {
+  footer > div > section #sign-up-footer {
+    grid-area: sign-up;
+  }
+}
+footer > div > section #sign-up-footer > h2 {
+  padding: 12px 0px 16px 0px;
+}
+@media (min-width: 992px) {
+  footer > div > section #sign-up-footer > h2 {
+    text-align: center;
+  }
+}
+@media (min-width: 992px) {
+  footer > div > section #socials-footer {
+    grid-area: socials;
+  }
+}
+footer > div > section #socials-footer h2 {
+  padding: 12px 0px 16px 0px;
+}
+footer #address-footer {
+  padding: 0px 40px;
+}
+footer #sign-up-footer {
+  padding: 0px 40px;
+}
+footer #socials-footer {
+  padding: 0px 40px;
+}
+
+/* =============
+    announcements
+============= */
+#announcements {
+  padding: 16px 0px;
+  justify-content: center;
+}
+@media (min-width: 768px) {
+  #announcements {
+    display: grid;
+    grid-template-columns: 16px auto 16px;
+    grid-template-areas: ". announcements .";
+  }
+}
+@media (min-width: 1200px) {
+  #announcements {
+    grid-template-columns: auto 1200px auto;
+  }
+}
+#announcements ul {
+  display: grid;
+  gap: 16px;
+}
+@media (min-width: 768px) {
+  #announcements ul {
+    grid-template-columns: 50% auto;
+    gap: 24px;
+    grid-area: announcements;
+  }
+}
+#announcements ul li {
+  padding: 14px 16px;
+  display: grid;
+  grid-template-columns: 16px auto 16px;
+  grid-template-areas: ". announce .";
+  background-color: #BFA48A;
+}
+@media (min-width: 768px) {
+  #announcements ul li {
+    padding: 17px 23px;
+  }
+}
+@media (min-width: 992px) {
+  #announcements ul li {
+    padding: 16px 17px;
+  }
+}
+#announcements ul li > div {
+  grid-area: announce;
+  display: grid;
+  grid-template-columns: auto 30%;
+  grid-template-areas: "text image-event" "text image-event";
+}
+#announcements ul li > div .announce-content {
+  grid-area: text;
+}
+#announcements ul li > div .announce-content > div > h2 {
+  color: #4E4741;
+  font-size: 1.3125rem;
+  font-weight: 400;
+}
+@media (min-width: 768px) {
+  #announcements ul li > div .announce-content > div > h2 {
+    font-size: 1.8125rem;
+  }
+}
+@media (min-width: 768px) {
+  #announcements ul li > div .announce-content > div > h2 {
+    font-size: 1.9375rem;
+  }
+}
+#announcements ul li > div .announce-content > div > button {
+  margin: 14px 0px;
+  background-color: #F0CCC5;
+  color: #4E4741;
+}
+@media (min-width: 768px) {
+  #announcements ul li > div .announce-content > div > button {
+    margin: 20px 0px;
+  }
+}
+@media (min-width: 992px) {
+  #announcements ul li > div .announce-content > div > button {
+    margin: 22px 0px;
+  }
+}
+#announcements ul li > div .announce-content > div > button:hover {
+  background-color: #4E4741;
+  color: #F0CCC5;
+}
+#announcements ul li > div .image-event {
+  grid-area: image-event;
+}
+#announcements ul li > div .image-event > div {
+  background-position: center;
+  border: 4px #fff solid;
+  height: 85px;
+  width: 85px;
+  border-radius: 100%;
+}
+@media (min-width: 768px) {
+  #announcements ul li > div .image-event > div {
+    height: 115px;
+    width: 115px;
+  }
+}
+#announcements ul li > div .image-event #event-right {
+  background-position: center bottom;
+  background-size: cover;
+  background-image: url("../img/announcements/macaron.jpg");
+}
+#announcements ul li > div .image-event #event-left {
+  background-position: center bottom;
+  background-size: cover;
+  background-image: url("../img/announcements/ice-cream.jpg");
+}
+
+/* =============
+    hero
+============= */
+#hero-image img {
+  width: 100%;
+  object-fit: cover;
+}
+
+#hero ul li {
+  display: grid;
+  grid-template-columns: 16px auto 16px;
+  grid-template-areas: ". hero .";
+}
+#hero ul li a {
+  grid-area: hero;
+}
+#hero ul #menu-hero {
+  justify-content: center;
+  background-color: #E3A599;
+  padding: 30px 10px;
+}
+@media (min-width: 768px) {
+  #hero ul #menu-hero {
+    justify-content: right;
+  }
+}
+#hero ul #location-hero {
+  justify-content: center;
+  background-color: #F0CCC5;
+  padding: 30px 17px;
+}
+@media (min-width: 768px) {
+  #hero ul #location-hero {
+    justify-content: left;
+  }
+}
+@media (min-width: 768px) {
+  #hero ul {
+    display: grid;
+    grid-template-columns: 47% auto;
+  }
+}
+@media (min-width: 992px) {
+  #hero ul {
+    display: grid;
+    grid-template-columns: 50% auto;
+  }
+  #hero ul .hero-button {
+    display: list-item;
+    display: inline-block;
+  }
+}
+#hero a:link, #hero a:visited {
+  color: #4E4741;
+  transition: 0.25s;
+}
+#hero a:link h3, #hero a:visited h3 {
+  font-size: 1.125rem;
+  font-weight: 600;
+}
+@media (min-width: 992px) {
+  #hero a:link h3, #hero a:visited h3 {
+    font-size: 1.5625rem;
+  }
+}
+#hero h4 {
+  font-size: 1rem;
+  font-weight: 400;
+}
+#hero:hover, #hero:active {
+  color: #fff;
+}
+
+a {
+  text-decoration: none;
+}
+
+.info-content {
+  display: inline-block;
+}
+
+.details-button {
+  display: inline-block;
+  text-decoration: none;
+  padding: 0px 20px;
+}
+@media (min-width: 768px) {
+  .details-button {
+    padding: 0px 13px;
+  }
+}
+.details-button > h4 {
+  color: #4E4741;
+  text-decoration: none;
+}
+.details-button > i {
+  color: #4E4741;
+  display: inline-block;
+  text-decoration: none;
+}
+
+.hero-button {
+  display: none;
+}
+
+/* =============
+    hero2
+============= */
+#hero2 > div {
+  display: grid;
+  grid-template-rows: repeat(8, 100px);
+  grid-template-areas: "h2-1" "h2-1" "h2-1" "h2-2" "h2-2" "h2-2" "h2-2" "h2-2";
+}
+#hero2 > div img {
+  width: 100%;
+}
+#hero2 > div #h2-1 {
+  background-image: url("../img/hero2/fruit-pastries.jpg");
+  background-position: center;
+  background-size: cover;
+  grid-area: h2-1;
+}
+#hero2 > div #h2-2 {
+  background-image: url("../img/hero2/cupcakes.jpg");
+  background-position: center;
+  background-size: cover;
+  grid-area: h2-2;
+}
+#hero2 > div #h2-3 {
+  background-image: url("../img/hero2/macarons.jpg");
+  background-position: center;
+  background-size: cover;
+  display: none;
+}
+@media (min-width: 768px) {
+  #hero2 > div {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1, 600px);
+    grid-template-areas: "h2-1 h2-2";
+  }
+}
+@media (min-width: 768px) {
+  #hero2 > div #h2-1 {
+    grid-area: h2-1;
+  }
+}
+@media (min-width: 768px) {
+  #hero2 > div #h2-2 {
+    grid-area: h2-2;
+  }
+}
+@media (min-width: 992px) {
+  #hero2 > div {
+    display: grid;
+    grid-template-columns: 16px 60% auto 16px;
+    grid-template-rows: repeat(1, 640px);
+    grid-template-areas: ". h2-1 h2-2 .";
+  }
+}
+@media (min-width: 992px) {
+  #hero2 > div #h2-1 {
+    grid-area: h2-1;
+  }
+}
+@media (min-width: 992px) {
+  #hero2 > div #h2-2 {
+    grid-area: h2-2;
+  }
+}
+@media (min-width: 1200px) {
+  #hero2 > div {
+    display: grid;
+    grid-template-columns: 40px 60% auto 40px;
+    grid-template-rows: repeat(2, 375px);
+    grid-template-areas: ". h2-1 h2-2 ." ". h2-1 h2-3 .";
+  }
+}
+@media (min-width: 1200px) {
+  #hero2 > div #h2-1 {
+    grid-area: h2-1;
+  }
+}
+@media (min-width: 1200px) {
+  #hero2 > div #h2-2 {
+    grid-area: h2-2;
+  }
+}
+@media (min-width: 1200px) {
+  #hero2 > div #h2-3 {
+    grid-area: h2-3;
+    display: list-item;
+  }
+}
+
+/* =============
+    testimonials
+============= */
+#testimonials {
+  margin-bottom: 24px;
+}
+@media (min-width: 768px) {
+  #testimonials {
+    display: grid;
+    grid-template-columns: 16px auto 16px;
+    grid-template-areas: ". testimonials .";
+    margin-bottom: 38px;
+  }
+}
+@media (min-width: 992px) {
+  #testimonials {
+    margin-bottom: 58px;
+  }
+}
+@media (min-width: 1200px) {
+  #testimonials {
+    grid-template-columns: auto 1200px auto;
+    margin-bottom: 66px;
+  }
+}
+#testimonials section div div h2 {
+  margin: 17px 0px 12px 0px;
+}
+@media (min-width: 768px) {
+  #testimonials > div {
+    grid-area: testimonials;
+  }
+}
+#testimonials > div #test-title {
+  display: grid;
+  grid-template-columns: 16px auto 16px;
+  grid-template-areas: ". title-test .";
+}
+#testimonials > div #test-title > h1 {
+  grid-area: title-test;
+  margin: 18px 0px 12px 0px;
+  font-size: 1.25rem;
+  font-weight: 400;
+}
+@media (min-width: 768px) {
+  #testimonials > div #test-title > h1 {
+    font-size: 1.75rem;
+    margin: 24px 0px 16px 0px;
+  }
+}
+@media (min-width: 992px) {
+  #testimonials > div #test-title > h1 {
+    font-size: 2.3125rem;
+    margin: 13px 0px 16px 0px;
+  }
+}
+@media (min-width: 1200px) {
+  #testimonials > div #test-title > h1 {
+    margin: 39px 0px 5px 0px;
+  }
+}
+@media (min-width: 768px) {
+  #testimonials > div ul {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas: "t1 t1 t2 t2" "t3 t3 t4 t4" ". t5 t5 .";
+    gap: 16px;
+  }
+}
+@media (min-width: 768px) {
+  #testimonials > div ul #t1 {
+    grid-area: t1;
+  }
+}
+@media (min-width: 768px) {
+  #testimonials > div ul #t2 {
+    grid-area: t2;
+  }
+}
+@media (min-width: 768px) {
+  #testimonials > div ul #t3 {
+    grid-area: t3;
+  }
+}
+@media (min-width: 768px) {
+  #testimonials > div ul #t4 {
+    grid-area: t4;
+  }
+}
+@media (min-width: 768px) {
+  #testimonials > div ul #t5 {
+    grid-area: t5;
+  }
+}
+@media (min-width: 992px) {
+  #testimonials > div ul {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-areas: "t1 t1 t2 t2 t3 t3" ". t4 t4 t5 t5 .";
+  }
+}
+@media (min-width: 992px) {
+  #testimonials > div ul #t1 {
+    grid-area: t1;
+  }
+}
+@media (min-width: 992px) {
+  #testimonials > div ul #t2 {
+    grid-area: t2;
+  }
+}
+@media (min-width: 992px) {
+  #testimonials > div ul #t3 {
+    grid-area: t3;
+  }
+}
+@media (min-width: 992px) {
+  #testimonials > div ul #t4 {
+    grid-area: t4;
+  }
+}
+@media (min-width: 992px) {
+  #testimonials > div ul #t5 {
+    grid-area: t5;
+  }
+}
+#testimonials > div ul li {
+  background-color: #EAE7E4;
+}
+#testimonials > div ul li img {
+  width: 100%;
+}
+#testimonials > div ul li #img-1t {
+  background-image: url("../img/testimonials/wedding-cake.jpg");
+  height: 250px;
+  background-position: center 30%;
+  background-size: cover;
+}
+#testimonials > div ul li #img-2t {
+  background-image: url("../img/testimonials/strawberry-cupcakes.jpg");
+  height: 250px;
+  background-position: center 80%;
+  background-size: cover;
+}
+#testimonials > div ul li #img-3t {
+  background-image: url("../img/testimonials/birthday-cake.jpg");
+  height: 250px;
+  background-position: center 87%;
+  background-size: cover;
+}
+#testimonials > div ul li #img-4t {
+  background-image: url("../img/testimonials/fruit-cake.jpg");
+  height: 250px;
+  background-position: center 87%;
+  background-size: cover;
+}
+#testimonials > div ul li #img-5t {
+  background-image: url("../img/testimonials/cake-display.jpg");
+  height: 250px;
+  background-position: center 87%;
+  background-size: cover;
+}
+#testimonials > div ul li section .test-content > div h2 {
+  font-size: 1.6875rem;
+  font-weight: 600;
+}
+#testimonials > div ul li section .test-content > div p {
+  font-size: 1rem;
+  font-weight: 400;
+}
+#testimonials > div ul section {
+  display: grid;
+  grid-template-columns: 16px auto 16px;
+  grid-template-areas: ". testimonials .";
+}
+#testimonials > div ul section .test-content {
+  grid-area: testimonials;
+}
+#testimonials > div ul section .test-content > div > h2 {
+  color: #4E4741;
+}
+#testimonials > div ul section .test-content > div > p {
+  color: #4E4741;
+}
+#testimonials > div ul section .test-content > div .readmore {
+  background-color: #F0CCC5;
+  color: #4E4741;
+  margin: 12px 17px 23px;
+}
+#testimonials > div ul section .test-content > div .readmore:hover {
+  background-color: #4E4741;
+  color: #F0CCC5;
+}
+
+#test-title h1 {
+  color: #4E4741;
+}

@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg width="366px" height="52px" viewBox="0 0 366 52" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <title>title</title>
+<svg width="53px" height="52px" viewBox="0 0 53 52" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Group 22</title>
     <defs>
         <polygon id="path-1" points="0 0 53 0 53 13 0 13"></polygon>
         <polygon id="path-3" points="0 4.85380237e-15 53 4.85380237e-15 53 27 0 27"></polygon>
         <polygon id="path-5" points="0.1799 0 0.8201 0 0.8201 5 0.1799 5"></polygon>
     </defs>
     <g id="Design" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="Desktop" transform="translate(-39.000000, -20.000000)">
+        <g id="Tablet" transform="translate(-39.000000, -20.000000)">
             <g id="title" transform="translate(39.000000, 20.000000)">
                 <g id="Group-22" transform="translate(0.000000, -0.000000)">
                     <g id="Group-3" transform="translate(0.000000, 16.000000)">
@@ -38,9 +38,6 @@
                     <path d="M25.5964351,0 C25.5964351,0 23.9607463,1.94883429 24.0007209,3.61910451 C24.041059,5.28937473 28,5.62365162 28,3.61910451 C28,1.6145574 25.6909206,2.50559103 25.5964351,0" id="Fill-18" fill="#FFFFFF"></path>
                     <path d="M17.5964351,0 C17.5964351,0 15.9607463,1.94883429 16.0007209,3.61910451 C16.0414224,5.28937473 20,5.62365162 20,3.61910451 C20,1.6145574 17.6909206,2.50559103 17.5964351,0" id="Fill-20" fill="#FFFFFF"></path>
                 </g>
-                <text id="Bredenbecks-Bakery" font-family="PlayfairDisplay-Regular, Playfair Display" font-size="30" font-weight="normal" fill="#EAE7E4">
-                    <tspan x="81" y="42">Bredenbecks Bakery</tspan>
-                </text>
             </g>
         </g>
     </g>
