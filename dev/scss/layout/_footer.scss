@@ -81,11 +81,6 @@ footer {
                 button{
                     background-color: $lightpink;
                     color: $darkbrown;
-                    display: block;
-
-                    margin-top: 16px;
-                    margin-bottom: 6px;
-
 
                     &:hover{
                         background-color: $darkbrown;
@@ -116,21 +111,9 @@ footer {
             >div{
                 .address-flex{
                     display: flex;
-                    margin: 18px 0px;
-                    >div{
-                        i{
-                            padding: 0px 5px;
-                        }
-                    }
                 }
                 .phone-flex{
                     display: flex;
-                    margin: 18px 0px;
-                    >div{
-                        i{
-                            padding: 0px 8px;
-                        }
-                    }
                 }
                 }
 
@@ -231,7 +214,7 @@ footer {
     display: flex;
     font-size: rem-calc(30px);
     li{
-    margin: 0px 16px 15px 0px;
+    padding: 0px 16px;
 
     a:link, a:visited{
         color: $white;
@@ -337,8 +320,6 @@ footer {
                     grid-area: title;
                     //    border: 1px solid red;
                 }
-
-                    padding: 12px 0px 16px 0px; 
             }
 
             #address-footer {
@@ -346,22 +327,12 @@ footer {
                     grid-area: loc;
                     //    border: 1px solid red;
                 }
-
-                
             }
 
             #sign-up-footer {
                 @include lg {
                     grid-area: sign-up;
                     //    border: 1px solid red;
-                }
-
-                >h2{
-                    padding: 12px 0px 16px 0px;
-
-                    @include lg{
-                        text-align: center;
-                    }
                 }
             }
 
@@ -370,17 +341,13 @@ footer {
                     grid-area: socials;
                     //    border: 1px solid red;
                 }
-                h2{
-                    padding: 12px 0px 16px 0px;
-                
-                }
             }
         }
 
-        // @include xl{
-        //     padding-left: 10%;
-        //     padding-right: 10%;
-        // }
+        @include xl{
+            padding-left: 10%;
+            padding-right: 10%;
+        }
     }
 
 
