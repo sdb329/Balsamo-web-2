@@ -21,12 +21,12 @@
       "oF" : 0,
       "pg" : 0
     },
-    "\/deploy\/img\/header\/logo.jpg" : {
+    "\/deploy\/img\/announcements\/ice-cream.jpg" : {
       "ft" : 16384,
-      "iS" : 12384,
+      "iS" : 359572,
       "jF" : 0,
       "oA" : 0,
-      "oAP" : "\/deploy\/img\/header\/logo.jpg",
+      "oAP" : "\/deploy\/img\/announcements\/ice-cream.jpg",
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,
@@ -34,12 +34,12 @@
       "q" : 100,
       "rq" : 75
     },
-    "\/deploy\/img\/hero-2\/hero-2-1.jpg" : {
+    "\/deploy\/img\/announcements\/macaron.jpg" : {
       "ft" : 16384,
-      "iS" : 97866,
+      "iS" : 440808,
       "jF" : 0,
       "oA" : 0,
-      "oAP" : "\/deploy\/img\/hero-2\/hero-2-1.jpg",
+      "oAP" : "\/deploy\/img\/announcements\/macaron.jpg",
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,
@@ -47,35 +47,32 @@
       "q" : 100,
       "rq" : 75
     },
-    "\/deploy\/img\/hero-2\/hero-2-2.jpg" : {
-      "ft" : 16384,
-      "iS" : 50432,
-      "jF" : 0,
+    "\/deploy\/img\/header\/logo.png" : {
+      "ft" : 32768,
+      "iS" : 8319,
       "oA" : 0,
-      "oAP" : "\/deploy\/img\/hero-2\/hero-2-2.jpg",
+      "oAP" : "\/deploy\/img\/header\/logo.png",
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,
+      "oT" : 1,
       "ou" : "lpckwebp-none",
       "q" : 100,
       "rq" : 75
     },
-    "\/deploy\/img\/hero-2\/hero-2-3.jpg" : {
-      "ft" : 16384,
-      "iS" : 62129,
-      "jF" : 0,
-      "oA" : 0,
-      "oAP" : "\/deploy\/img\/hero-2\/hero-2-3.jpg",
+    "\/deploy\/img\/header\/logo.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/deploy\/img\/header\/logo.svg",
       "oF" : 0,
-      "oIPL" : 0,
       "opt" : 0,
-      "ou" : "lpckwebp-none",
-      "q" : 100,
-      "rq" : 75
+      "plM" : 52780316221407,
+      "prP" : 0
     },
     "\/deploy\/img\/hero\/hero.jpg" : {
       "ft" : 16384,
-      "iS" : 502474,
+      "iS" : 496927,
       "jF" : 0,
       "oA" : 0,
       "oAP" : "\/deploy\/img\/hero\/hero.jpg",
@@ -86,12 +83,12 @@
       "q" : 100,
       "rq" : 75
     },
-    "\/deploy\/img\/new\/gallery-1.jpg" : {
+    "\/deploy\/img\/hero2\/cupcakes.jpg" : {
       "ft" : 16384,
-      "iS" : 58858,
+      "iS" : 653182,
       "jF" : 0,
       "oA" : 0,
-      "oAP" : "\/deploy\/img\/new\/gallery-1.jpg",
+      "oAP" : "\/deploy\/img\/hero2\/cupcakes.jpg",
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,
@@ -99,12 +96,12 @@
       "q" : 100,
       "rq" : 75
     },
-    "\/deploy\/img\/new\/gallery-2.jpg" : {
+    "\/deploy\/img\/hero2\/fruit-pastries.jpg" : {
       "ft" : 16384,
-      "iS" : 44480,
+      "iS" : 916523,
       "jF" : 0,
       "oA" : 0,
-      "oAP" : "\/deploy\/img\/new\/gallery-2.jpg",
+      "oAP" : "\/deploy\/img\/hero2\/fruit-pastries.jpg",
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,
@@ -112,12 +109,12 @@
       "q" : 100,
       "rq" : 75
     },
-    "\/deploy\/img\/new\/gallery-3.jpg" : {
+    "\/deploy\/img\/hero2\/macarons.jpg" : {
       "ft" : 16384,
-      "iS" : 87851,
+      "iS" : 573852,
       "jF" : 0,
       "oA" : 0,
-      "oAP" : "\/deploy\/img\/new\/gallery-3.jpg",
+      "oAP" : "\/deploy\/img\/hero2\/macarons.jpg",
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,
@@ -125,12 +122,12 @@
       "q" : 100,
       "rq" : 75
     },
-    "\/deploy\/img\/new\/gallery-4.jpg" : {
+    "\/deploy\/img\/testimonials\/birthday-cake.jpg" : {
       "ft" : 16384,
-      "iS" : 48356,
+      "iS" : 270235,
       "jF" : 0,
       "oA" : 0,
-      "oAP" : "\/deploy\/img\/new\/gallery-4.jpg",
+      "oAP" : "\/deploy\/img\/testimonials\/birthday-cake.jpg",
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,
@@ -138,12 +135,12 @@
       "q" : 100,
       "rq" : 75
     },
-    "\/deploy\/img\/new\/gallery-5.jpg" : {
+    "\/deploy\/img\/testimonials\/cake-display.jpg" : {
       "ft" : 16384,
-      "iS" : 41470,
+      "iS" : 753318,
       "jF" : 0,
       "oA" : 0,
-      "oAP" : "\/deploy\/img\/new\/gallery-5.jpg",
+      "oAP" : "\/deploy\/img\/testimonials\/cake-display.jpg",
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,
@@ -151,38 +148,25 @@
       "q" : 100,
       "rq" : 75
     },
-    "\/deploy\/img\/planning\/planning-left.jpg" : {
+    "\/deploy\/img\/testimonials\/fruit-cake.jpg" : {
       "ft" : 16384,
-      "iS" : 6214,
+      "iS" : 589300,
       "jF" : 0,
       "oA" : 0,
-      "oAP" : "\/deploy\/img\/planning\/planning-left.jpg",
+      "oAP" : "\/deploy\/img\/testimonials\/fruit-cake.jpg",
       "oF" : 0,
       "oIPL" : 0,
-      "opt" : 0,
+      "opt" : 1,
       "ou" : "lpckwebp-none",
       "q" : 100,
       "rq" : 75
     },
-    "\/deploy\/img\/planning\/planning-left.png" : {
-      "ft" : 32768,
-      "iS" : 20481,
-      "oA" : 0,
-      "oAP" : "\/deploy\/img\/planning\/planning-left.png",
-      "oF" : 0,
-      "oIPL" : 0,
-      "opt" : 0,
-      "oT" : 1,
-      "ou" : "lpckwebp-none",
-      "q" : 100,
-      "rq" : 75
-    },
-    "\/deploy\/img\/planning\/planning-right.jpg" : {
+    "\/deploy\/img\/testimonials\/strawberry-cupcakes.jpg" : {
       "ft" : 16384,
-      "iS" : 10265,
+      "iS" : 203541,
       "jF" : 0,
       "oA" : 0,
-      "oAP" : "\/deploy\/img\/planning\/planning-right.jpg",
+      "oAP" : "\/deploy\/img\/testimonials\/strawberry-cupcakes.jpg",
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,
@@ -190,15 +174,15 @@
       "q" : 100,
       "rq" : 75
     },
-    "\/deploy\/img\/planning\/planning-right.png" : {
-      "ft" : 32768,
-      "iS" : 24324,
+    "\/deploy\/img\/testimonials\/wedding-cake.jpg" : {
+      "ft" : 16384,
+      "iS" : 461726,
+      "jF" : 0,
       "oA" : 0,
-      "oAP" : "\/deploy\/img\/planning\/planning-right.png",
+      "oAP" : "\/deploy\/img\/testimonials\/wedding-cake.jpg",
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,
-      "oT" : 1,
       "ou" : "lpckwebp-none",
       "q" : 100,
       "rq" : 75
@@ -211,12 +195,55 @@
       "oAP" : "\/deploy\/index.html",
       "oF" : 0
     },
-    "\/design\/Grid Design.sketch" : {
+    "\/deploy\/js\/scripts-min.js" : {
+      "bF" : 0,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 0,
+      "oAP" : "\/deploy\/js\/scripts-min-min.js",
+      "oF" : 0,
+      "sC" : 3,
+      "tS" : 0
+    },
+    "\/design\/structure-tags.sketch" : {
       "cB" : 0,
       "ft" : 8192,
       "hM" : 0,
       "oA" : 0,
-      "oAP" : "\/design\/Grid Design.sketch",
+      "oAP" : "\/design\/structure-tags.sketch",
+      "oF" : 0
+    },
+    "\/dev\/content\/announcements.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/dev\/content\/announcements.html",
+      "oF" : 0
+    },
+    "\/dev\/content\/hero.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/dev\/content\/hero.html",
+      "oF" : 0
+    },
+    "\/dev\/content\/hero2.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/dev\/content\/hero2.html",
+      "oF" : 0
+    },
+    "\/dev\/content\/testimonials.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/dev\/content\/testimonials.html",
       "oF" : 0
     },
     "\/dev\/global\/footer.kit" : {
@@ -224,8 +251,8 @@
       "ft" : 2048,
       "hM" : 0,
       "oA" : 1,
-      "oAP" : "\/dev\/global\/footer.html",
-      "oF" : 0
+      "oAP" : "\/deploy\/index.html",
+      "oF" : 3
     },
     "\/dev\/global\/head.kit" : {
       "cB" : 0,
@@ -256,8 +283,8 @@
       "ft" : 2048,
       "hM" : 0,
       "oA" : 0,
-      "oAP" : "\/dev\/index.html",
-      "oF" : 0
+      "oAP" : "\/deploy\/index.html",
+      "oF" : 2
     },
     "\/dev\/js\/scripts.js" : {
       "bF" : 0,
@@ -265,8 +292,8 @@
       "ma" : 0,
       "mi" : 1,
       "oA" : 0,
-      "oAP" : "\/dev\/js\/scripts-min.js",
-      "oF" : 0,
+      "oAP" : "\/deploy\/js\/scripts-min.js",
+      "oF" : 2,
       "sC" : 3,
       "tS" : 0
     },
@@ -410,6 +437,62 @@
       "pg" : 0,
       "sct" : 0
     },
+    "\/dev\/scss\/sections\/_announcements.scss" : {
+      "aP" : 0,
+      "bl" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/dev\/scss\/sections\/_announcements.css",
+      "oF" : 0,
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 0
+    },
+    "\/dev\/scss\/sections\/_hero.scss" : {
+      "aP" : 0,
+      "bl" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/dev\/scss\/sections\/_hero.css",
+      "oF" : 0,
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 0
+    },
+    "\/dev\/scss\/sections\/_hero2.scss" : {
+      "aP" : 0,
+      "bl" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/dev\/scss\/sections\/_hero2.css",
+      "oF" : 0,
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 0
+    },
+    "\/dev\/scss\/sections\/_testimonials.scss" : {
+      "aP" : 0,
+      "bl" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/dev\/scss\/sections\/_testimonials.css",
+      "oF" : 0,
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 0
+    },
     "\/dev\/scss\/styles.scss" : {
       "aP" : 0,
       "bl" : 0,
@@ -418,177 +501,11 @@
       "ft" : 4,
       "ma" : 0,
       "oA" : 0,
-      "oAP" : "\/dev\/scss\/styles.css",
-      "oF" : 0,
+      "oAP" : "\/deploy\/css\/styles.css",
+      "oF" : 2,
       "oS" : 0,
       "pg" : 0,
       "sct" : 0
-    },
-    "\/img\/announcements\/ice-cream.jpg" : {
-      "ft" : 16384,
-      "iS" : 359572,
-      "jF" : 0,
-      "oA" : 0,
-      "oAP" : "\/img\/announcements\/ice-cream.jpg",
-      "oF" : 0,
-      "oIPL" : 0,
-      "opt" : 0,
-      "ou" : "lpckwebp-none",
-      "q" : 100,
-      "rq" : 75
-    },
-    "\/img\/announcements\/macaron.jpg" : {
-      "ft" : 16384,
-      "iS" : 440808,
-      "jF" : 0,
-      "oA" : 0,
-      "oAP" : "\/img\/announcements\/macaron.jpg",
-      "oF" : 0,
-      "oIPL" : 0,
-      "opt" : 0,
-      "ou" : "lpckwebp-none",
-      "q" : 100,
-      "rq" : 75
-    },
-    "\/img\/header\/logo.png" : {
-      "ft" : 32768,
-      "iS" : 8319,
-      "oA" : 0,
-      "oAP" : "\/img\/header\/logo.png",
-      "oF" : 0,
-      "oIPL" : 0,
-      "opt" : 0,
-      "oT" : 1,
-      "ou" : "lpckwebp-none",
-      "q" : 100,
-      "rq" : 75
-    },
-    "\/img\/header\/logo.svg" : {
-      "ft" : 2097152,
-      "miP" : 0,
-      "oA" : 2,
-      "oAP" : "\/img\/header\/logo.svg",
-      "oF" : 0,
-      "opt" : 0,
-      "plM" : 52780316221407,
-      "prP" : 0
-    },
-    "\/img\/hero\/hero.jpg" : {
-      "ft" : 16384,
-      "iS" : 496927,
-      "jF" : 0,
-      "oA" : 0,
-      "oAP" : "\/img\/hero\/hero.jpg",
-      "oF" : 0,
-      "oIPL" : 0,
-      "opt" : 0,
-      "ou" : "lpckwebp-none",
-      "q" : 100,
-      "rq" : 75
-    },
-    "\/img\/hero2\/cupcakes.jpg" : {
-      "ft" : 16384,
-      "iS" : 653182,
-      "jF" : 0,
-      "oA" : 0,
-      "oAP" : "\/img\/hero2\/cupcakes.jpg",
-      "oF" : 0,
-      "oIPL" : 0,
-      "opt" : 0,
-      "ou" : "lpckwebp-none",
-      "q" : 100,
-      "rq" : 75
-    },
-    "\/img\/hero2\/fruit-pastries.jpg" : {
-      "ft" : 16384,
-      "iS" : 916523,
-      "jF" : 0,
-      "oA" : 0,
-      "oAP" : "\/img\/hero2\/fruit-pastries.jpg",
-      "oF" : 0,
-      "oIPL" : 0,
-      "opt" : 0,
-      "ou" : "lpckwebp-none",
-      "q" : 100,
-      "rq" : 75
-    },
-    "\/img\/hero2\/macarons.jpg" : {
-      "ft" : 16384,
-      "iS" : 573852,
-      "jF" : 0,
-      "oA" : 0,
-      "oAP" : "\/img\/hero2\/macarons.jpg",
-      "oF" : 0,
-      "oIPL" : 0,
-      "opt" : 0,
-      "ou" : "lpckwebp-none",
-      "q" : 100,
-      "rq" : 75
-    },
-    "\/img\/testimonials\/birthday-cake.jpg" : {
-      "ft" : 16384,
-      "iS" : 270235,
-      "jF" : 0,
-      "oA" : 0,
-      "oAP" : "\/img\/testimonials\/birthday-cake.jpg",
-      "oF" : 0,
-      "oIPL" : 0,
-      "opt" : 0,
-      "ou" : "lpckwebp-none",
-      "q" : 100,
-      "rq" : 75
-    },
-    "\/img\/testimonials\/cake-display.jpg" : {
-      "ft" : 16384,
-      "iS" : 753318,
-      "jF" : 0,
-      "oA" : 0,
-      "oAP" : "\/img\/testimonials\/cake-display.jpg",
-      "oF" : 0,
-      "oIPL" : 0,
-      "opt" : 0,
-      "ou" : "lpckwebp-none",
-      "q" : 100,
-      "rq" : 75
-    },
-    "\/img\/testimonials\/fruit-cake.jpg" : {
-      "ft" : 16384,
-      "iS" : 589300,
-      "jF" : 0,
-      "oA" : 0,
-      "oAP" : "\/img\/testimonials\/fruit-cake.jpg",
-      "oF" : 0,
-      "oIPL" : 0,
-      "opt" : 0,
-      "ou" : "lpckwebp-none",
-      "q" : 100,
-      "rq" : 75
-    },
-    "\/img\/testimonials\/strawberry-cupcakes.jpg" : {
-      "ft" : 16384,
-      "iS" : 203541,
-      "jF" : 0,
-      "oA" : 0,
-      "oAP" : "\/img\/testimonials\/strawberry-cupcakes.jpg",
-      "oF" : 0,
-      "oIPL" : 0,
-      "opt" : 0,
-      "ou" : "lpckwebp-none",
-      "q" : 100,
-      "rq" : 75
-    },
-    "\/img\/testimonials\/wedding-cake.jpg" : {
-      "ft" : 16384,
-      "iS" : 461726,
-      "jF" : 0,
-      "oA" : 0,
-      "oAP" : "\/img\/testimonials\/wedding-cake.jpg",
-      "oF" : 0,
-      "oIPL" : 0,
-      "opt" : 0,
-      "ou" : "lpckwebp-none",
-      "q" : 100,
-      "rq" : 75
     }
   },
   "hooks" : [
