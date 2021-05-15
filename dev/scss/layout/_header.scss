@@ -13,11 +13,11 @@ header {
     >div {
         grid-area: header;
 
-        padding: 10px;
+        padding: 20px 0px;
 
-        img{
-            width: 100%;
-        }
+        // img{
+        //     width: 100%;
+        // }
     }
 
 }
@@ -26,9 +26,11 @@ header {
 
 
 #search {
+
+    padding: 17px 0px;
     @include md {
         font-size: rem-calc(30);
-        font-weight: 400;
+        padding: 20px 0px;
     }
 
     background-color: $gray;
@@ -37,10 +39,18 @@ header {
     grid-template-columns: 16px auto 16px;
     grid-template-areas: ". search .";
 
+    font-weight: 300;
+
     @include xl {
-        grid-template-columns: auto 1000px auto;
+        padding: 24px 0px;
+    }
+
+    @include xl {
+        // grid-template-columns: auto 1000px auto;
         font-size: rem-calc(35);
-        font-weight: 400;
+        padding: 27px 0px;
+   
+
 
     }
 
@@ -66,14 +76,24 @@ header {
                 }
 
                 background-color: transparent;
+                border: none;
+                border-bottom: 1px solid $lightbrown;
+                border-radius: 0px;
+                width: 80%;
+
             }
 
             button {
                 background-color: $lightpink;
                 color: $darkbrown;
+                padding: 6px 10px;
+                @include md{
+                    padding: 9px 15px;
+                }
                 &:hover{
                     background-color: $darkbrown;
                     color: $lightpink;
+
                 }
             }
         }
