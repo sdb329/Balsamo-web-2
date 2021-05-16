@@ -847,21 +847,28 @@ footer #socials-footer {
 }
 #hero ul #menu-hero {
   background-color: #E3A599;
-  padding: 20px 10px;
 }
-#hero ul #menu-hero a:link, #hero ul #menu-hero a:visited {
+#hero ul #menu-hero a:link,
+#hero ul #menu-hero a:visited {
+  padding: 20px 10px;
   grid-area: hero;
   color: #4E4741;
   transition: 0.25s;
 }
-#hero ul #menu-hero a:link:hover, #hero ul #menu-hero a:link:active, #hero ul #menu-hero a:visited:hover, #hero ul #menu-hero a:visited:active {
+#hero ul #menu-hero a:link:hover, #hero ul #menu-hero a:link:active,
+#hero ul #menu-hero a:visited:hover,
+#hero ul #menu-hero a:visited:active {
   background-color: #4E4741;
   color: #E3A599;
 }
-#hero ul #menu-hero a:link:hover h4, #hero ul #menu-hero a:link:active h4, #hero ul #menu-hero a:visited:hover h4, #hero ul #menu-hero a:visited:active h4 {
+#hero ul #menu-hero a:link:hover h4, #hero ul #menu-hero a:link:active h4,
+#hero ul #menu-hero a:visited:hover h4,
+#hero ul #menu-hero a:visited:active h4 {
   color: #E3A599;
 }
-#hero ul #menu-hero a:link:hover i, #hero ul #menu-hero a:link:active i, #hero ul #menu-hero a:visited:hover i, #hero ul #menu-hero a:visited:active i {
+#hero ul #menu-hero a:link:hover i, #hero ul #menu-hero a:link:active i,
+#hero ul #menu-hero a:visited:hover i,
+#hero ul #menu-hero a:visited:active i {
   color: #E3A599;
 }
 @media (min-width: 768px) {
@@ -871,21 +878,28 @@ footer #socials-footer {
 }
 #hero ul #location-hero {
   background-color: #F0CCC5;
-  padding: 40px 17px;
 }
-#hero ul #location-hero a:link, #hero ul #location-hero a:visited {
+#hero ul #location-hero a:link,
+#hero ul #location-hero a:visited {
+  padding: 40px 17px;
   grid-area: hero;
   color: #4E4741;
   transition: 0.25s;
 }
-#hero ul #location-hero a:link:hover, #hero ul #location-hero a:link:active, #hero ul #location-hero a:visited:hover, #hero ul #location-hero a:visited:active {
+#hero ul #location-hero a:link:hover, #hero ul #location-hero a:link:active,
+#hero ul #location-hero a:visited:hover,
+#hero ul #location-hero a:visited:active {
   background-color: #4E4741;
   color: #E3A599;
 }
-#hero ul #location-hero a:link:hover h4, #hero ul #location-hero a:link:active h4, #hero ul #location-hero a:visited:hover h4, #hero ul #location-hero a:visited:active h4 {
+#hero ul #location-hero a:link:hover h4, #hero ul #location-hero a:link:active h4,
+#hero ul #location-hero a:visited:hover h4,
+#hero ul #location-hero a:visited:active h4 {
   color: #F0CCC5;
 }
-#hero ul #location-hero a:link:hover i, #hero ul #location-hero a:link:active i, #hero ul #location-hero a:visited:hover i, #hero ul #location-hero a:visited:active i {
+#hero ul #location-hero a:link:hover i, #hero ul #location-hero a:link:active i,
+#hero ul #location-hero a:visited:hover i,
+#hero ul #location-hero a:visited:active i {
   color: #F0CCC5;
 }
 @media (min-width: 768px) {
@@ -909,25 +923,36 @@ footer #socials-footer {
     display: inline-block;
   }
 }
-#hero a:link, #hero a:visited {
+#hero a:link,
+#hero a:visited {
   color: #4E4741;
   transition: 0.25s;
 }
-#hero a:link h3, #hero a:visited h3 {
+#hero a:link h3,
+#hero a:visited h3 {
   font-size: 1.125rem;
   font-weight: 600;
 }
 @media (min-width: 992px) {
-  #hero a:link h3, #hero a:visited h3 {
+  #hero a:link h3,
+#hero a:visited h3 {
     font-size: 1.5625rem;
   }
 }
-#hero h4 {
+#hero #cakeflavor {
   font-size: 1rem;
   font-weight: 400;
 }
-#hero h4 span {
-  font-weight: bold;
+#hero #locationhero {
+  font-size: 1rem;
+  font-weight: 400;
+}
+#hero #locationhero span {
+  font-weight: 600;
+}
+#hero .hero-info {
+  font-size: 1.125rem;
+  font-weight: 600;
 }
 #hero:hover, #hero:active {
   color: #fff;
