@@ -25,10 +25,19 @@
             grid-template-columns: 16px auto 16px;
             grid-template-areas: ". hero .";
 
+
             a {
                 grid-area: hero;
+                >div{
+                    display: flex;
+                    align-items: center;
 
-                display: flex;
+                 .details-button{
+                      margin-left: auto;
+
+                  }
+
+                }
 
             }
         }
@@ -41,7 +50,7 @@
             a:link,
             a:visited {
 
-                padding: 20px 10px;
+                padding: 30px 10px;
 
 
                 grid-area: hero;
@@ -78,7 +87,7 @@
             a:link,
             a:visited {
 
-                padding: 40px 17px;
+                padding: 40px 10px;
 
 
                 grid-area: hero;
@@ -183,62 +192,22 @@ a {
 
 
 
-.info-content {
-
-    display: inline-block;
-}
-
 
 
 
 .details-button {
 
-    display: inline-block;
-    text-decoration: none;
 
-    padding: 0px 20px;
 
     @include md {
         padding: 0px 13px;
     }
-
-    >h4 {
-
-        color: $darkbrown;
-
-        text-decoration: none;
-
-    }
-
-    >i {
-        color: $darkbrown;
-        display: inline-block;
-        text-decoration: none;
-    }
 }
 
-
-.hero-info {
-    display: grid;
-    grid-template-columns: 90% auto;
-    grid-template-areas: "text button";
-
-    .info-content {
-        grid-area: text;
-
-    }
-
-    .details-button {
-        grid-area: button;
-        display: flex;
-        align-items: center;
-    }
-
-}
 
 @include lg {
     .hero-info {
-        display: inline-flex;
+
 
         i {
             padding: 0px 5px;

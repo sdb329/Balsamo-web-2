@@ -521,9 +521,16 @@ footer {
   grid-template-areas: ". footer .";
   background-color: #4E4741;
 }
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   footer {
-    justify-content: center;
+    width: 100%;
+    border: 1px solid red;
+    align-items: center;
+  }
+}
+@media (min-width: 1200px) {
+  footer {
+    grid-template-columns: auto 1000px auto;
   }
 }
 footer > div {
@@ -592,6 +599,7 @@ footer > div section #socials-footer ul li {
 }
 footer ul li > div .address-flex {
   display: flex;
+  align-items: center;
   margin: 18px 0px;
 }
 footer ul li > div .address-flex > div i {
@@ -599,10 +607,32 @@ footer ul li > div .address-flex > div i {
 }
 footer ul li > div .phone-flex {
   display: flex;
+  align-items: center;
   margin: 18px 0px;
 }
 footer ul li > div .phone-flex > div i {
   padding: 0px 8px;
+}
+footer ul li > div .phone-flex #phone1-1 a:link, footer ul li > div .phone-flex #phone1-1 a:visited {
+  color: #EAE7E4;
+  transition: 0.25;
+}
+footer ul li > div .phone-flex #phone1-1 a:link:hover, footer ul li > div .phone-flex #phone1-1 a:link:active, footer ul li > div .phone-flex #phone1-1 a:visited:hover, footer ul li > div .phone-flex #phone1-1 a:visited:active {
+  color: #F0CCC5;
+}
+footer ul li > div .phone-flex #phone1-2 a:link, footer ul li > div .phone-flex #phone1-2 a:visited {
+  color: #EAE7E4;
+  transition: 0.25;
+}
+footer ul li > div .phone-flex #phone1-2 a:link:hover, footer ul li > div .phone-flex #phone1-2 a:link:active, footer ul li > div .phone-flex #phone1-2 a:visited:hover, footer ul li > div .phone-flex #phone1-2 a:visited:active {
+  color: #F0CCC5;
+}
+footer ul li > div .phone-flex #phone1-3 a:link, footer ul li > div .phone-flex #phone1-3 a:visited {
+  color: #EAE7E4;
+  transition: 0.25;
+}
+footer ul li > div .phone-flex #phone1-3 a:link:hover, footer ul li > div .phone-flex #phone1-3 a:link:active, footer ul li > div .phone-flex #phone1-3 a:visited:hover, footer ul li > div .phone-flex #phone1-3 a:visited:active {
+  color: #F0CCC5;
 }
 footer ul li .bottom {
   background-color: #EAE7E4;
@@ -695,10 +725,15 @@ footer > div > section #sign-up-footer input {
 @media (min-width: 992px) {
   footer > div > section #socials-footer {
     grid-area: socials;
+    margin-left: auto;
+  }
+  footer > div > section #socials-footer h2 {
+    padding: 12px 0px 16px 70px;
   }
 }
 footer > div > section #socials-footer h2 {
-  padding: 12px 0px 16px 0px;
+  padding-top: 12px;
+  padding-bottom: 16px;
 }
 footer #address-footer {
   padding: 0px 40px;
@@ -759,52 +794,64 @@ footer #socials-footer {
 }
 #announcements ul li > div {
   grid-area: announce;
-  display: grid;
-  grid-template-columns: auto 30%;
-  grid-template-areas: "text image-event" "text image-event";
+  display: flex;
+}
+#announcements ul li > div > section {
+  display: flex;
+  align-items: center;
 }
 #announcements ul li > div .announce-content {
   grid-area: text;
+  display: grid;
+  grid-template-columns: 100% auto;
 }
-#announcements ul li > div .announce-content > div > h2 {
+#announcements ul li > div .announce-content > div article > h2 {
   color: #4E4741;
   font-size: 1.3125rem;
   font-weight: 400;
 }
 @media (min-width: 768px) {
-  #announcements ul li > div .announce-content > div > h2 {
+  #announcements ul li > div .announce-content > div article > h2 {
     font-size: 1.8125rem;
   }
 }
 @media (min-width: 768px) {
-  #announcements ul li > div .announce-content > div > h2 {
+  #announcements ul li > div .announce-content > div article > h2 {
     font-size: 1.9375rem;
   }
 }
-#announcements ul li > div .announce-content > div > button {
+#announcements ul li > div .announce-content > div .planning-button {
+  display: flex;
+  justify-content: flex-start;
+  margin-left: 0;
+}
+#announcements ul li > div .announce-content > div aside {
+  margin-left: auto;
+}
+#announcements ul li > div .announce-content > div aside > button {
   margin: 14px 0px;
   background-color: #F0CCC5;
   color: #4E4741;
 }
 @media (min-width: 768px) {
-  #announcements ul li > div .announce-content > div > button {
+  #announcements ul li > div .announce-content > div aside > button {
     margin: 20px 0px;
   }
 }
 @media (min-width: 992px) {
-  #announcements ul li > div .announce-content > div > button {
+  #announcements ul li > div .announce-content > div aside > button {
     margin: 22px 0px;
   }
 }
-#announcements ul li > div .announce-content > div > button:hover {
+#announcements ul li > div .announce-content > div aside > button:hover {
   background-color: #4E4741;
   color: #F0CCC5;
 }
 #announcements ul li > div .image-event {
+  margin-left: auto;
   grid-area: image-event;
 }
 #announcements ul li > div .image-event > div {
-  background-position: center;
   border: 4px #fff solid;
   height: 85px;
   width: 85px;
@@ -843,14 +890,20 @@ footer #socials-footer {
 }
 #hero ul li a {
   grid-area: hero;
+}
+#hero ul li a > div {
   display: flex;
+  align-items: center;
+}
+#hero ul li a > div .details-button {
+  margin-left: auto;
 }
 #hero ul #menu-hero {
   background-color: #E3A599;
 }
 #hero ul #menu-hero a:link,
 #hero ul #menu-hero a:visited {
-  padding: 20px 10px;
+  padding: 30px 10px;
   grid-area: hero;
   color: #4E4741;
   transition: 0.25s;
@@ -881,7 +934,7 @@ footer #socials-footer {
 }
 #hero ul #location-hero a:link,
 #hero ul #location-hero a:visited {
-  padding: 40px 17px;
+  padding: 40px 10px;
   grid-area: hero;
   color: #4E4741;
   transition: 0.25s;
@@ -962,48 +1015,13 @@ a {
   text-decoration: none;
 }
 
-.info-content {
-  display: inline-block;
-}
-
-.details-button {
-  display: inline-block;
-  text-decoration: none;
-  padding: 0px 20px;
-}
 @media (min-width: 768px) {
   .details-button {
     padding: 0px 13px;
   }
 }
-.details-button > h4 {
-  color: #4E4741;
-  text-decoration: none;
-}
-.details-button > i {
-  color: #4E4741;
-  display: inline-block;
-  text-decoration: none;
-}
-
-.hero-info {
-  display: grid;
-  grid-template-columns: 90% auto;
-  grid-template-areas: "text button";
-}
-.hero-info .info-content {
-  grid-area: text;
-}
-.hero-info .details-button {
-  grid-area: button;
-  display: flex;
-  align-items: center;
-}
 
 @media (min-width: 992px) {
-  .hero-info {
-    display: inline-flex;
-  }
   .hero-info i {
     padding: 0px 5px;
   }

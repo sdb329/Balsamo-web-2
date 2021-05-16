@@ -50,20 +50,34 @@
 
             >div {
                 grid-area: announce;
+
+                >section{
+
+                    display: flex;
+                    align-items: center;
+                }
                 // border: 1px solid red;
 
-                display: grid;
-                grid-template-columns: auto 30%;
-                // grid-template-rows: 200px 200px;
-                grid-template-areas:
-                    "text image-event"
-                    "text image-event";
+                // display: grid;
+                // grid-template-columns: auto 30%;
+
+                // grid-template-areas:
+                //     "text image-event"
+                //     "text image-event";
 
                 .announce-content {
                     grid-area: text;
+
+                    display: grid;
+                    grid-template-columns: 100% auto;
                     
 
                     >div{
+
+
+                        article{
+
+    
                         >h2{
                             color: $darkbrown;
                                 font-size: rem-calc(21);
@@ -75,7 +89,23 @@
                                 @include md{
                                     font-size: rem-calc(31);
                                 }
+
                         }
+                        
+
+                      
+                    }
+
+                    .planning-button{
+
+                    display: flex;
+                    justify-content: flex-start;
+                    margin-left: 0;
+                }
+
+                        aside{
+                         margin-left: auto;
+
                         
                         >button{
 
@@ -98,13 +128,23 @@
                             }
                         }
                     }
+                    }
                 }
 
+                display: flex;
+
                 .image-event {
+                    margin-left: auto;
                     grid-area: image-event;
 
+
                     >div {
-                    background-position: center;
+  
+
+
+
+
+                    // background-position: center;
                     border: 4px $white solid;
                     height: 85px;
                     width: 85px;

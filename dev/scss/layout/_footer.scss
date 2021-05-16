@@ -4,9 +4,21 @@
 
 footer {
 
-    @include md{
-        justify-content: center;
+    // @include md{
+    //     justify-content: center;
 
+    // }
+
+    @include lg{
+        // grid-template-columns: auto 1000px auto;
+        width: 100%;
+        border: 1px solid red;
+       align-items: center;
+    }
+
+    @include xl{
+        grid-template-columns: auto 1000px auto;
+ 
     }
 
     display: grid;
@@ -123,6 +135,7 @@ footer {
             >div{
                 .address-flex{
                     display: flex;
+                    align-items: center;
                     margin: 18px 0px;
                     >div{
                         i{
@@ -132,12 +145,47 @@ footer {
                 }
                 .phone-flex{
                     display: flex;
+                    align-items: center;
                     margin: 18px 0px;
                     >div{
+
                         i{
                             padding: 0px 8px;
                         }
                     }
+                    #phone1-1{
+                        a:link, a:visited{
+                            color: $gray;
+                            transition: 0.25;
+
+                            &:hover, &:active{
+                            color: $lightpink;
+                            }
+                        }
+                    }
+
+                    #phone1-2{
+                        a:link, a:visited{
+                            color: $gray;
+                            transition: 0.25;
+
+                            &:hover, &:active{
+                            color: $lightpink;
+                            }
+                        }
+                    }
+
+                    #phone1-3{
+                        a:link, a:visited{
+                            color: $gray;
+                            transition: 0.25;
+
+                            &:hover, &:active{
+                            color: $lightpink;
+                            }
+                        }
+                    }
+
                 }
                 }
 
@@ -160,6 +208,7 @@ footer {
 #social-media{
     display: flex;
     font-size: rem-calc(30px);
+
     li{
     margin: 0px 16px 15px 0px;
 
@@ -239,6 +288,8 @@ footer {
                 grid-template-areas:
                     "title title title"
                     "loc sign-up socials";
+
+ 
             }
 
             #title-footer {
@@ -255,6 +306,7 @@ footer {
                     grid-area: loc;
 
                 }
+              
 
                 
             }
@@ -281,13 +333,20 @@ footer {
             }
 
             #socials-footer {
+
                 @include lg {
                     grid-area: socials;
+                    margin-left: auto;
 
+                    h2{
+                        padding: 12px 0px 16px 70px;
+                    }
                 }
                 h2{
-                    padding: 12px 0px 16px 0px;
-                
+
+                    padding-top: 12px;
+                    padding-bottom: 16px;
+   
                 }
             }
         }
