@@ -492,9 +492,10 @@ header > div {
   }
 }
 header > div #button-container {
-  grid-area: survival;
   padding: 10px;
-  text-align: right;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
 }
 header > div #button-container button {
   background-color: #F0CCC5;
@@ -580,6 +581,11 @@ header > div #nav-container {
 @media (min-width: 992px) {
   #search > div form {
     grid-template-columns: 93% auto;
+  }
+}
+@media (min-width: 992px) {
+  #search > div form {
+    padding-top: 70px;
   }
 }
 #search > div form input {

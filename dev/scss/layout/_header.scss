@@ -24,9 +24,10 @@ header {
         }
 
         #button-container{
-            grid-area: survival;
             padding: 10px;
-            text-align: right;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
 
             button{
                 background-color: $lightpink;
@@ -103,7 +104,6 @@ header {
     }
 
     @include xl {
-        // grid-template-columns: auto 1000px auto;
         font-size: rem-calc(35);
         padding: 27px 0px;
    
@@ -129,6 +129,9 @@ header {
 
             }
             padding-top: 50px;
+            @include lg{
+                padding-top: 70px;
+            }
 
             input {
 
