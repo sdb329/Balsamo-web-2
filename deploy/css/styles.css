@@ -847,6 +847,7 @@ footer #socials-footer {
 }
 #hero ul #menu-hero {
   background-color: #E3A599;
+  padding: 20px 10px;
 }
 #hero ul #menu-hero a:link, #hero ul #menu-hero a:visited {
   grid-area: hero;
@@ -870,7 +871,7 @@ footer #socials-footer {
 }
 #hero ul #location-hero {
   background-color: #F0CCC5;
-  padding: 30px 17px;
+  padding: 40px 17px;
 }
 #hero ul #location-hero a:link, #hero ul #location-hero a:visited {
   grid-area: hero;
@@ -960,6 +961,28 @@ a {
   text-decoration: none;
 }
 
+.hero-info {
+  display: grid;
+  grid-template-columns: 90% auto;
+  grid-template-areas: "text button";
+}
+.hero-info .info-content {
+  grid-area: text;
+}
+.hero-info .details-button {
+  grid-area: button;
+  display: flex;
+  align-items: center;
+}
+
+@media (min-width: 992px) {
+  .hero-info {
+    display: inline-flex;
+  }
+  .hero-info i {
+    padding: 0px 5px;
+  }
+}
 .hero-button {
   display: none;
 }
