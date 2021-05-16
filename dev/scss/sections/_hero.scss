@@ -8,36 +8,19 @@
     img{
         width: 100%;
         object-fit: cover;
+        display: block;
     }
-//     background-image: url("../img/hero/hero.jpg");
-//     height: 252px;
-//     background-position: center top;
-//     background-size: cover;
-// // x right center left
-// // y top center bottom
 
-// @include md{
-//     height: 422px;
-// }
-// @include lg{
-//     height: 562px;
-// }
-// @include xl{
-//     height: 880px;
-// }
 }
 
 #hero {
+  
 
-    
     ul {
-        
 
+      
         li {
 
-            // @include xl{
-            //    grid-template-columns: auto 480px 16px;
-            // }
             display: grid;
             grid-template-columns: 16px auto 16px;
             grid-template-areas: ". hero .";
@@ -45,7 +28,18 @@
             a {
                 grid-area: hero;
 
+                display: flex;
+
+            // .hero-button{
+            //     margin-left: auto;
+            // }
+            // i{
+            //     margin-left: auto;
+            // }
+
             }
+
+           
 
         }
 
@@ -54,9 +48,28 @@
 
         #menu-hero{
 
-            justify-content: center;
+
+            a:link, a:visited{
+                grid-area: hero;
+                color: $darkbrown;
+                transition: 00.25s;
+
+                &:hover, &:active{
+                    background-color: $darkbrown;
+                    color: $darkpink;
+                    h4{
+                        color: $darkpink;
+                    }
+                    i{
+                        color: $darkpink;
+                    }
+                }
+            }
+
+
+            // justify-content: center;
             background-color: $darkpink;
-            padding: 30px 10px;
+            // padding: 30px 10px;
 @include md{
             justify-content: right;
         }
@@ -65,16 +78,34 @@
 
         #location-hero{
 
-            justify-content: center;
+            a:link, a:visited{
+                grid-area: hero;
+                color: $darkbrown;
+                transition: 00.25s;
+
+                &:hover, &:active{
+                    background-color: $darkbrown;
+                    color: $darkpink;
+                    h4{
+                        color: $lightpink;
+                    }
+                    i{
+                        color: $lightpink;
+                    }
+                }
+            }
+
+            // justify-content: center;
             background-color: $lightpink;
             padding: 30px 17px;
-            // display: flex;
+
 
 
             @include md{
             justify-content: left;
             }
 
+           
 
         }
 
@@ -115,6 +146,10 @@
             h4{
                 font-size: rem-calc(16);
                 font-weight: 400;
+                span{
+                    font-weight: bold;
+  
+            }
             }
 
             &:hover, &:active{
@@ -130,29 +165,18 @@
 
 
 
-    // .hero-info {
-    //     // display: grid;
-    //     // grid-template-columns: 90% auto;
-    //     // grid-template-areas: "text button";
+   
 
         .info-content {
-    //     //     // grid-area: text;
+
             display: inline-block;
-    //     //     text-decoration: none;
         }
 
 
-    //     //     >h3{
-    //     //         color: $darkbrown;
-    //     //     }
-    //     //     >h4{
-    //     //         color: $darkbrown;
-    //     //     }
-
-    //     }
+  
 
         .details-button {
-            // grid-area: button;
+ 
             display: inline-block;
             text-decoration: none;
 
@@ -163,6 +187,7 @@
             }
 
             >h4{
+
                 color: $darkbrown;
     
                 text-decoration: none;

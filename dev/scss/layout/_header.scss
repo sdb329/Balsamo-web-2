@@ -26,6 +26,10 @@ header {
 
 
 #search {
+    @include xl{
+        grid-template-columns: auto 1000px auto;
+    }
+
 
     padding: 17px 0px;
     @include md {
@@ -59,7 +63,21 @@ header {
 
 
         form {
+
+
+            display: grid;
+            grid-template-columns: 92% auto;
+            gap: 5px;
+
+
+            @include lg{
+
+                grid-template-columns: 93% auto;
+
+            }
+
             input {
+
 
                 color: $lightbrown;
 
@@ -75,20 +93,20 @@ header {
                     color: $lightbrown;
                 }
 
+                font-weight: 300;
                 background-color: transparent;
                 border: none;
                 border-bottom: 1px solid $lightbrown;
                 border-radius: 0px;
-                width: 80%;
-
+                // width: 100%;
             }
 
             button {
                 background-color: $lightpink;
                 color: $darkbrown;
-                padding: 6px 10px;
+                padding: 6px 0px;
                 @include md{
-                    padding: 9px 15px;
+                    padding: 9px 0px;
                 }
                 &:hover{
                     background-color: $darkbrown;

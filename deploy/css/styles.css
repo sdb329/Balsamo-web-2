@@ -445,6 +445,11 @@ header > div {
   grid-template-areas: ". search .";
   font-weight: 300;
 }
+@media (min-width: 1200px) {
+  #search {
+    grid-template-columns: auto 1000px auto;
+  }
+}
 @media (min-width: 768px) {
   #search {
     font-size: 1.875rem;
@@ -465,13 +470,23 @@ header > div {
 #search > div {
   grid-area: search;
 }
+#search > div form {
+  display: grid;
+  grid-template-columns: 92% auto;
+  gap: 5px;
+}
+@media (min-width: 992px) {
+  #search > div form {
+    grid-template-columns: 93% auto;
+  }
+}
 #search > div form input {
   color: #BFA48A;
+  font-weight: 300;
   background-color: transparent;
   border: none;
   border-bottom: 1px solid #BFA48A;
   border-radius: 0px;
-  width: 80%;
 }
 #search > div form input::placeholder {
   color: #BFA48A;
@@ -485,11 +500,11 @@ header > div {
 #search > div form button {
   background-color: #F0CCC5;
   color: #4E4741;
-  padding: 6px 10px;
+  padding: 6px 0px;
 }
 @media (min-width: 768px) {
   #search > div form button {
-    padding: 9px 15px;
+    padding: 9px 0px;
   }
 }
 #search > div form button:hover {
@@ -671,6 +686,12 @@ footer > div > section #sign-up-footer > h2 {
     text-align: center;
   }
 }
+footer > div > section #sign-up-footer input {
+  border: none;
+  font-weight: 600;
+  padding: 15px 10px;
+  width: 100%;
+}
 @media (min-width: 992px) {
   footer > div > section #socials-footer {
     grid-area: socials;
@@ -812,6 +833,7 @@ footer #socials-footer {
 #hero-image img {
   width: 100%;
   object-fit: cover;
+  display: block;
 }
 
 #hero ul li {
@@ -821,11 +843,25 @@ footer #socials-footer {
 }
 #hero ul li a {
   grid-area: hero;
+  display: flex;
 }
 #hero ul #menu-hero {
-  justify-content: center;
   background-color: #E3A599;
-  padding: 30px 10px;
+}
+#hero ul #menu-hero a:link, #hero ul #menu-hero a:visited {
+  grid-area: hero;
+  color: #4E4741;
+  transition: 0.25s;
+}
+#hero ul #menu-hero a:link:hover, #hero ul #menu-hero a:link:active, #hero ul #menu-hero a:visited:hover, #hero ul #menu-hero a:visited:active {
+  background-color: #4E4741;
+  color: #E3A599;
+}
+#hero ul #menu-hero a:link:hover h4, #hero ul #menu-hero a:link:active h4, #hero ul #menu-hero a:visited:hover h4, #hero ul #menu-hero a:visited:active h4 {
+  color: #E3A599;
+}
+#hero ul #menu-hero a:link:hover i, #hero ul #menu-hero a:link:active i, #hero ul #menu-hero a:visited:hover i, #hero ul #menu-hero a:visited:active i {
+  color: #E3A599;
 }
 @media (min-width: 768px) {
   #hero ul #menu-hero {
@@ -833,9 +869,23 @@ footer #socials-footer {
   }
 }
 #hero ul #location-hero {
-  justify-content: center;
   background-color: #F0CCC5;
   padding: 30px 17px;
+}
+#hero ul #location-hero a:link, #hero ul #location-hero a:visited {
+  grid-area: hero;
+  color: #4E4741;
+  transition: 0.25s;
+}
+#hero ul #location-hero a:link:hover, #hero ul #location-hero a:link:active, #hero ul #location-hero a:visited:hover, #hero ul #location-hero a:visited:active {
+  background-color: #4E4741;
+  color: #E3A599;
+}
+#hero ul #location-hero a:link:hover h4, #hero ul #location-hero a:link:active h4, #hero ul #location-hero a:visited:hover h4, #hero ul #location-hero a:visited:active h4 {
+  color: #F0CCC5;
+}
+#hero ul #location-hero a:link:hover i, #hero ul #location-hero a:link:active i, #hero ul #location-hero a:visited:hover i, #hero ul #location-hero a:visited:active i {
+  color: #F0CCC5;
 }
 @media (min-width: 768px) {
   #hero ul #location-hero {
@@ -874,6 +924,9 @@ footer #socials-footer {
 #hero h4 {
   font-size: 1rem;
   font-weight: 400;
+}
+#hero h4 span {
+  font-weight: bold;
 }
 #hero:hover, #hero:active {
   color: #fff;

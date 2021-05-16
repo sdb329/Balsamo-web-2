@@ -6,18 +6,23 @@ footer {
 
     @include md{
         justify-content: center;
+
     }
+
     display: grid;
     grid-template-columns: 16px auto 16px;
     grid-template-areas: ". footer .";
+
 
     background-color: $darkbrown;
 
     >div {
         grid-area: footer;
-        // border: 1px solid blueviolet;
+
+
 
         section{
+
             #title-footer{
                 color: $gray;
 
@@ -25,10 +30,12 @@ footer {
                 font-weight: 600;
             }
             #address-footer{
+
                 >ul{
                     >li{
                         h3{
                             color: $gray;
+
 
 
                 font-size: rem-calc(16);
@@ -146,92 +153,16 @@ footer {
         }
     }
 
-    // #section1-1 {
-    //     display: grid; 
-    //     grid-template-columns: 1fr 1fr;
-    //     // grid-template-rows: 200px 200px;
-    //     grid-template-areas:
-    //         "symbol1 address1"
-    //         "symbol2 phone";
-
-    //     #symbol1-1 {
-    //         grid-area: symbol1;
-    //     }
-
-    //     #address1-1 {
-    //         grid-area: address1;
-    //     }
-
-    //     #symbol2-1 {
-    //         grid-area: symbol2;
-    //     }
-
-    //     #phone1-1 {
-    //         grid-area: phone;
-    //     }
-
-    // }
 
 
-    // #section1-2 {
-    //     display: grid;
-    //     grid-template-columns: 1fr 1fr;
 
-    //     grid-template-areas:
-    //         "symbol1 address1"
-    //         "symbol2 phone";
-
-    //     #symbol1-2 {
-    //         grid-area: symbol1;
-    //     }
-
-    //     #address1-2 {
-    //         grid-area: address1;
-    //     }
-
-    //     #symbol2-2 {
-    //         grid-area: symbol2;
-    //     }
-
-    //     #phone1-2 {
-    //         grid-area: phone;
-    //     }
-
-    // }
-
-
-    // #section1-3 {
-    //     display: grid;
-    //     grid-template-columns: 1fr 1fr;
-
-    //     grid-template-areas:
-    //         "symbol1 address1"
-    //         "symbol2 phone";
-
-
-    //     #symbol1-3 {
-    //         grid-area: symbol1;
-    //     }
-
-    //     #address1-3 {
-    //         grid-area: address1;
-    //     }
-
-    //     #symbol2-3 {
-    //         grid-area: symbol2;
-    //     }
-
-    //     #phone1-3 {
-    //         grid-area: phone;
-    //     }
-
-    // }
 
 #social-media{
     display: flex;
     font-size: rem-calc(30px);
     li{
     margin: 0px 16px 15px 0px;
+
 
     a:link, a:visited{
         color: $white;
@@ -245,31 +176,7 @@ footer {
     }
 }
 
-    // #social-media {
 
-    //     display: grid;
-    //     grid-template-columns: 16px auto auto auto auto 16px;
-
-    //     grid-template-areas: ". yt t ig fb .";
-
-
-    //     #yt {
-    //         grid-area: yt;
-
-    //     }
-
-    //     #t {
-    //         grid-area: t;
-    //     }
-
-    //     #ig {
-    //         grid-area: ig;
-    //     }
-
-    //     #fb {
-    //         grid-area: fb;
-    //     }
-    // }
 
 
 
@@ -283,11 +190,13 @@ footer {
             @include md {
                 display: grid;
                 grid-template-columns: auto auto;
-                // grid-template-rows: 200px 200px;
+
                 grid-template-areas:
                     "title title"
                     "loc sign-up"
                     "loc socials";
+
+
             }
 
 
@@ -295,28 +204,28 @@ footer {
             #title-footer {
                 @include md {
                     grid-area: title;
-                    //    border: 1px solid red;
+
                 }
             }
 
             #address-footer {
                 @include md {
                     grid-area: loc;
-                    //    border: 1px solid red;
+
                 }
             }
 
             #sign-up-footer {
                 @include md {
                     grid-area: sign-up;
-                    //    border: 1px solid red;
+
                 }
             }
 
             #socials-footer {
                 @include md {
                     grid-area: socials;
-                    //    border: 1px solid red;
+
                 }
             }
 
@@ -326,7 +235,7 @@ footer {
             @include lg {
                 display: grid;
                 grid-template-columns: auto auto auto;
-                // grid-template-rows: 200px 200px;
+
                 grid-template-areas:
                     "title title title"
                     "loc sign-up socials";
@@ -335,7 +244,7 @@ footer {
             #title-footer {
                 @include lg {
                     grid-area: title;
-                    //    border: 1px solid red;
+
                 }
 
                     padding: 12px 0px 16px 0px; 
@@ -344,7 +253,7 @@ footer {
             #address-footer {
                 @include lg {
                     grid-area: loc;
-                    //    border: 1px solid red;
+
                 }
 
                 
@@ -353,7 +262,7 @@ footer {
             #sign-up-footer {
                 @include lg {
                     grid-area: sign-up;
-                    //    border: 1px solid red;
+
                 }
 
                 >h2{
@@ -363,12 +272,18 @@ footer {
                         text-align: center;
                     }
                 }
+                input{
+                    border: none;
+                    font-weight: 600;
+                    padding: 15px 10px;
+                    width: 100%;
+                }
             }
 
             #socials-footer {
                 @include lg {
                     grid-area: socials;
-                    //    border: 1px solid red;
+
                 }
                 h2{
                     padding: 12px 0px 16px 0px;
@@ -377,16 +292,9 @@ footer {
             }
         }
 
-        // @include xl{
-        //     padding-left: 10%;
-        //     padding-right: 10%;
-        // }
+
     }
 
-
-    // #title-footer{
-    //     padding: 0px 40px;
-    // }
     #address-footer{
         padding: 0px 40px;
     }
