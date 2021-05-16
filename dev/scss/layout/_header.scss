@@ -2,28 +2,87 @@
     Header
 ============= */
 
+/* =============
+    Header
+============= */
+
+/* =============
+    Header
+============= */
 header {
-
     background-color: $darkbrown;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
 
-    display: grid;
-    grid-template-columns: 16px auto 16px;
-    grid-template-areas: ". header .";
+    >div{
+        display: grid;
+        grid-template-areas: 
+        "burger survival"
+        "nav nav";
+        grid-template-columns: 20% auto;
 
-    >div {
-        grid-area: header;
 
-        padding: 20px 0px;
+        @include lg{
+            grid-template-areas: "nav survival";
+            grid-template-columns: 20% auto;
+        }
 
-        // img{
-        //     width: 100%;
-        // }
+        #button-container{
+            grid-area: survival;
+            padding: 10px;
+            text-align: right;
+
+            button{
+                background-color: $lightpink;
+                color: $darkbrown;
+                display: inline-block;
+                font-size: rem-calc(18);
+                padding: 10px 20px;
+                transition: 0.25s;
+
+                &:hover{
+                    background-color: $darkbrown;
+                    color: $lightpink;
+                    border: 1px solid $lightpink;
+                }
+            }
+        }
+
+        #burger-container {
+            align-items: center;
+            display: flex;
+            grid-area: burger;
+            padding: 10px;
+
+            @include lg{
+                display: none !important;
+            }
+
+            i{
+                cursor: pointer;
+                font-size: rem-calc(30);
+                color: $gray;
+
+            }
+        }
+
+        #nav-container {
+            background-color: $darkbrown;
+            display: none;
+            grid-area: nav;
+            padding: 20px 10px 10px;
+
+            @include lg {
+                background-color: $darkbrown;
+                display: block !important;
+            }
+        }
+  
+        
     }
-
 }
-
-
-
 
 #search {
     @include xl{

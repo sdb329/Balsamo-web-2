@@ -426,15 +426,75 @@ textarea {
 /* =============
     Header
 ============= */
+/* =============
+    Header
+============= */
+/* =============
+    Header
+============= */
 header {
   background-color: #4E4741;
-  display: grid;
-  grid-template-columns: 16px auto 16px;
-  grid-template-areas: ". header .";
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
 header > div {
-  grid-area: header;
-  padding: 20px 0px;
+  display: grid;
+  grid-template-areas: "burger survival" "nav nav";
+  grid-template-columns: 20% auto;
+}
+@media (min-width: 992px) {
+  header > div {
+    grid-template-areas: "nav survival";
+    grid-template-columns: 20% auto;
+  }
+}
+header > div #button-container {
+  grid-area: survival;
+  padding: 10px;
+  text-align: right;
+}
+header > div #button-container button {
+  background-color: #F0CCC5;
+  color: #4E4741;
+  display: inline-block;
+  font-size: 1.125rem;
+  padding: 10px 20px;
+  transition: 0.25s;
+}
+header > div #button-container button:hover {
+  background-color: #4E4741;
+  color: #F0CCC5;
+  border: 1px solid #F0CCC5;
+}
+header > div #burger-container {
+  align-items: center;
+  display: flex;
+  grid-area: burger;
+  padding: 10px;
+}
+@media (min-width: 992px) {
+  header > div #burger-container {
+    display: none !important;
+  }
+}
+header > div #burger-container i {
+  cursor: pointer;
+  font-size: 1.875rem;
+  color: #EAE7E4;
+}
+header > div #nav-container {
+  background-color: #4E4741;
+  display: none;
+  grid-area: nav;
+  padding: 20px 10px 10px;
+}
+@media (min-width: 992px) {
+  header > div #nav-container {
+    background-color: #4E4741;
+    display: block !important;
+  }
 }
 
 #search {
