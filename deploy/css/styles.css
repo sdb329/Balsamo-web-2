@@ -423,12 +423,53 @@ textarea {
 /* =============
     Navigation
 ============= */
-/* =============
-    Header
-============= */
-/* =============
-    Header
-============= */
+#nav-container ul {
+  height: 100%;
+}
+@media (min-width: 992px) {
+  #nav-container ul {
+    display: flex;
+  }
+}
+#nav-container ul li {
+  margin-bottom: 20px;
+}
+@media (min-width: 992px) {
+  #nav-container ul li {
+    align-items: center;
+    border-right: 2px solid #EAE7E4;
+    display: flex;
+    margin-bottom: 0px;
+  }
+}
+#nav-container ul li a:link, #nav-container ul li a:visited {
+  color: #EAE7E4;
+  font-family: "Playfair Display," serif;
+  padding: 0 20px;
+  text-decoration: none;
+  transition: 0.25s;
+}
+@media (min-width: 992px) {
+  #nav-container ul li a:link, #nav-container ul li a:visited {
+    color: #EAE7E4;
+  }
+}
+#nav-container ul li a:link:hover, #nav-container ul li a:link:active, #nav-container ul li a:visited:hover, #nav-container ul li a:visited:active {
+  color: #E3A599;
+}
+#nav-container ul li:first-child {
+  border: none;
+  display: none;
+}
+@media (min-width: 768px) {
+  #nav-container ul li:first-child {
+    display: list-item;
+  }
+}
+#nav-container ul li:last-child {
+  border: none;
+}
+
 /* =============
     Header
 ============= */
@@ -498,7 +539,7 @@ header > div #nav-container {
 }
 
 #search {
-  padding: 17px 0px;
+  padding: 40px 0px;
   background-color: #EAE7E4;
   display: grid;
   grid-template-columns: 16px auto 16px;
@@ -534,6 +575,7 @@ header > div #nav-container {
   display: grid;
   grid-template-columns: 92% auto;
   gap: 5px;
+  padding-top: 50px;
 }
 @media (min-width: 992px) {
   #search > div form {
