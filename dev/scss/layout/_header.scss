@@ -1,8 +1,6 @@
 /* =============
     Header
 ============= */
-
-
 header {
     background-color: $darkbrown;
     left: 0;
@@ -10,26 +8,24 @@ header {
     top: 0;
     width: 100%;
 
-    >div{
+    >div {
         display: grid;
-        grid-template-areas: 
-        "burger survival"
-        "nav nav";
+        grid-template-areas: "burger survival"
+            "nav nav";
         grid-template-columns: 20% auto;
 
-
-        @include lg{
+        @include lg {
             grid-template-areas: "nav survival";
             grid-template-columns: 20% auto;
         }
 
-        #button-container{
-            padding: 10px;
-            display: flex;
+        #button-container {
             align-items: center;
+            display: flex;
             justify-content: flex-end;
+            padding: 10px;
 
-            button{
+            button {
                 background-color: $lightpink;
                 color: $darkbrown;
                 display: inline-block;
@@ -37,10 +33,10 @@ header {
                 padding: 10px 20px;
                 transition: 0.25s;
 
-                &:hover{
+                &:hover {
                     background-color: $darkbrown;
-                    color: $lightpink;
                     border: 1px solid $lightpink;
+                    color: $lightpink;
                 }
             }
         }
@@ -51,15 +47,14 @@ header {
             grid-area: burger;
             padding: 10px;
 
-            @include lg{
+            @include lg {
                 display: none !important;
             }
 
-            i{
+            i {
+                color: $gray;
                 cursor: pointer;
                 font-size: rem-calc(30);
-                color: $gray;
-
             }
         }
 
@@ -74,70 +69,48 @@ header {
                 display: block !important;
             }
         }
-  
-        
     }
 }
 
 #search {
-    @include xl{
-        grid-template-columns: auto 1000px auto;
+    background-color: $gray;
+    display: grid;
+    font-weight: 300;
+    grid-template-areas: ". search .";
+    grid-template-columns: 16px auto 16px;
+    padding: 40px 0px;
+
+    @include xl {
+        font-size: rem-calc(35);
+        padding: 27px 0px;
     }
 
-
-    padding: 40px 0px;
     @include md {
         font-size: rem-calc(30);
         padding: 20px 0px;
     }
 
-    background-color: $gray;
-
-    display: grid;
-    grid-template-columns: 16px auto 16px;
-    grid-template-areas: ". search .";
-
-    font-weight: 300;
-
-    @include xl {
-        padding: 24px 0px;
-    }
-
-    @include xl {
-        font-size: rem-calc(35);
-        padding: 27px 0px;
-   
-
-
-    }
-
     >div {
         grid-area: search;
 
-
         form {
-
-
             display: grid;
-            grid-template-columns: 92% auto;
             gap: 5px;
-
-
-            @include lg{
-
-                grid-template-columns: 93% auto;
-
-            }
+            grid-template-columns: 92% auto;
             padding-top: 50px;
-            @include lg{
+
+            @include lg {
                 padding-top: 70px;
             }
 
             input {
-
-
+                // width: 100%;
+                background-color: transparent;
+                border: none;
+                border-bottom: 1px solid $lightbrown;
+                border-radius: 0px;
                 color: $lightbrown;
-          
+                font-weight: 300;
 
                 &::placeholder {
                     color: $lightbrown;
@@ -150,29 +123,22 @@ header {
                 &::-ms-input-placeholder {
                     color: $lightbrown;
                 }
-
-                font-weight: 300;
-                background-color: transparent;
-                border: none;
-                border-bottom: 1px solid $lightbrown;
-                border-radius: 0px;
-                // width: 100%;
             }
 
             button {
                 background-color: $lightpink;
                 color: $darkbrown;
                 padding: 6px 0px;
-                @include md{
+
+                @include md {
                     padding: 9px 0px;
                 }
-                &:hover{
+
+                &:hover {
                     background-color: $darkbrown;
                     color: $lightpink;
-
                 }
             }
         }
     }
-
 }

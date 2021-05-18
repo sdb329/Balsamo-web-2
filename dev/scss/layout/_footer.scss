@@ -4,20 +4,15 @@
 
 footer {
 
-    // @include md{
-    //     justify-content: center;
 
-    // }
-
-    @include lg{
-        // grid-template-columns: auto 1000px auto;
+    @include lg {
         width: 100%;
-       align-items: center;
+        align-items: center;
     }
 
-    @include xl{
+    @include xl {
         grid-template-columns: auto 1000px auto;
- 
+
     }
 
     display: grid;
@@ -32,32 +27,35 @@ footer {
 
 
 
-        section{
+        section {
 
-            #title-footer{
+            #title-footer {
                 color: $gray;
 
                 font-size: rem-calc(20);
                 font-weight: 600;
             }
-            #address-footer{
 
-                >ul{
-                    >li{
-                        h3{
+            #address-footer {
+
+                >ul {
+                    >li {
+                        h3 {
                             color: $gray;
 
 
 
-                font-size: rem-calc(16);
-                font-weight: 500;
+                            font-size: rem-calc(16);
+                            font-weight: 500;
                         }
-                        >div{
-                            >div{
-                                i{
-                                color: $darkpink;
+
+                        >div {
+                            >div {
+                                i {
+                                    color: $darkpink;
                                 }
-                                a{
+
+                                a {
                                     color: $gray;
 
                                     font-size: rem-calc(12);
@@ -65,7 +63,8 @@ footer {
                                 }
                             }
                         }
-                        address{
+
+                        address {
                             color: $gray;
 
                             font-size: rem-calc(12);
@@ -74,29 +73,32 @@ footer {
                     }
                 }
             }
-            #sign-up-footer{
-                h2{
+
+            #sign-up-footer {
+                h2 {
                     color: $gray;
                     font-size: rem-calc(20);
                     font-weight: 600;
                 }
-                input{
+
+                input {
                     background-color: $gray;
                     color: $darkbrown;
 
-                        &::placeholder {
-                            color: $darkbrown;
-                        }
-        
-                        &:-ms-input-placeholder {
-                            color: $darkbrown;
-                        }
-        
-                        &::-ms-input-placeholder {
-                            color: $darkbrown;
-                        }
+                    &::placeholder {
+                        color: $darkbrown;
+                    }
+
+                    &:-ms-input-placeholder {
+                        color: $darkbrown;
+                    }
+
+                    &::-ms-input-placeholder {
+                        color: $darkbrown;
+                    }
                 }
-                button{
+
+                button {
                     background-color: $lightpink;
                     color: $darkbrown;
                     display: block;
@@ -105,21 +107,23 @@ footer {
                     margin-bottom: 6px;
 
 
-                    &:hover{
+                    &:hover {
                         background-color: $darkbrown;
                         color: $lightpink;
                         border: 0.5px solid $lightbrown;
                     }
                 }
             }
-            #socials-footer{
-                h2{
+
+            #socials-footer {
+                h2 {
                     color: $gray;
                     font-size: rem-calc(20);
                     font-weight: 600;
                 }
-                ul{
-                    li{
+
+                ul {
+                    li {
                         color: white;
                     }
                 }
@@ -129,73 +133,85 @@ footer {
     }
 
 
-    ul{
-        li{
-            >div{
-                .address-flex{
+    ul {
+        li {
+            >div {
+                .address-flex {
                     display: flex;
                     align-items: center;
                     margin: 18px 0px;
-                    >div{
-                        i{
+
+                    >div {
+                        i {
                             padding: 0px 5px;
                         }
                     }
                 }
-                .phone-flex{
+
+                .phone-flex {
                     display: flex;
                     align-items: center;
                     margin: 18px 0px;
-                    >div{
 
-                        i{
+                    >div {
+
+                        i {
                             padding: 0px 8px;
                         }
                     }
-                    #phone1-1{
-                        a:link, a:visited{
+
+                    #phone1-1 {
+
+                        a:link,
+                        a:visited {
                             color: $gray;
                             transition: 0.25;
 
-                            &:hover, &:active{
-                            color: $lightpink;
+                            &:hover,
+                            &:active {
+                                color: $lightpink;
                             }
                         }
                     }
 
-                    #phone1-2{
-                        a:link, a:visited{
+                    #phone1-2 {
+
+                        a:link,
+                        a:visited {
                             color: $gray;
                             transition: 0.25;
 
-                            &:hover, &:active{
-                            color: $lightpink;
+                            &:hover,
+                            &:active {
+                                color: $lightpink;
                             }
                         }
                     }
 
-                    #phone1-3{
-                        a:link, a:visited{
+                    #phone1-3 {
+
+                        a:link,
+                        a:visited {
                             color: $gray;
                             transition: 0.25;
 
-                            &:hover, &:active{
-                            color: $lightpink;
+                            &:hover,
+                            &:active {
+                                color: $lightpink;
                             }
                         }
                     }
 
                 }
-                }
+            }
 
 
-                .bottom{
-                    background-color: $gray;
-                    height: 1px;
-                    margin: 10px 0px;
-                    width: 100%;
+            .bottom {
+                background-color: $gray;
+                height: 1px;
+                margin: 10px 0px;
+                width: 100%;
 
-                }
             }
         }
     }
@@ -204,25 +220,6 @@ footer {
 
 
 
-#social-media{
-    display: flex;
-    font-size: rem-calc(30px);
-
-    li{
-    margin: 0px 16px 15px 0px;
-
-
-    a:link, a:visited{
-        color: $white;
-        transition: 0.25s;
-
-        &:hover, &:active{
-            color: $lightpink;
-        }
-    }
-
-    }
-}
 
 
 
@@ -230,7 +227,9 @@ footer {
 
 
 
-footer {
+
+
+
     >div {
 
 
@@ -288,7 +287,7 @@ footer {
                     "title title title"
                     "loc sign-up socials";
 
- 
+
             }
 
             #title-footer {
@@ -297,7 +296,7 @@ footer {
 
                 }
 
-                    padding: 12px 0px 16px 0px; 
+                padding: 12px 0px 16px 0px;
             }
 
             #address-footer {
@@ -305,9 +304,9 @@ footer {
                     grid-area: loc;
 
                 }
-              
 
-                
+
+
             }
 
             #sign-up-footer {
@@ -316,14 +315,15 @@ footer {
 
                 }
 
-                >h2{
+                >h2 {
                     padding: 12px 0px 16px 0px;
 
-                    @include lg{
+                    @include lg {
                         text-align: center;
                     }
                 }
-                input{
+
+                input {
                     border: none;
                     font-weight: 600;
                     padding: 15px 10px;
@@ -337,15 +337,16 @@ footer {
                     grid-area: socials;
                     margin-left: auto;
 
-                    h2{
+                    h2 {
                         padding: 12px 0px 16px 70px;
                     }
                 }
-                h2{
+
+                h2 {
 
                     padding-top: 12px;
                     padding-bottom: 16px;
-   
+
                 }
             }
         }
@@ -353,13 +354,37 @@ footer {
 
     }
 
-    #address-footer{
+    #address-footer {
         padding: 0px 40px;
     }
+
     #sign-up-footer {
         padding: 0px 40px;
     }
-    #socials-footer{
+
+    #socials-footer {
         padding: 0px 40px;
+    }
+}
+
+#social-media {
+    display: flex;
+    font-size: rem-calc(30px);
+
+    li {
+        margin: 0px 16px 15px 0px;
+
+
+        a:link,
+        a:visited {
+            color: $white;
+            transition: 0.25s;
+
+            &:hover,
+            &:active {
+                color: $lightpink;
+            }
+        }
+
     }
 }

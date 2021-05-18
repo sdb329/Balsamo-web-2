@@ -1,51 +1,54 @@
 /* =============
     Navigation
 ============= */
- #nav-container{
-    ul{
+#nav-container {
+    ul {
         height: 100%;
 
         @include lg {
             display: flex;
         }
 
-        li{
+        li {
             margin-bottom: 20px;
 
-            @include lg{
+            @include lg {
                 align-items: center;
                 border-right: 2px solid $gray;
                 display: flex;
                 margin-bottom: 0px;
             }
-            a:link, a:visited {
+
+            a:link,
+            a:visited {
                 color: $gray;
-                font-family: 'Playfair Display,' serif;
+                font-family: 'Playfair Display,'serif;
                 padding: 0 20px;
                 text-decoration: none;
                 transition: 0.25s;
 
-                @include lg{
+                @include lg {
                     color: $gray;
                 }
 
-                &:hover, &:active{
+                &:hover,
+                &:active {
                     color: $darkpink;
                 }
             }
         }
 
-       li:first-child {
-           border: none;
-           display: none;
+        li:first-child {
+            border: none;
+            display: none;
 
-           @include md{
-               display: list-item;
-           }
-       }
-       li:last-child{
-           border: none;
-       }
+            @include md {
+                display: list-item;
+            }
+        }
+
+        li:last-child {
+            border: none;
+        }
     }
-
- }
+}

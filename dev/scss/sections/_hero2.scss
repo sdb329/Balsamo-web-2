@@ -3,42 +3,39 @@
 ============= */
 #featured {
     >div {
-
-
-        // padding-bottom: 115%;
         display: grid;
         grid-template-rows: repeat(8, 100px);
         grid-template-areas:
-        "h2-1"
-        "h2-1"
-        "h2-1"
-        "h2-2"
-        "h2-2"
-        "h2-2"
-        "h2-2"
-        "h2-2";
+            "h2-1"
+            "h2-1"
+            "h2-1"
+            "h2-2"
+            "h2-2"
+            "h2-2"
+            "h2-2"
+            "h2-2";
 
         img {
             width: 100%;
         }
+
         #h2-1 {
             background-image: url("../img/hero2/fruit-pastries.jpg");
             background-position: center;
             background-size: cover;
-            // height: 200px;
-
             grid-area: h2-1;
 
         }
+
         #h2-2 {
             background-image: url("../img/hero2/cupcakes.jpg");
             background-position: center;
             background-size: cover;
-            // height: 300px;
 
             grid-area: h2-2;
 
         }
+
         #h2-3 {
             background-image: url("../img/hero2/macarons.jpg");
             background-position: center;
@@ -55,18 +52,20 @@
             grid-template-areas:
                 "h2-1 h2-2";
         }
+
         #h2-1 {
             @include md {
                 grid-area: h2-1;
             }
         }
+
         #h2-2 {
             @include md {
                 grid-area: h2-2;
             }
         }
 
-        
+
 
         @include lg {
             display: grid;
@@ -75,18 +74,20 @@
             grid-template-areas:
                 ". h2-1 h2-2 .";
         }
+
         #h2-1 {
             @include lg {
                 grid-area: h2-1;
             }
         }
+
         #h2-2 {
             @include lg {
                 grid-area: h2-2;
             }
         }
 
-        @include xl{
+        @include xl {
             display: grid;
             grid-template-columns: 40px 60% auto 40px;
             grid-template-rows: repeat(2, 375px);
@@ -94,16 +95,19 @@
                 ". h2-1 h2-2 ."
                 ". h2-1 h2-3 .";
         }
+
         #h2-1 {
             @include xl {
                 grid-area: h2-1;
             }
         }
+
         #h2-2 {
             @include xl {
                 grid-area: h2-2;
             }
         }
+
         #h2-3 {
             @include xl {
                 grid-area: h2-3;
@@ -111,5 +115,5 @@
                 display: list-item;
             }
         }
-        }
     }
+}

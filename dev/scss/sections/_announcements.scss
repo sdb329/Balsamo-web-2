@@ -1,179 +1,132 @@
 /* =============
     announcements
 ============= */
-
 #announcements {
-
-
-    padding: 16px 0px;
-    // text-align: center;
     justify-content: center;
+    padding: 16px 0px;
 
-    @include md{
+    @include md {
         display: grid;
-        grid-template-columns: 16px auto 16px;
         grid-template-areas: ". announcements .";
-
+        grid-template-columns: 16px auto 16px;
     }
 
-    @include xl{
+    @include xl {
         grid-template-columns: auto 1200px auto;
     }
 
     ul {
+        display: grid;
+        gap: 16px;
 
-       display: grid;
-       gap: 16px;
-
-       @include md{
-           grid-template-columns: 50% auto;
-           gap: 24px;
-           grid-area: announcements;
-       }
-
+        @include md {
+            gap: 24px;
+            grid-area: announcements;
+            grid-template-columns: 50% auto;
+        }
 
         li {
-
-            padding: 14px 16px;
-            @include md{
-                padding: 17px 23px; 
-            }
-            @include lg{
-                padding: 16px 17px; 
-            }
-
-
+            background-color: $lightbrown;
             display: grid;
-            grid-template-columns: 16px auto 16px;
             grid-template-areas: ". announce .";
-            background-color: $lightbrown;        
+            grid-template-columns: 16px auto 16px;
+            padding: 14px 16px;
+
+            @include md {
+                padding: 17px 23px;
+            }
+
+            @include lg {
+                padding: 16px 17px;
+            }
 
             >div {
+                display: flex;
                 grid-area: announce;
 
-                >section{
-
-                    display: flex;
+                >section {
                     align-items: center;
+                    display: flex;
                 }
-                // border: 1px solid red;
-
-                // display: grid;
-                // grid-template-columns: auto 30%;
-
-                // grid-template-areas:
-                //     "text image-event"
-                //     "text image-event";
 
                 .announce-content {
-                    grid-area: text;
-
                     display: grid;
+                    grid-area: text;
                     grid-template-columns: 100% auto;
-                    
 
-                    >div{
-
-
-                        article{
-
-    
-                        >h2{
-                            color: $darkbrown;
+                    >div {
+                        article {
+                            >h2 {
+                                color: $darkbrown;
                                 font-size: rem-calc(21);
                                 font-weight: 400;
 
-                                @include md{
-                                    font-size: rem-calc(29);
-                                }
-                                @include md{
+                                @include md {
                                     font-size: rem-calc(31);
                                 }
-
+                            }
                         }
-                        
 
-                      
-                    }
+                        .planning-button {
+                            display: flex;
+                            justify-content: flex-start;
+                            margin-left: 0;
+                        }
 
-                    .planning-button{
+                        aside {
+                            margin-left: auto;
 
-                    display: flex;
-                    justify-content: flex-start;
-                    margin-left: 0;
-                }
+                            >button {
+                                background-color: $lightpink;
+                                color: $darkbrown;
+                                margin: 14px 0px;
 
-                        aside{
-                         margin-left: auto;
+                                @include md {
+                                    margin: 20px 0px;
+                                }
 
-                        
-                        >button{
+                                @include lg {
+                                    margin: 22px 0px;
+                                }
 
-                            margin: 14px 0px;
-                            @include md{
-                                margin: 20px 0px;
-                            }
-                            @include lg{
-                                margin: 22px 0px; 
-                            }
-                
-
-                            
-                            background-color: $lightpink;
-                            color: $darkbrown;
-
-                            &:hover{
-                                background-color: $darkbrown;
-                                color: $lightpink;
+                                &:hover {
+                                    background-color: $darkbrown;
+                                    color: $lightpink;
+                                }
                             }
                         }
                     }
-                    }
                 }
-
-                display: flex;
 
                 .image-event {
-                    margin-left: auto;
                     grid-area: image-event;
-
+                    margin-left: auto;
 
                     >div {
-  
+                        border: 4px $white solid;
+                        border-radius: 100%;
+                        height: 85px;
+                        width: 85px;
 
-
-
-
-                    // background-position: center;
-                    border: 4px $white solid;
-                    height: 85px;
-                    width: 85px;
-                    border-radius: 100%;
-
-
-                    @include md{
-                        height: 115px;
-                        width: 115px;
+                        @include md {
+                            height: 115px;
+                            width: 115px;
+                        }
                     }
-                    }
-                    #event-right{
-                        background-position: center bottom;
-                        background-size: cover;
+
+                    #event-right {
                         background-image: url("../img/announcements/macaron.jpg");
-                    }
-                    
-                    #event-left{
                         background-position: center bottom;
                         background-size: cover;
+                    }
+
+                    #event-left {
                         background-image: url("../img/announcements/ice-cream.jpg");
+                        background-position: center bottom;
+                        background-size: cover;
                     }
                 }
-
             }
         }
     }
-
 }
-
-
-

@@ -1,60 +1,43 @@
 /* =============
     hero
 ============= */
-
-
-
 #hero-image {
     img {
-        width: 100%;
-        object-fit: cover;
         display: block;
+        object-fit: cover;
+        width: 100%;
     }
-
 }
 
 #hero {
-
-
     ul {
-
-
         li {
-
             display: grid;
-            grid-template-columns: 16px auto 16px;
             grid-template-areas: ". hero .";
-
+            grid-template-columns: 16px auto 16px;
 
             a {
                 grid-area: hero;
-                >div{
-                    display: flex;
+
+                >div {
                     align-items: center;
+                    display: flex;
 
-                 .details-button{
-                      margin-left: auto;
-
-                  }
-
+                    .details-button {
+                        margin-left: auto;
+                    }
                 }
-
             }
         }
 
-
-
-
         #menu-hero {
+            background-color: $darkpink;
 
             a:link,
             a:visited {
-
-                padding: 30px 10px;
-
-
-                grid-area: hero;
                 color: $darkbrown;
+                grid-area: hero;
+                padding: 30px 10px;
                 transition: 00.25s;
 
                 &:hover,
@@ -71,27 +54,20 @@
                     }
                 }
             }
-
-            background-color: $darkpink;
 
             @include md {
                 justify-content: right;
             }
         }
 
-
         #location-hero {
-
-
+            background-color: $lightpink;
 
             a:link,
             a:visited {
-
-                padding: 40px 10px;
-
-
-                grid-area: hero;
                 color: $darkbrown;
+                grid-area: hero;
+                padding: 40px 10px;
                 transition: 00.25s;
 
                 &:hover,
@@ -109,22 +85,14 @@
                 }
             }
 
-            background-color: $lightpink;
-
-
-
             @include md {
                 justify-content: left;
             }
-
-
-
         }
 
         @include md {
             display: grid;
             grid-template-columns: 47% auto;
-
         }
 
         @include lg {
@@ -132,18 +100,14 @@
             grid-template-columns: 50% auto;
 
             .hero-button {
-                display: list-item;
                 display: inline-block;
             }
         }
-
     }
-
 
     a:link,
     a:visited {
         color: $darkbrown;
-
         transition: 0.25s;
 
         h3 {
@@ -161,20 +125,19 @@
         font-weight: 400;
     }
 
-        #locationhero {
-            font-size: rem-calc(16);
-            font-weight: 400;
-                span{
-                    font-weight: 600;
+    #locationhero {
+        font-size: rem-calc(16);
+        font-weight: 400;
 
-            }
-        }
-
-        .hero-info{
-            font-size: rem-calc(18);
+        span {
             font-weight: 600;
         }
-    
+    }
+
+    .hero-info {
+        font-size: rem-calc(18);
+        font-weight: 600;
+    }
 
     &:hover,
     &:active {
@@ -186,29 +149,14 @@ a {
     text-decoration: none;
 }
 
-
-
-
-
-
-
-
-
-
 .details-button {
-
-
-
     @include md {
         padding: 0px 13px;
     }
 }
 
-
 @include lg {
     .hero-info {
-
-
         i {
             padding: 0px 5px;
         }
